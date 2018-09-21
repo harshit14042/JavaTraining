@@ -73,6 +73,7 @@ public class Application {
 		List<Restaurant> restaurants=readTextFile();
 		Collections.sort(restaurants);
 		System.out.println(restaurants);
+		System.out.println(restaurants);
 		
 	}
 
