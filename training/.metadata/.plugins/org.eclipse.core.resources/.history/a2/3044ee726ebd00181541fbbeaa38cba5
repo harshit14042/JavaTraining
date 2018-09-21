@@ -1,0 +1,46 @@
+
+import java.io.*;
+
+public class ObjectHandling {
+	
+	public boolean saveObject(Object obj){
+		
+		boolean status = false;
+		ObjectOutputStream outStream=null;
+		try {
+			outStream=new ObjectOutputStream(new FileOutputStream(new File("customer.ser")));
+			outStream.writeObject(obj);
+			status=true;
+		} catch (Exception e) {
+			e.printStackTrace();
+		}finally{
+			try {
+				outStream.close();
+			} catch (IOException e) {
+				e.printStackTrace();
+			}
+		}
+		
+		return status;
+	}
+	
+	public Object loadObject(){
+		Object obj=null;
+		ObjectInputStream inputStream=null;
+		try {
+			inputStream=new ObjectInputStream(new FileInputStream("customer.ser"));
+			obj=inputStream.readObject();
+		} catch (Exception e) {
+			// TODO: handle exception
+		}
+		finally{
+			try {
+				inputStream.close();
+			} catch (IOException e) {
+				// TODO Auto-generated catch block
+				e.printStackTrace();
+			}
+		}
+		return obj;
+	}
+}
