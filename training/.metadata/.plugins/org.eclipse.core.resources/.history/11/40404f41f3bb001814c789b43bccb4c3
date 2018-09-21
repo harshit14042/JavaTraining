@@ -1,0 +1,17 @@
+package com.training.domain;
+
+public class Outer {
+	public void show(){
+		filter obj=new filter(){
+
+			@Override
+			public String filter(String[] data, String condition) {
+				return data[0]
+			}
+			
+		};
+	}
+	public static void main(String[] args){
+		
+	}
+}

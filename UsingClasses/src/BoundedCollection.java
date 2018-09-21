@@ -1,0 +1,29 @@
+import java.util.ArrayList;
+import java.util.List;
+
+public class BoundedCollection {
+
+	public static void display(List<? extends Insurance> insurance){
+		System.out.println(insurance.get(0).claculatePremium());
+	}
+	
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		LifeInsurance insurance=new LifeInsurance(101, "HV", 20);
+		
+		//List<LifeInsurance> life=new ArrayList<>();
+		
+		List<LifeInsurance> life=new ArrayList<>();
+		life.add(insurance);
+		
+		display(life);
+		VehicleInsurance insurance2=new VehicleInsurance(202, "John", "CAR", 100);
+		
+		List<VehicleInsurance> c=new ArrayList<>();
+		
+		c.add(insurance2);
+		
+		display(c);
+	}
+
+}

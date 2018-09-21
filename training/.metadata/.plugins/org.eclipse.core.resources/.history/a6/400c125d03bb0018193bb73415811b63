@@ -1,0 +1,11 @@
+
+public class Book {
+	private String bookNumber;
+	private String bookName;
+	private String author;
+	private int ratePerUnit;
+	
+	public double findDiscount(){
+		
+	}
+}

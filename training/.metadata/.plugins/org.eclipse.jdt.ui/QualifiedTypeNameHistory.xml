@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<qualifiedTypeNameHistroy>
+<fullyQualifiedTypeName name="BookManager"/>
+<fullyQualifiedTypeName name="Insurance"/>
+<fullyQualifiedTypeName name="com.training.domains.MarutiCar"/>
+<fullyQualifiedTypeName name="com.training.domains.BajajBike"/>
+<fullyQualifiedTypeName name="com.training.domains.QuoteManager"/>
+<fullyQualifiedTypeName name="com.training.ifaces.IAutomobile"/>
+<fullyQualifiedTypeName name="com.training.domains.Tractor"/>
+<fullyQualifiedTypeName name="com.training.domains.Customer"/>
+<fullyQualifiedTypeName name="java.lang.ArrayIndexOutOfBoundsException"/>
+<fullyQualifiedTypeName name="java.lang.NumberFormatException"/>
+<fullyQualifiedTypeName name="java.lang.ArithmeticException"/>
+<fullyQualifiedTypeName name="com.training.domains.RangeCheckException"/>
+<fullyQualifiedTypeName name="com.training.iface.Igreeting"/>
+<fullyQualifiedTypeName name="java.lang.FunctionalInterface"/>
+<fullyQualifiedTypeName name="java.util.Arrays"/>
+<fullyQualifiedTypeName name="java.math.BigInteger"/>
+<fullyQualifiedTypeName name="com.training.domains.Employee"/>
+<fullyQualifiedTypeName name="com.training.domains.EmployeeServices"/>
+<fullyQualifiedTypeName name="java.util.Scanner"/>
+<fullyQualifiedTypeName name="java.lang.Comparable"/>
+<fullyQualifiedTypeName name="java.util.Comparator"/>
+<fullyQualifiedTypeName name="com.training.domains.EmployeeNameComparator"/>
+<fullyQualifiedTypeName name="com.training.domains.EmployeeAgeComparator"/>
+<fullyQualifiedTypeName name="java.util.List"/>
+<fullyQualifiedTypeName name="LifeInsurance"/>
+<fullyQualifiedTypeName name="VehicleInsurance"/>
+<fullyQualifiedTypeName name="java.util.ArrayList"/>
+</qualifiedTypeNameHistroy>

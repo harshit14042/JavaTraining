@@ -1,0 +1,26 @@
+package com.training.domains;
+
+import java.util.Scanner;
+
+public class Application {
+
+	public int[] generateMarks(int n){
+		int[] m=new int[n];
+		for(int i=0;i<n;i++){
+			m[i]=(int) Math.ceil(Math.random()*100);
+		}
+		return m;
+	}
+	
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		System.out.println("Enter the Department Id");
+		Scanner s=new Scanner(System.in);
+		
+		long deptId=s.nextLong();
+		
+		
+		Student s1=new Student("Student1",20,generateMarks(3));
+	}
+
+}

@@ -1,0 +1,15 @@
+package com.training.domains;
+
+public class Service {
+	public static int[] generateMarks(int n){
+		int[] m=new int[n];
+		for(int i=0;i<n;i++){
+			m[i]=(int) Math.ceil(Math.random()*100);
+		}
+		return m;
+	}
+	
+	public void Initializer(){
+		
+	}
+}

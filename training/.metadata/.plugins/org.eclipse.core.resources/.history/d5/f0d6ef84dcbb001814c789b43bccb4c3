@@ -1,0 +1,18 @@
+package com.training.domains;
+
+public class ExceptionHandler {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		int age=Integer.parseInt(args[0]);
+		
+		double marksScored=450.00;
+		
+		double average=marksScored/0;
+		
+		System.out.println(age);
+		
+		System.out.println(average);
+	}
+
+}

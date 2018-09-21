@@ -1,0 +1,28 @@
+package com.training.domains;
+
+import java.util.*;
+
+public class EmployeeServices implements EmployeeAPI {
+
+	
+	List<Employee> empList;
+	
+	public EmployeeServices() {
+		super();
+		empList=new ArrayList<>();
+		// TODO Auto-generated constructor stub
+	}
+
+	@Override
+	public boolean add(Employee emp) {
+		// TODO Auto-generated method stub
+		empList.add(emp);
+	}
+
+	@Override
+	public List<Employee> findAll() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+}

@@ -1,0 +1,16 @@
+package com.training.domains;
+
+import com.training.ifaces.IAutomobile;
+
+public class QuoteManager {
+	public IAutomobile getModel(int key){
+		switch(key){
+		case 1:
+			return new MarutiCar();
+		case 2:
+			return new BajajBike();
+		default:
+				return null;
+		}
+	}
+}

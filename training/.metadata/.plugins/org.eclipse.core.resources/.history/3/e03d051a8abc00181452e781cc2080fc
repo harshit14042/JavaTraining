@@ -1,0 +1,7 @@
+package com.training.domains;
+
+public class Department {
+	private String departmentName;
+	private long deptId;
+	private List<Student> students=new ArrayList<Student>();
+}

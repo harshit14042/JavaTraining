@@ -1,0 +1,7 @@
+package com.training.domains;
+
+public class Doctor {
+	private String name;
+	private String Specialization;
+	private String city;
+}

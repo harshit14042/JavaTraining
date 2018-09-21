@@ -1,0 +1,8 @@
+
+public class BookManager {
+	public void displayBooks(Book[] bookList){
+		for(book eachBook:bookList){
+			
+		}
+	}
+}

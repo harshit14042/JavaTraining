@@ -1,0 +1,27 @@
+
+public class BookManager {
+	
+	public void displayBooks(){
+		for(Book eachBook:bookList){
+			double discount=eachBook.findDiscount();
+			double newAmount=eachBook.getRatePerUnit()*(1-discount);
+			System.out.println(eachBook.getBookName());
+			System.out.println(eachBook.getAuthor());
+			System.out.println(eachBook.getRatePerUnit());
+			System.out.println(eachBook.findDiscount());
+			System.out.println(newAmount);
+		}
+	}
+	
+	public void displayBooks(Book[] bookList){
+		for(Book eachBook:bookList){
+			double discount=eachBook.findDiscount();
+			double newAmount=eachBook.getRatePerUnit()*(1-discount);
+			System.out.println(eachBook.getBookName());
+			System.out.println(eachBook.getAuthor());
+			System.out.println(eachBook.getRatePerUnit());
+			System.out.println(eachBook.findDiscount());
+			System.out.println(newAmount);
+		}
+	}
+}

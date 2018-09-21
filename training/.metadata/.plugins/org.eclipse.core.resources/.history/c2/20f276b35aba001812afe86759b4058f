@@ -1,0 +1,11 @@
+package com.training;
+
+public class TestGreeting {
+	public static int main(String[] args) {
+		// TODO Auto-generated method stub
+		Greeting obj=new Greeting();
+		System.out.println(obj.getMessage());
+		
+		return 1;
+	}
+}

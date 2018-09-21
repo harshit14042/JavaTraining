@@ -1,0 +1,37 @@
+package com.training.domains;
+
+import java.util.*;
+
+public class Hospital {
+	private Set<Doctor> doctors=new HashSet<>();
+	private Set<Patient> patients=new HashSet<>();
+	
+	private Map<Doctor,Set<Patient>> appointments=new HashMap<Doctor,Set<Patient>>();
+
+	public Set<Doctor> getDoctors() {
+		return doctors;
+	}
+
+	public void setDoctors(Set<Doctor> doctors) {
+		this.doctors = doctors;
+	}
+
+	public Set<Patient> getPatients() {
+		return patients;
+	}
+
+	public void setPatients(Set<Patient> patients) {
+		this.patients = patients;
+	}
+
+	public Map<Doctor, Set<Patient>> getAppointments() {
+		return appointments;
+	}
+
+	public void setAppointments(Map<Doctor, Set<Patient>> appointments) {
+		this.appointments = appointments;
+	}
+	
+	
+	
+}

@@ -1,0 +1,10 @@
+package com.training.domains;
+
+public class Customer {
+	private long customerId;
+	private String customerName;
+	private Address address;
+	private long mobileNumber;
+	
+	
+}

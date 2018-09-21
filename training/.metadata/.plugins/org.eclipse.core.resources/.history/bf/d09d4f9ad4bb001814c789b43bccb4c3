@@ -1,0 +1,5 @@
+package com.training.domains;
+
+public class Address {
+	private String address_line1;
+}

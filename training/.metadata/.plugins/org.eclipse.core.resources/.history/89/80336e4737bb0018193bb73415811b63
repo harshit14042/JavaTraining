@@ -1,0 +1,11 @@
+package com.training.ifaces;
+/**
+ * 
+ * @author AC31841
+ *
+ */
+public interface IAutomobile {
+	public String getModel();
+	public String getColor();
+	public double getPrice();
+}

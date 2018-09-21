@@ -1,0 +1,8 @@
+package com.training.iface;
+
+public class FirstExample {
+	public static void main(String[] args){
+		
+		Igreeting greeter = (name)=>{return name.toUpperCase();}
+	}
+}

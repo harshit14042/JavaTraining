@@ -1,0 +1,13 @@
+package com.training;
+
+public class Doctor {
+	public String name;
+	public String speciality;
+	public int age;
+	public String qualification;
+	public int experience;
+	
+	askPatientDetail
+	giveTreatment
+	recordPatientHealth
+}

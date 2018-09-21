@@ -1,0 +1,12 @@
+
+public class VehicleInsurance extends Insurance {
+
+	private String VehicleType;
+	private String dateOfManufacturate;
+	@Override
+	public double claculatePremium() {
+		// TODO Auto-generated method stub
+		return 0;
+	}
+
+}

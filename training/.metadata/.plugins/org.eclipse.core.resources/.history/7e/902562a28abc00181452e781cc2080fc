@@ -1,0 +1,9 @@
+package com.training.domains;
+
+import java.util.*;
+
+public class University {
+	private String universityName;
+	private String city;
+	private List<Department> depts; 
+}

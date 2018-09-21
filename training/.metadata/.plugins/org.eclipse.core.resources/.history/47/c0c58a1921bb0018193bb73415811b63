@@ -1,0 +1,10 @@
+
+public class VehicleInsurance extends Insurance {
+
+	@Override
+	public double claculatePremium() {
+		// TODO Auto-generated method stub
+		return 0;
+	}
+
+}

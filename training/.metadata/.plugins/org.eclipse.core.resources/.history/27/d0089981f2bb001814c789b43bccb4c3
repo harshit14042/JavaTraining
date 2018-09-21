@@ -1,0 +1,12 @@
+package com.training.domain;
+
+public class Outer {
+	public void show(){
+		filter obj=new filter(){
+			
+		};
+	}
+	public static void main(String[] args){
+		
+	}
+}

@@ -1,0 +1,13 @@
+package com.training;
+
+public class Doctor {
+	name
+	speciality
+	age
+	qualification
+	location
+	experience
+	
+	giveTreatment
+	
+}

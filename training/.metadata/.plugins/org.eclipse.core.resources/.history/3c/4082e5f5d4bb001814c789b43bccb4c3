@@ -1,0 +1,12 @@
+package com.training.domains;
+
+public class Application {
+
+	public static void main(String[] args) {
+		
+		
+		Address addr_1=new Address("Flat No. 20","ACK","New Delhi",110019)
+		
+	}
+
+}

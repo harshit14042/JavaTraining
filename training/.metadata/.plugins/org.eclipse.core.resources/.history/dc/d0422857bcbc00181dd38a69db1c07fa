@@ -1,0 +1,14 @@
+import java.util.List;
+
+public class BoundedCollection {
+
+	public static void display(List<LifeInsurance> insurance){
+		
+	}
+	
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Insurance insurance=new LifeInsurance(101, "HV", 20);
+	}
+
+}

@@ -1,0 +1,15 @@
+package com.training.iface;
+
+public class FirstExample {
+	public static void main(String[] args){
+		
+		Igreeting greeter = (name)->{return name.toUpperCase();};
+		
+		System.out.println(greeter.greet("asgdjhasg"));
+		
+		
+		Converter c=(value)->{return value*(72.5);};
+		
+		System.out.println(c.dollarToInr(10));
+	}
+}

@@ -1,0 +1,11 @@
+package com.training.domains;
+
+public class CollectionApplication {
+
+	public static void main(String[] args) {
+		Employee e=new Employee(5, "HV");
+		Employee e1=new Employee(51, "HV1");
+		Employee e2=new Employee(52, "HV2");
+	}
+
+}

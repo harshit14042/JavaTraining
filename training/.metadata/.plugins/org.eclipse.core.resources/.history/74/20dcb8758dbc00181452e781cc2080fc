@@ -1,0 +1,22 @@
+package com.training.domains;
+
+import java.util.Scanner;
+
+public class Application {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		System.out.println("Enter the Department Id");
+		Scanner s=new Scanner(System.in);
+		
+		long deptId=s.nextLong();
+		
+		public int[] generateMarks(){
+			
+		}
+		
+		
+		Student s1=new Student("Student1",20);
+	}
+
+}

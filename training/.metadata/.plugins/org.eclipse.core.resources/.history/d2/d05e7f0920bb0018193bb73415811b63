@@ -1,0 +1,5 @@
+
+public abstract class Insurance {
+	private long policyNumber;
+	private String policyHolderName;
+}

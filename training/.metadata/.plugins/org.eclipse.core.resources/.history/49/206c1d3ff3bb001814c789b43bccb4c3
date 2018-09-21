@@ -1,0 +1,18 @@
+package com.training.domain;
+
+public class Outer {
+	public void show(){
+		filter obj=new filter(){
+
+			@Override
+			public String filter(String[] data, String condition) {
+				// TODO Auto-generated method stub
+				return null;
+			}
+			
+		};
+	}
+	public static void main(String[] args){
+		
+	}
+}

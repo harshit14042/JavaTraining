@@ -1,0 +1,24 @@
+package com.training.domains;
+
+public class Service {
+	public static int[] generateMarks(int n){
+		int[] m=new int[n];
+		for(int i=0;i<n;i++){
+			m[i]=(int) Math.ceil(Math.random()*100);
+		}
+		return m;
+	}
+	
+	public void Initializer(){
+		
+		Student s2=new Student("Student2",21,generateMarks(3));
+		
+		Student s3=new Student("Student3",22,generateMarks(3));
+		
+		Student s4=new Student("Student4",23,generateMarks(3));
+		
+		Student s5=new Student("Student5",24,generateMarks(3));
+		
+		Student s6=new Student("Student6",25,generateMarks(3));
+	}
+}

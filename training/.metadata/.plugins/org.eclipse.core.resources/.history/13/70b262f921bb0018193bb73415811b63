@@ -1,0 +1,25 @@
+
+public class VehicleInsurance extends Insurance {
+
+	private String VehicleType;
+	private long yearOfManufacturate;
+
+
+	@Override
+	public double claculatePremium() {
+		// TODO Auto-generated method stub
+		double premium=0.0;
+		if(this.VehicleType.equals("bike")){
+			switch(this.yearOfManufacturate){
+			case 2017:
+				premium = 200;
+				break;
+			}
+		}
+		else{
+			
+		}
+		return premium;
+	}
+
+}

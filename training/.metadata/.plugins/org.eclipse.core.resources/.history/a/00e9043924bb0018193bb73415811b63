@@ -1,0 +1,23 @@
+
+public class LifeInsurance extends Insurance {
+
+	private int age;
+	
+	public LifeInsurance(long policyNumber, String policyHolderName, int age) {
+		super(policyNumber, policyHolderName);
+		this.age = age;
+	}
+
+	@Override
+	public double claculatePremium() {
+		// TODO Auto-generated method stub
+		double premium=0.0;
+		if(age<40){
+			premium=100;
+		}
+		else{
+			premium=400;
+		}
+	}
+
+}

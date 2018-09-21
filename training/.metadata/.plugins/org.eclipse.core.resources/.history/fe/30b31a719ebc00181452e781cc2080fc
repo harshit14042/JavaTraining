@@ -1,0 +1,25 @@
+package com.training.domains;
+
+public class CollectionApplication {
+
+	public static void main(String[] args) {
+		Employee.order="D";
+		Employee e=new Employee(50, "AHV",3);
+		Employee e1=new Employee(51, "ZHV1",5);
+		Employee e2=new Employee(52, "VHV2",1);
+		EmployeeServices emp=new EmployeeServices();
+		
+		emp.add(e,e1,e2);
+		
+		emp.findAll().forEach(System.out::println);
+		
+		System.out.println(emp.sortBy);
+		
+		emp.findAll().forEach(System.out::println);
+		
+		
+		
+		
+	}
+
+}

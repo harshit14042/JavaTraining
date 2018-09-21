@@ -1,0 +1,7 @@
+package com.training.ifaces;
+
+public interface IAutomobile {
+	public String getModel();
+	public String getColor();
+	public double getPrice();
+}

@@ -1,0 +1,15 @@
+
+public class InsuranceAgent {
+
+	public static void findPremium(Insurance insurance){
+		System.out.println(insurance.claculatePremium());
+	}
+	
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		VehicleInsurance pulsarBike=new VehicleInsurance(879, "John Doe", "bike", 2017);
+		
+		findPremium(pulsarBike);
+	}
+
+}

@@ -1,0 +1,19 @@
+package com.training.domains;
+
+import java.util.List;
+
+public class EmployeeServices implements EmployeeAPI {
+
+	@Override
+	public boolean add(Employee emp) {
+		// TODO Auto-generated method stub
+		return false;
+	}
+
+	@Override
+	public List<Employee> findAll() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+}

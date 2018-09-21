@@ -1,0 +1,6 @@
+package com.training.domains;
+
+public class Employee {
+	private int age;
+	
+}

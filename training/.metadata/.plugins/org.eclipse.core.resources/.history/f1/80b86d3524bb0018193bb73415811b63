@@ -1,0 +1,12 @@
+
+public class LifeInsurance extends Insurance {
+
+	private int age;
+	
+	@Override
+	public double claculatePremium() {
+		// TODO Auto-generated method stub
+		
+	}
+
+}

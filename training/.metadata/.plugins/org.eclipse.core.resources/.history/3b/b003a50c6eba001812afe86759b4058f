@@ -1,0 +1,15 @@
+package com.training;
+
+public class Doctor {
+	private String name;
+	private String speciality;
+	private int age;
+	private String qualification;
+	private int experience;
+	
+	public String askPatientDetail(){
+		return "Patient Details";
+	}
+	giveTreatment
+	recordPatientHealth
+}

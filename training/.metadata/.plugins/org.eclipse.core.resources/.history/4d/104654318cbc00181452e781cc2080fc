@@ -1,0 +1,51 @@
+package com.training.domains;
+
+import java.util.ArrayList;
+import java.util.List;
+
+public class Student {
+	private String name;
+	private int age;
+	private int[] subjects;
+	
+	public double getStuAvg(Student s){
+		double avg=0;
+		int total=s.getSubjects().length;
+		int[] marks=s.getSubjects();
+		for(int i=0;i<total;i++){
+			avg+=marks[i];
+		}
+		return avg/total;
+	}
+	
+	public String getName() {
+		return name;
+	}
+	public void setName(String name) {
+		this.name = name;
+	}
+	public int getAge() {
+		return age;
+	}
+	public void setAge(int age) {
+		this.age = age;
+	}
+	public int[] getSubjects() {
+		return subjects;
+	}
+	public void setSubjects(List<Integer> subjects) {
+		subjects = subjects;
+	}
+	public Student() {
+		super();
+		// TODO Auto-generated constructor stub
+	}
+	public Student(String name, int age, int[] subjects) {
+		super();
+		this.name = name;
+		this.age = age;
+		subjects = subjects;
+	}
+	
+	
+}

@@ -1,0 +1,15 @@
+package com.training.domains;
+
+public class Application {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Hospital hospital=new Hospital();
+		
+		Doctor doc1=new Doctor("Ramesh","ENT","Delhi");
+		Doctor doc2=new Doctor("Suresh","Dental","Delhi");
+		
+		
+	}
+
+}

@@ -1,0 +1,25 @@
+package com.training.domains;
+
+public class Application {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Hospital hospital=new Hospital();
+		
+		Doctor doc1=new Doctor("Ramesh","ENT","Delhi");
+		Doctor doc2=new Doctor("Suresh","Dental","Delhi");
+		
+		Patient patient1=new Patient("Harshit", 20, "4678");
+		Patient patient2=new Patient("Hamaad", 23, "4689798");
+		
+		hospital.addDoctor(doc1);
+		hospital.addDoctor(doc2);
+		
+		hospital.addPatient(patient1);
+		hospital.addPatient(patient2);
+		
+		hospital
+		
+	}
+
+}

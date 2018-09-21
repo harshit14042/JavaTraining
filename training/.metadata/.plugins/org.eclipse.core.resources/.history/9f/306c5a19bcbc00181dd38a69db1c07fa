@@ -1,0 +1,13 @@
+
+public class BoundedCollection {
+
+	public static void display(List<LifeInsurance> insurance){
+		
+	}
+	
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+	}
+
+}

@@ -1,0 +1,9 @@
+package com.training.domains;
+
+public class CollectionApplication {
+
+	public static void main(String[] args) {
+		
+	}
+
+}

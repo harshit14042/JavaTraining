@@ -1,0 +1,16 @@
+package com.training;
+
+public class BloodDonor {
+	private String name;
+	private String gender;
+	private int age;
+	public BloodDonor() {
+		super();
+		// TODO Auto-generated constructor stub
+	}
+	public BloodDonor(String name, String gender) {
+		super();
+		this.name = name;
+		this.gender = gender;
+	}
+}

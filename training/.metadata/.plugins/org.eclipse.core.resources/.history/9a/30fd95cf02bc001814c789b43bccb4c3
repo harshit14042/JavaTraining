@@ -1,0 +1,7 @@
+package com.training.domains;
+import java.util.*;
+public interface EmployeeAPI {
+	public boolean add(Employee emp){
+		
+	}
+}

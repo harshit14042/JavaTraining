@@ -1,0 +1,10 @@
+package com.training;
+
+public class Greeting {
+	Greeting(){
+		
+	}
+	public String getMessage(){
+		return "Welcome";
+	}
+}

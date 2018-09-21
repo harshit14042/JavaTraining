@@ -1,0 +1,13 @@
+package com.training.domains;
+
+import java.util.*;
+
+public class Hospital {
+	private Set<Doctor> doctors=new HashSet<>();
+	private Set<Patient> patients=new HashSet<>();
+	
+	private Map<Doctor,Set<Patient>> appointments=new HashMap<Doctor,Set<Patient>>();
+	
+	
+	
+}
