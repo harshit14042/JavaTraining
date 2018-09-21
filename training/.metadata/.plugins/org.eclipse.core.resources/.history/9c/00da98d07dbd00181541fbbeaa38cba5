@@ -1,0 +1,11 @@
+package com.training.domains;
+
+public class Restaurant implements Comparable<Restaurant> {
+
+	@Override
+	public int compareTo(Restaurant o) {
+		// TODO Auto-generated method stub
+		return 0;
+	}
+
+}

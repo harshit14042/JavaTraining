@@ -1,0 +1,78 @@
+package com.training.domains;
+
+import java.io.BufferedReader;
+import java.io.File;
+import java.io.FileNotFoundException;
+import java.io.FileReader;
+import java.io.FileWriter;
+import java.io.IOException;
+import java.io.PrintWriter;
+import java.util.ArrayList;
+import java.util.Collections;
+import java.util.List;
+
+public class Application {
+	
+	private static boolean writeToTextFile(Restaurant rest){
+		boolean status=false;
+		PrintWriter writer=null;
+		try {
+			writer=new PrintWriter(new FileWriter(new File("Restaurant.txt"),true));
+			writer.write(rest.toString()+"\n");
+			status=true;
+		} catch (Exception e) {
+			// TODO: handle exception
+			e.printStackTrace();
+		}
+		finally{
+			writer.close();
+		}
+		return status;
+	}
+	
+	public static List<Restaurant> readTextFile(){
+		List<Restaurant> restaurants=new ArrayList<>();
+		BufferedReader br=null;
+		try {
+			br=new BufferedReader(new FileReader(new File("Restaurant.txt")));
+			String line;
+			try {
+				while((line=br.readLine())!=null){
+					String[] restaurantText=line.split(",");
+					Restaurant rest=new Restaurant(restaurantText[0],restaurantText[1],Long.parseLong(restaurantText[2]),Integer.parseInt(restaurantText[3]));
+					restaurants.add(rest);
+				}
+			} catch (IOException e) {
+				// TODO Auto-generated catch block
+				e.printStackTrace();
+			}
+		} catch (FileNotFoundException e1) {
+			// TODO Auto-generated catch block
+			e1.printStackTrace();
+		}
+		finally{
+			try {
+				br.close();
+			} catch (IOException e) {
+				// TODO Auto-generated catch block
+				e.printStackTrace();
+			}
+		}
+		return restaurants;
+	}
+	
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Restaurant rest1=new Restaurant("McDonalds","Delhi",6548967,5);
+		Restaurant rest2=new Restaurant("Dominos","Pune",6548967,1);
+		Restaurant rest3=new Restaurant("Pizzahut","Bangalore",6548967,2);
+		
+		writeToTextFile(rest1);
+		writeToTextFile(rest2);
+		writeToTextFile(rest3);
+		List<Restaurant> restaurants=new ArrayList<>();
+		Collections.sort(readTextFile());
+		System.out.println();
+	}
+
+}

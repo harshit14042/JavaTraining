@@ -1,0 +1,50 @@
+package com.training.domains;
+
+import java.io.*;
+import java.util.TreeSet;
+
+public class Application {
+
+	TreeSet<Restaurant> restaurants=new TreeSet<>();
+	
+	private boolean writeToTextFile(){
+		boolean status=false;
+		PrintWriter writer=null;
+		try {
+			writer=new PrintWriter(new FileWriter(new File("Restaurants.txt"),true));
+			writer.write(this.toString());
+			status=true;
+		} catch (Exception e) {
+			// TODO: handle exception
+			e.printStackTrace();
+		}
+		finally{
+			writer.close();
+		}
+		return status;
+	}
+	
+	public static void readTextFile(){
+		BufferedReader br=null;
+		try {
+			br=new BufferedReader(new FileReader(new File("Restaurant.txt")));
+		} catch (FileNotFoundException e1) {
+			// TODO Auto-generated catch block
+			e1.printStackTrace();
+		}
+		finally{
+			try {
+				br.close();
+			} catch (IOException e) {
+				// TODO Auto-generated catch block
+				e.printStackTrace();
+			}
+		}
+	}
+	
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+	}
+
+}

@@ -1,0 +1,19 @@
+package com.training.domains;
+
+import java.util.*;
+
+public class Application {
+
+	TreeSet<Restaurant> restaurants=new TreeSet<>();
+	
+	public static void readTextFile(){
+		BufferedReader br=null;
+		
+	}
+	
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+	}
+
+}
