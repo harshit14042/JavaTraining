@@ -23,8 +23,17 @@
 <fullyQualifiedTypeName name="java.util.Comparator"/>
 <fullyQualifiedTypeName name="com.training.domains.EmployeeNameComparator"/>
 <fullyQualifiedTypeName name="com.training.domains.EmployeeAgeComparator"/>
-<fullyQualifiedTypeName name="java.util.List"/>
 <fullyQualifiedTypeName name="LifeInsurance"/>
 <fullyQualifiedTypeName name="VehicleInsurance"/>
+<fullyQualifiedTypeName name="ObjectHandling"/>
+<fullyQualifiedTypeName name="java.io.Serializable"/>
+<fullyQualifiedTypeName name="java.io.ObjectOutputStream"/>
+<fullyQualifiedTypeName name="java.io.ObjectInputStream"/>
+<fullyQualifiedTypeName name="com.training.domains.Restaurant"/>
+<fullyQualifiedTypeName name="java.util.List"/>
 <fullyQualifiedTypeName name="java.util.ArrayList"/>
+<fullyQualifiedTypeName name="java.util.Collections"/>
+<fullyQualifiedTypeName name="com.training.domains.Calculate"/>
+<fullyQualifiedTypeName name="java.lang.Thread"/>
+<fullyQualifiedTypeName name="com.training.domains.UsePrintString"/>
 </qualifiedTypeNameHistroy>

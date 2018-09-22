@@ -1,0 +1,18 @@
+package com.training.domains;
+
+public class JoinExample {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		System.out.println("Main Started");
+		
+		Thread thread=new Thread(){
+			public void run(){
+				
+			}
+		}
+		
+		System.out.println("Main Finished");
+	}
+
+}

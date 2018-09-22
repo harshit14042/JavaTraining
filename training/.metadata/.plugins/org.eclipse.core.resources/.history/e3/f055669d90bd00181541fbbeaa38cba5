@@ -1,0 +1,13 @@
+package com.training.domains;
+
+public class Calculate implements Runnable {
+
+	private int count;
+	
+	@Override
+	public void run() {
+		// TODO Auto-generated method stub
+
+	}
+
+}

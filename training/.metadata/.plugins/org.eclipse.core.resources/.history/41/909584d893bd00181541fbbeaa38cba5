@@ -1,0 +1,9 @@
+package com.training.domains;
+
+public class PrintString {
+	
+	public static void print(String str1,String s2){
+		
+	}
+
+}

@@ -1,0 +1,13 @@
+package com.training.domains;
+
+public class UsePrintString implements Runnable {
+
+	private String str1,str2;
+	
+	@Override
+	public void run() {
+		// TODO Auto-generated method stub
+		PrintString.print(str1, str2);
+	}
+
+}

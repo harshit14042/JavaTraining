@@ -1,0 +1,22 @@
+package com.training.domains;
+
+public class Calculate implements Runnable {
+
+	private int count;
+	
+	public Calculate(int count) {
+		super();
+		this.count = count;
+	}
+
+	private long fact(long n){
+		
+	}
+	
+	@Override
+	public void run() {
+		// TODO Auto-generated method stub
+		
+	}
+
+}

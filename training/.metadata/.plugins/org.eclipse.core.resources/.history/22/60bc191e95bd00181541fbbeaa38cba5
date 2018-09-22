@@ -1,0 +1,13 @@
+package com.training.domains;
+
+public class Application {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		UsePrintString ups1=new UsePrintString("A", "B");
+		UsePrintString ups2=new UsePrintString("C", "D");
+		UsePrintString ups3=new UsePrintString("E", "F");
+		UsePrintString ups4=new UsePrintString("G", "H");
+	}
+
+}
