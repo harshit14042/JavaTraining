@@ -1,0 +1,45 @@
+package com.training.com;
+
+public class Order {
+	private int orderId;
+	private Items item;
+	private int quantity;
+	
+	
+	
+	
+	public int getOrderId() {
+		return orderId;
+	}
+	public void setOrderId(int orderId) {
+		this.orderId = orderId;
+	}
+	public Items getItem() {
+		return item;
+	}
+	public void setItem(Items item) {
+		this.item = item;
+	}
+	public int getQuantity() {
+		return quantity;
+	}
+	public void setQuantity(int quantity) {
+		this.quantity = quantity;
+	}
+	@Override
+	public String toString() {
+		return "Order [orderId=" + orderId + ", item=" + item + ", quantity=" + quantity + "]";
+	}
+	public Order(int orderId, Items item, int quantity) {
+		super();
+		this.orderId = orderId;
+		this.item = item;
+		this.quantity = quantity;
+	}
+	public Order() {
+		super();
+		// TODO Auto-generated constructor stub
+	}
+	
+	
+}

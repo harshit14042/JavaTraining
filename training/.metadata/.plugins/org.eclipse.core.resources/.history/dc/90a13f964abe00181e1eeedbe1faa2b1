@@ -1,0 +1,10 @@
+package com.training.com;
+
+public class Furniture extends Items{
+
+	public Furniture(long l, String string, int i) {
+		// TODO Auto-generated constructor stub
+		
+	}
+	
+}

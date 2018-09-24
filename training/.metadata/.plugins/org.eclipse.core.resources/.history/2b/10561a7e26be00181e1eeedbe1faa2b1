@@ -1,0 +1,55 @@
+package com.training.com;
+
+import java.util.ArrayList;
+import java.util.List;
+
+public class Customer {
+	private String Id;
+	private String Name;
+	
+	private List<Orders> orders=new ArrayList<>();
+	
+//	private HashMap<Items,Integer> orders=new HashMap<>();
+//
+//	public void addItem(Items item,int quantity){
+//		//this.orders.put(item, quantity);
+//		int qty;
+//		if(orders.containsKey(item)){
+//			qty=orders.get(item);
+//			qty+=quantity;
+//		}
+//		else{
+//			qty=quantity;
+//		}
+//		orders.put(item, qty);
+//	}
+	
+	public String getId() {
+		return Id;
+	}
+
+	public void setId(String id) {
+		Id = id;
+	}
+
+	public String getName() {
+		return Name;
+	}
+
+	public void setName(String name) {
+		Name = name;
+	}
+
+	public Customer(String id, String name) {
+		super();
+		Id = id;
+		Name = name;
+	}
+
+	public Customer() {
+		super();
+		// TODO Auto-generated constructor stub
+	}
+	
+	
+}

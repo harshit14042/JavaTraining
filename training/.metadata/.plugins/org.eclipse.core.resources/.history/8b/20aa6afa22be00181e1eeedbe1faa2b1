@@ -1,0 +1,9 @@
+package com.training.com;
+
+public class Customer {
+	private String Id;
+	private String Name;
+	
+	private HashMap<Items,Integer> orders=new HashMap<>();
+	
+}

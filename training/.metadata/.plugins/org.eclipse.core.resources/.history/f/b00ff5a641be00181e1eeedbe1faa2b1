@@ -1,0 +1,42 @@
+package com.training.com;
+
+public class Items {
+	long itemId;
+	String Type;
+	double price;
+	
+	public Items() {
+		super();
+		// TODO Auto-generated constructor stub
+	}
+	public Items(long itemId, String type, double price) {
+		super();
+		this.itemId = itemId;
+		Type = type;
+		this.price = price;
+	}
+	@Override
+	public String toString() {
+		return "Items [itemId=" + itemId + ", Type=" + Type + ", price=" + price + "]";
+	}
+	public long getItemId() {
+		return itemId;
+	}
+	public void setItemId(long itemId) {
+		this.itemId = itemId;
+	}
+	public String getType() {
+		return Type;
+	}
+	public void setType(String type) {
+		Type = type;
+	}
+	public double getPrice() {
+		return price;
+	}
+	public void setPrice(double price) {
+		this.price = price;
+	}
+	
+	
+}

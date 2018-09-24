@@ -68,7 +68,7 @@ public class Application {
 						System.out.println("Do you want to add more items?\nPress 'y' for yes and 'n' for no.");
 						more=s.next();
 					}while(more.equals("y"));
-					System.out.println(rental.rent(orderId++, customer, its));
+					System.out.println("Rent Amount: "+rental.rent(orderId++, customer, its));
 					System.out.println("Do you want to add more orders?\nPress 'y' for yes and 'n' for no.");
 					choice=s.next();
 				}while(choice.equals("y"));
@@ -101,6 +101,7 @@ public class Application {
 				break;
 			}
 		}
+		s.close();
 	}
 
 }

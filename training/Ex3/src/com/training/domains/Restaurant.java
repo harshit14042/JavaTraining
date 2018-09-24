@@ -1,7 +1,5 @@
 package com.training.domains;
 
-import java.io.*;
-
 public class Restaurant implements Comparable<Restaurant> {
 
 	private String name;

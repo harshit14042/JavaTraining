@@ -1,0 +1,32 @@
+package com.training.com;
+
+public class Bill {
+	private Customer cust;
+	private Order order;
+	public Customer getCust() {
+		return cust;
+	}
+	public void setCust(Customer cust) {
+		this.cust = cust;
+	}
+	public Order getOrder() {
+		return order;
+	}
+	public void setOrder(Order order) {
+		this.order = order;
+	}
+	@Override
+	public String toString() {
+		return "Bill [cust=" + cust + ", order=" + order + "]";
+	}
+	public Bill(Customer cust, Order order) {
+		super();
+		this.cust = cust;
+		this.order = order;
+	}
+	public Bill() {
+		super();
+		// TODO Auto-generated constructor stub
+	}
+	
+}

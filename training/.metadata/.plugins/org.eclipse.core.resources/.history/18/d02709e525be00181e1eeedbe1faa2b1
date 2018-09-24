@@ -1,0 +1,25 @@
+package com.training.com;
+
+public class Order {
+	private int orderId;
+	private Items item;
+	private int quantity;
+	
+	
+	private HashMap<Items,Integer> orders=new HashMap<>();
+	//
+//		public void addItem(Items item,int quantity){
+//			//this.orders.put(item, quantity);
+//			int qty;
+//			if(orders.containsKey(item)){
+//				qty=orders.get(item);
+//				qty+=quantity;
+//			}
+//			else{
+//				qty=quantity;
+//			}
+//			orders.put(item, qty);
+//		}
+	
+	
+}

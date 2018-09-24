@@ -1,0 +1,8 @@
+package com.training.com;
+
+public class Order {
+	private int orderId;
+	private Items item;
+	private int quantity;
+	
+}

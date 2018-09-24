@@ -1,0 +1,6 @@
+package com.training.com;
+
+public class Bill {
+	private Customer cust;
+	private Order order;
+}

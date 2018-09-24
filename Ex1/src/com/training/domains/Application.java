@@ -21,7 +21,7 @@ public class Application {
 		service.getDetails(deptId);
 		
 		
-		
+		s.close();
 	}
 
 }

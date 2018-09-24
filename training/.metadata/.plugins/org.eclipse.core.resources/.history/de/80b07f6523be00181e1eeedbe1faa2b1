@@ -1,0 +1,55 @@
+package com.training.com;
+
+import java.util.HashMap;
+
+public class Customer {
+	private String Id;
+	private String Name;
+	
+	private HashMap<Items,Integer> orders=new HashMap<>();
+
+	public void addItem(Items item,int quantity){
+		//this.orders.put(item, quantity);
+		if(orders.containsKey(item)){
+			int quantity=orders.get(item);
+		}
+	}
+	
+	public String getId() {
+		return Id;
+	}
+
+	public void setId(String id) {
+		Id = id;
+	}
+
+	public String getName() {
+		return Name;
+	}
+
+	public void setName(String name) {
+		Name = name;
+	}
+
+	public HashMap<Items, Integer> getOrders() {
+		return orders;
+	}
+
+	public void setOrders(HashMap<Items, Integer> orders) {
+		this.orders = orders;
+	}
+
+	public Customer(String id, String name, HashMap<Items, Integer> orders) {
+		super();
+		Id = id;
+		Name = name;
+		this.orders = orders;
+	}
+
+	public Customer() {
+		super();
+		// TODO Auto-generated constructor stub
+	}
+	
+	
+}

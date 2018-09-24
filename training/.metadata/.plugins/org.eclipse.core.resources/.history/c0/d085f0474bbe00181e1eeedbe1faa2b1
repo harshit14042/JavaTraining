@@ -1,0 +1,7 @@
+package com.training.com;
+
+public class Furniture extends Items {
+	public Furniture(){
+		super(long itemId, String type, double price);
+	}
+}

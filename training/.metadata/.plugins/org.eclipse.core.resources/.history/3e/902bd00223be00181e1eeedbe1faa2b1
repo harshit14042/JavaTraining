@@ -1,0 +1,11 @@
+package com.training.com;
+
+import java.util.HashMap;
+
+public class Customer {
+	private String Id;
+	private String Name;
+	
+	private HashMap<Items,Integer> orders=new HashMap<>();
+	
+}

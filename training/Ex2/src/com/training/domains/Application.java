@@ -49,6 +49,7 @@ public class Application {
 		patName=s.next();
 		hospital.cancelAppointment(docName, patName);
 		System.out.println(hospital.getAppointments());
+		s.close();
 	}
 
 }

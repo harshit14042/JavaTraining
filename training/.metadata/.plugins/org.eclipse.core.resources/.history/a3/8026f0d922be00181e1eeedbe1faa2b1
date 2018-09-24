@@ -1,0 +1,8 @@
+package com.training.com;
+
+public class Customer {
+	private String Id;
+	private String Name;
+	
+	
+}

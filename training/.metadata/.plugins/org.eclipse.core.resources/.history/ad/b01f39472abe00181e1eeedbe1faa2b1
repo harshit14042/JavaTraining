@@ -1,0 +1,14 @@
+package com.training.com;
+
+import java.util.ArrayList;
+import java.util.List;
+
+public class Customer {
+	private String Id;
+	private String Name;
+	private long contact;
+	
+	private List<Order> orders=new ArrayList<>();
+	
+	
+}

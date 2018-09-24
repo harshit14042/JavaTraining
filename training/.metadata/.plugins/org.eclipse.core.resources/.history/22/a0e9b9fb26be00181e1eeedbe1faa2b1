@@ -1,0 +1,17 @@
+package com.training.com;
+
+import java.util.ArrayList;
+import java.util.List;
+
+public class Customer {
+	private String Id;
+	private String Name;
+	
+	private List<Order> orders=new ArrayList<>();
+
+
+	public void addOrder(Order order){
+		this.orders.add(order);
+	}
+	
+}

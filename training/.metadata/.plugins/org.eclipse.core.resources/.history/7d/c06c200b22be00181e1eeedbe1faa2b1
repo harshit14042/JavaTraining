@@ -1,0 +1,6 @@
+package com.training.com;
+
+public abstract class Items {
+	private String itemId;
+	private String Type;
+}

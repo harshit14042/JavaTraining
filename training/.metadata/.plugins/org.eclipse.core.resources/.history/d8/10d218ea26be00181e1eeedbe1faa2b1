@@ -1,0 +1,45 @@
+package com.training.com;
+
+import java.util.ArrayList;
+import java.util.List;
+
+public class Customer {
+	private String Id;
+	private String Name;
+	
+	private List<Order> orders=new ArrayList<>();
+
+
+	public void addOrder(Order order){
+		this.orders.add(order);
+	}
+	
+	public String getId() {
+		return Id;
+	}
+
+	public void setId(String id) {
+		Id = id;
+	}
+
+	public String getName() {
+		return Name;
+	}
+
+	public void setName(String name) {
+		Name = name;
+	}
+
+	public Customer(String id, String name) {
+		super();
+		Id = id;
+		Name = name;
+	}
+
+	public Customer() {
+		super();
+		// TODO Auto-generated constructor stub
+	}
+	
+	
+}
