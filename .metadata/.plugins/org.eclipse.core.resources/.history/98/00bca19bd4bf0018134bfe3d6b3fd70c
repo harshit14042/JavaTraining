@@ -1,0 +1,31 @@
+package com.training;
+
+import com.training.entity.Movie;
+import com.training.entity.MovieDAO;
+import com.training.entity.MovieDAOImpl;
+import com.training.utils.DbConnections;
+
+public class Application {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		System.out.println(DbConnections.getConnection());
+		
+		Movie movie=new Movie(101, "The Dark Knight", "Christopher Nolan", "Crime", 4.9);
+		
+		MovieDAO doa=new MovieDAOImpl();
+		
+		int rowAdded=doa.addMovie(movie);
+		
+		System.out.println(rowAdded+" Rows Added");
+		
+		((MovieDAOImpl)doa).closeConnection(); 
+		
+		/*try {
+			DbConnections.getConnection().close();
+		} catch (SQLException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}*/
+	}
+}

@@ -1,0 +1,130 @@
+package com.training.entity;
+
+import java.sql.Connection;
+import java.sql.PreparedStatement;
+import java.sql.ResultSet;
+import java.sql.SQLException;
+import java.util.ArrayList;
+import java.util.List;
+
+import com.training.utils.DbConnections;
+
+public class MovieDAOImpl implements MovieDAO {
+
+	private Connection conn;
+	
+	
+	
+	
+	public MovieDAOImpl() {
+		super();
+		conn=DbConnections.getConnection();
+		// TODO Auto-generated constructor stub
+	}
+
+	@Override
+	public int addMovie(Movie movie) {
+		// TODO Auto-generated method stub
+		String sql="insert into moviehv values(?,?,?,?,?)";
+		PreparedStatement pstmt=null;
+		int rowAdded=0;
+		try {
+			pstmt=conn.prepareStatement(sql);
+			pstmt.setLong(1, movie.getMovieId());
+			pstmt.setString(2, movie.getMovieName());
+			pstmt.setString(3, movie.getDirector());
+			pstmt.setString(4, movie.getGenre());
+			pstmt.setDouble(5, movie.getRating());
+			rowAdded=pstmt.executeUpdate();
+			
+		} catch (Exception e) {
+			// TODO: handle exception
+			e.printStackTrace();
+		}
+		finally{
+			try {
+				pstmt.close();
+			} catch (SQLException e) {
+				// TODO Auto-generated catch block
+				e.printStackTrace();
+			}
+		}
+		return rowAdded;
+	}
+
+	@Override
+	public List<Movie> findAll() {
+		// TODO Auto-generated method stub
+		String sql="select * from moviehv";
+		PreparedStatement pstmt=null;
+		ArrayList<Movie> movieList=new ArrayList<Movie>();
+		try {
+			pstmt=conn.prepareStatement(sql);
+			ResultSet rs=pstmt.executeQuery();
+			
+			while(rs.next()){
+				long movieId=rs.getLong("movieId");
+				String movieName=rs.getString("movieName");
+				String director=rs.getString("director");
+				String genre=rs.getString("genre");
+				Double rating=rs.getDouble("rating");
+				
+				Movie movie=new Movie(movieId, movieName, director, genre, rating);
+				movieList.add(movie);
+			}
+			
+		} catch (Exception e) {
+			// TODO: handle exception
+		}
+		return movieList;
+	}
+	
+	public void closeConnection(){
+		try {
+			conn.close();
+		} catch (Exception e) {
+			// TODO: handle exception
+			e.printStackTrace();
+		}
+	}
+
+	@Override
+	public int remove(long movieId) {
+		// TODO Auto-generated method stub
+		return 0;
+	}
+
+	@Override
+	public int updateRating(long movieId, double currentRating) {
+		// TODO Auto-generated method stub
+		return 0;
+	}
+
+	@Override
+	public Movie findByPrimaryKey(long movieId) {
+		// TODO Auto-generated method stub
+		String sql="Select * from moviehv where movieId="+movieId;
+		PreparedStatement pstmt=null;
+		ArrayList<Movie> movieList=new ArrayList<Movie>();
+		try {
+			pstmt=conn.prepareStatement(sql);
+			ResultSet rs=pstmt.executeQuery();
+			
+			while(rs.next()){
+				long movieId=rs.getLong("movieId");
+				String movieName=rs.getString("movieName");
+				String director=rs.getString("director");
+				String genre=rs.getString("genre");
+				Double rating=rs.getDouble("rating");
+				
+				Movie movie=new Movie(movieId, movieName, director, genre, rating);
+				movieList.add(movie);
+			}
+			
+		} catch (Exception e) {
+			// TODO: handle exception
+		}
+		return null;
+	}
+
+}

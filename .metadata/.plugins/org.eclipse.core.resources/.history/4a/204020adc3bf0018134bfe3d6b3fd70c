@@ -1,0 +1,19 @@
+package com.training.utils;
+import java.sql.*;
+public class DbConnections {
+	
+	public static Connection getConnection(){
+		Connection conn=null;
+		
+		try {
+			
+		} catch (Exception e) {
+			// TODO: handle exception
+			e.printStackTrace();
+		}
+		
+		
+		return conn;
+	}
+	
+}

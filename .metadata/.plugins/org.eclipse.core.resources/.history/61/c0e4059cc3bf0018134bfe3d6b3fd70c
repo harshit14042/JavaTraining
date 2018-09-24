@@ -1,0 +1,11 @@
+package com.training.utils;
+import java.sql.*;
+public class DbConnections {
+	
+	public static Connection getConnection(){
+		Connection conn=null;
+		
+		return conn;
+	}
+	
+}

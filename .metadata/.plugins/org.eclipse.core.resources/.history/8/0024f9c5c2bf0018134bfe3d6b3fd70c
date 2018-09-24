@@ -1,0 +1,4 @@
+db.url=jdbc:
+db.usernName=training@training
+db.passWord=training2013
+db.driverClass=oracle.jdbc.driver.OracleDriver

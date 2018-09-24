@@ -1,0 +1,22 @@
+package com.training.utils;
+import java.sql.*;
+import java.*;
+import java.util.Properties;
+public class DbConnections {
+	
+	public static Connection getConnection(){
+		Connection conn=null;
+		
+		try {
+			Properties props=new Properties();
+			props.
+			
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+		
+		
+		return conn;
+	}
+	
+}

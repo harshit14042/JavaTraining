@@ -1,0 +1,21 @@
+package com.training.entity;
+
+import java.util.List;
+
+public class MovieDAOImpl implements MovieDAO {
+
+	
+	
+	@Override
+	public int addMovie(Movie movie) {
+		// TODO Auto-generated method stub
+
+	}
+
+	@Override
+	public List<Movie> findAll() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+}

@@ -1,0 +1,11 @@
+package com.training.entity;
+
+import java.io.Serializable;
+
+public class Movie implements Serializable{
+
+	private long movieId;
+	private String movieName;
+	
+	
+}

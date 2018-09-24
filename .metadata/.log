@@ -51,3 +51,85 @@ java.io.IOException: The process cannot access the file because another process 
 	at org.eclipse.jgit.api.AddCommand.call(AddCommand.java:228)
 	at org.eclipse.egit.ui.internal.staging.StagingView$49.run(StagingView.java:2553)
 	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+!ENTRY org.eclipse.jface.text 2 0 2018-09-24 12:01:09.562
+!MESSAGE Duplicate template id: 'org.eclipse.wst.xslt.templates.xpath.number'
+
+!ENTRY org.eclipse.jface.text 2 0 2018-09-24 12:01:09.564
+!MESSAGE Duplicate template id: 'org.eclipse.wst.xslt.templates.xpath.round'
+
+!ENTRY org.eclipse.recommenders.types.rcp 1 4 2018-09-24 12:06:48.067
+!MESSAGE Full project indexing required:
+  [+] C:\Oracle\Ora12_2_0_1_x64\jdbc\lib\ojdbc8.jar
+  [+] C:\Program Files\Java\jre1.8.0_151\lib\charsets.jar
+  [+] C:\Program Files\Java\jre1.8.0_151\lib\ext\access-bridge-64.jar
+  [+] C:\Program Files\Java\jre1.8.0_151\lib\ext\cldrdata.jar
+  [+] C:\Program Files\Java\jre1.8.0_151\lib\ext\dnsns.jar
+  [+] C:\Program Files\Java\jre1.8.0_151\lib\ext\jaccess.jar
+  [+] C:\Program Files\Java\jre1.8.0_151\lib\ext\jfxrt.jar
+  [+] C:\Program Files\Java\jre1.8.0_151\lib\ext\localedata.jar
+  [+] C:\Program Files\Java\jre1.8.0_151\lib\ext\nashorn.jar
+  [+] C:\Program Files\Java\jre1.8.0_151\lib\ext\sunec.jar
+  [+] C:\Program Files\Java\jre1.8.0_151\lib\ext\sunjce_provider.jar
+  [+] C:\Program Files\Java\jre1.8.0_151\lib\ext\sunmscapi.jar
+  [+] C:\Program Files\Java\jre1.8.0_151\lib\ext\sunpkcs11.jar
+  [+] C:\Program Files\Java\jre1.8.0_151\lib\ext\zipfs.jar
+  [+] C:\Program Files\Java\jre1.8.0_151\lib\jce.jar
+  [+] C:\Program Files\Java\jre1.8.0_151\lib\jfr.jar
+  [+] C:\Program Files\Java\jre1.8.0_151\lib\jsse.jar
+  [+] C:\Program Files\Java\jre1.8.0_151\lib\resources.jar
+  [+] C:\Program Files\Java\jre1.8.0_151\lib\rt.jar
+
+!STACK 0
+org.eclipse.recommenders.utils.Logs$LogTraceException
+	at org.eclipse.recommenders.utils.Logs$LogTraceException.newTrace(Logs.java:381)
+	at org.eclipse.recommenders.utils.Logs.log(Logs.java:134)
+	at org.eclipse.recommenders.internal.types.rcp.ProjectTypesIndex.needsRebuild(ProjectTypesIndex.java:169)
+	at org.eclipse.recommenders.internal.types.rcp.ProjectTypesIndex.startUp(ProjectTypesIndex.java:122)
+	at com.google.common.util.concurrent.AbstractIdleService$2$1.run(AbstractIdleService.java:54)
+	at com.google.common.util.concurrent.Callables$3.run(Callables.java:93)
+	at java.lang.Thread.run(Unknown Source)
+
+!ENTRY org.eclipse.recommenders.types.rcp 1 4 2018-09-24 16:49:30.550
+!MESSAGE Full project indexing required:
+  [+] C:\Oracle\Ora12_2_0_1_x64\jdbc\lib\ojdbc8.jar
+  [+] C:\Program Files\Java\jre1.8.0_151\lib\charsets.jar
+  [+] C:\Program Files\Java\jre1.8.0_151\lib\ext\access-bridge-64.jar
+  [+] C:\Program Files\Java\jre1.8.0_151\lib\ext\cldrdata.jar
+  [+] C:\Program Files\Java\jre1.8.0_151\lib\ext\dnsns.jar
+  [+] C:\Program Files\Java\jre1.8.0_151\lib\ext\jaccess.jar
+  [+] C:\Program Files\Java\jre1.8.0_151\lib\ext\jfxrt.jar
+  [+] C:\Program Files\Java\jre1.8.0_151\lib\ext\localedata.jar
+  [+] C:\Program Files\Java\jre1.8.0_151\lib\ext\nashorn.jar
+  [+] C:\Program Files\Java\jre1.8.0_151\lib\ext\sunec.jar
+  [+] C:\Program Files\Java\jre1.8.0_151\lib\ext\sunjce_provider.jar
+  [+] C:\Program Files\Java\jre1.8.0_151\lib\ext\sunmscapi.jar
+  [+] C:\Program Files\Java\jre1.8.0_151\lib\ext\sunpkcs11.jar
+  [+] C:\Program Files\Java\jre1.8.0_151\lib\ext\zipfs.jar
+  [+] C:\Program Files\Java\jre1.8.0_151\lib\jce.jar
+  [+] C:\Program Files\Java\jre1.8.0_151\lib\jfr.jar
+  [+] C:\Program Files\Java\jre1.8.0_151\lib\jsse.jar
+  [+] C:\Program Files\Java\jre1.8.0_151\lib\resources.jar
+  [+] C:\Program Files\Java\jre1.8.0_151\lib\rt.jar
+
+!STACK 0
+org.eclipse.recommenders.utils.Logs$LogTraceException
+	at org.eclipse.recommenders.utils.Logs$LogTraceException.newTrace(Logs.java:381)
+	at org.eclipse.recommenders.utils.Logs.log(Logs.java:134)
+	at org.eclipse.recommenders.internal.types.rcp.ProjectTypesIndex.needsRebuild(ProjectTypesIndex.java:169)
+	at org.eclipse.recommenders.internal.types.rcp.ProjectTypesIndex.startUp(ProjectTypesIndex.java:122)
+	at com.google.common.util.concurrent.AbstractIdleService$2$1.run(AbstractIdleService.java:54)
+	at com.google.common.util.concurrent.Callables$3.run(Callables.java:93)
+	at java.lang.Thread.run(Unknown Source)
+
+!ENTRY org.eclipse.egit.ui 4 0 2018-09-24 18:14:18.908
+!MESSAGE The process cannot access the file because another process has locked a portion of the file
+!STACK 0
+java.io.IOException: The process cannot access the file because another process has locked a portion of the file
+	at java.io.FileInputStream.readBytes(Native Method)
+	at java.io.FileInputStream.read(Unknown Source)
+	at org.eclipse.jgit.util.IO.readFully(IO.java:303)
+	at org.eclipse.jgit.internal.storage.file.ObjectDirectoryInserter.insert(ObjectDirectoryInserter.java:103)
+	at org.eclipse.jgit.api.AddCommand.call(AddCommand.java:228)
+	at org.eclipse.egit.ui.internal.staging.StagingView$49.run(StagingView.java:2553)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
