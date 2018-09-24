@@ -1,0 +1,37 @@
+package com.training.utility;
+
+import com.training.entity.Courses;
+import com.training.entity.Student;
+import com.training.utils.CourseDAO;
+import com.training.utils.CourseDAOImpl;
+import com.training.utils.StudentDAO;
+import com.training.utils.StudentDAOimpl;
+
+public class Application {
+
+	public static long studentId=0;
+	public static long courseId=0;
+	
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Courses course1=new Courses(++courseId,"Java");
+		Courses course2=new Courses(++courseId,".Net");
+		Student stu1=new Student(++studentId, "Harshit", 1);
+		Student stu2=new Student(++studentId, "Ramesh", 1);
+		Student stu3=new Student(++studentId, "Nikhil", 2);
+		Student stu4=new Student(++studentId,"Aankeet",2);
+		
+		CourseDAO cdao=new CourseDAOImpl();
+		cdao.addCourse(course1);
+		cdao.addCourse(course2);
+		
+		StudentDAO sdao=new StudentDAOimpl();
+		sdao.addStudent(stu1);
+		sdao.addStudent(stu2);
+		sdao.addStudent(stu3);
+		sdao.addStudent(stu4);
+		
+		cdao.getStudents("Java");
+	}
+
+}

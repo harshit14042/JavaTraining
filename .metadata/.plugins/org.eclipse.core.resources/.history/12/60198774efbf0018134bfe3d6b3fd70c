@@ -1,0 +1,13 @@
+package com.training.utils;
+
+import com.training.entity.Student;
+
+public class StudentDAOimpl implements StudentDAO {
+
+	@Override
+	public int addStudent(Student student) {
+		// TODO Auto-generated method stub
+		return 0;
+	}
+
+}

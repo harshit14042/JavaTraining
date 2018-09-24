@@ -1,0 +1,5 @@
+package com.training.utils;
+
+public interface CourseDAO {
+	public int addCourse(Courses course);
+}
