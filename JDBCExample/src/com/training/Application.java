@@ -16,7 +16,7 @@ public class Application {
 		/*Movie movie=new Movie(101, "The Dark Knight", "Christopher Nolan", "Crime", 4.9);
 		Movie movie1=new Movie(102, "Batman Begins", "Christopher Nolan", "Crime", 4.0);
 		Movie movie2=new Movie(103, "Dark Knight Rises", "Christopher Nolan", "Crime", 4.5);*/
-		
+		System.out.println("Hello");
 		MovieDAO doa=new MovieDAOImpl();
 		
 		//int rowAdded=doa.addMovie(movie2);

@@ -1,7 +1,0 @@
-package com.training.utils;
-
-import com.training.entity.*;
-
-public interface CourseDAO {
-	public int addCourse(Courses course);
-}

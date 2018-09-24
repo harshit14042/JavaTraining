@@ -1,6 +1,0 @@
-package com.training.entity;
-
-public interface MovieDAO {
-	private int addMovie(Movie movie);
-	private List<Movie> findAll();
-}

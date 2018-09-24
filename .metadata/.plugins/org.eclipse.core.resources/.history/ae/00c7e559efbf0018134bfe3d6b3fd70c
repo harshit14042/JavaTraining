@@ -1,7 +1,0 @@
-package com.training.utils;
-
-public interface StudentDAO {
-
-	public int addStudent(Student student);
-	
-}

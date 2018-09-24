@@ -1,8 +1,0 @@
-package com.training.entity;
-
-import java.util.List;
-
-public interface MovieDAO {
-	private int addMovie(Movie movie);
-	private List<Movie> findAll();
-}
