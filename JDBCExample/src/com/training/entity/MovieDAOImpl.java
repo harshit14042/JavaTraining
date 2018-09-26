@@ -23,7 +23,7 @@ public class MovieDAOImpl implements MovieDAO {
 	}
 
 	@Override
-	public int addMovie(Movie movie) {
+	public int add(Movie movie) {
 		// TODO Auto-generated method stub
 		String sql="insert into moviehv values(?,?,?,?,?)";
 		PreparedStatement pstmt=null;

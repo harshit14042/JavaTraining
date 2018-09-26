@@ -5,8 +5,8 @@ import java.util.Iterator;
 public class Application {
 
 	public static void main(String[] args) {
-		MyArrayList arr=new MyArrayList();
-		
+		MyArrayList<String> arr=new MyArrayList<String>();
+		System.out.println(arr.toString());
 		for(int i=0;i<=10;i++){
 			arr.addElement(i+1);
 		}
@@ -25,6 +25,12 @@ public class Application {
 		
 		while(it.hasNext()){
 			System.out.println(it.next());
+		}
+		
+		Iterator it1=arr.iterator();
+		
+		while(it1.hasNext()){
+			System.out.println(it1.next());
 		}
 	}
 

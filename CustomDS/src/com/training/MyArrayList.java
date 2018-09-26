@@ -8,26 +8,6 @@ public class MyArrayList<T> implements Iterable<T> {
 	private Object[] array;
 	private int no_of_ele=0;
 	
-	private Iterator<T> it=new Iterator<T>() {
-
-		int index=0;
-		
-		@Override
-		public boolean hasNext() {
-			boolean status=false;
-			if(index<no_of_ele){
-				status=true;
-			}
-			return status;
-		}
-
-		@Override
-		public T next() {
-			return (T) array[index++];
-		}
-		
-	};
-	
 	public MyArrayList(){
 		super();
 		this.array=new Object[this.size];
@@ -65,7 +45,9 @@ public class MyArrayList<T> implements Iterable<T> {
 	@Override
 	public String toString(){
 		String str="ArrayList: [";
-		str+=this.array[0].toString();
+		if(0<this.no_of_ele){
+			str+=this.array[0].toString();
+		}
 		for(int i=1;i<this.no_of_ele;i++){
 			str+=","+this.array[i].toString();
 		}
@@ -84,7 +66,24 @@ public class MyArrayList<T> implements Iterable<T> {
 
 	@Override
 	public Iterator<T> iterator() {
-		// TODO Auto-generated method stub
-		return it;
+		return new Iterator<T>() {
+
+			int index=0;
+			
+			@Override
+			public boolean hasNext() {
+				boolean status=false;
+				if(index<no_of_ele){
+					status=true;
+				}
+				return status;
+			}
+
+			@Override
+			public T next() {
+				return (T) array[index++];
+			}
+			
+		};
 	}
 }

@@ -4,6 +4,7 @@ import java.sql.SQLException;
 
 import com.training.entity.Movie;
 import com.training.entity.MovieDAO;
+import com.training.entity.DAO;
 import com.training.entity.MovieDAOImpl;
 import com.training.utils.DbConnections;
 
@@ -30,7 +31,7 @@ public class Application {
 		switch(key){
 		case 1:
 			Movie movie=new Movie(101, "The Dark Knight", "Christopher Nolan", "Crime", 4.9);
-			int rowAdded=doa.addMovie(movie);
+			int rowAdded=doa.add(movie);
 			System.out.println(rowAdded+" Rows Added");
 			break;
 		case 2:
