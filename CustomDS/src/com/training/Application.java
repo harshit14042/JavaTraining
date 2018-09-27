@@ -37,11 +37,11 @@ public class Application {
 		
 		map.put(1, "HV");
 		map.put(2, "Ramesh");
-		//map.put(1, "Ramesh");
+		map.put(1, "Ramesh");
 		
 		System.out.println(map.get(1).toString());
 		
-		System.out.println(map.toString());
+		System.out.println(map.convertToSet());
 	}
 
 }

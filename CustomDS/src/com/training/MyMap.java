@@ -52,6 +52,8 @@ public class MyMap<K,V> {
 	}
 	
 	public <V> V get(K key){
+		
+		//should use while instead of using break in for loop
 		V val=null;
 		for(int i=0;i<size;i++){
 			if(entries[i].getKey().equals(key)){
