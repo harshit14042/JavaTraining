@@ -1,0 +1,14 @@
+<example>
+	<className>com.training.module.Employee</className>
+	<props>
+		<prop>
+			<name>R</name>
+			<value>riya</value>
+		</prop>
+		<prop>
+			<name>S</name>
+			<value>Siri</value>
+		</prop>
+	</props>
+
+</example>
