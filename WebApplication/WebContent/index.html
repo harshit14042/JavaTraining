@@ -5,14 +5,18 @@
 <title>Web Application</title>
 </head>
 <body>
-
-<form action="Login" method="post">
-	<label for="userName">UserName</label>
-	<input type="text" name="userName" placeholder="Enter Username"/><br/><br/>
-	<label for="passWord">Password</label>
-	<input type="text" name="passWord" placeholder="Enter password"/><br/><br/>
+<ul>
+<li>
+<form action="addMovie" method="post">
+	<label for="movieName">Movie Name</label>
+	<input type="text" placeholder="Enter Movie Name" name="movieName"/>
+	<label for="directorName">Director Name</label>
+	<input type="text" placeholder="Enter the director Name" name="directorName"/>
+	<label for="genre">Genre</label>
+	<input type="text" placeholder="Enter Genre" name="genre"/>
+	<label for="rating">Rating</label>
+	<input type="text" placeholder="Enter Rating" name="rating"/>
 	<input type="submit" value="Submit"/>
 </form>
-
 </body>
 </html>

@@ -29,4 +29,24 @@
     <servlet-name>LoginServlet</servlet-name>
     <url-pattern>/Login</url-pattern>
   </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>MovieServlet</display-name>
+    <servlet-name>MovieServlet</servlet-name>
+    <servlet-class>com.training.MovieServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>MovieServlet</servlet-name>
+    <url-pattern>/movie</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>addMovieServlet</display-name>
+    <servlet-name>addMovieServlet</servlet-name>
+    <servlet-class>com.training.addMovieServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>addMovieServlet</servlet-name>
+    <url-pattern>/addMovie</url-pattern>
+  </servlet-mapping>
 </web-app>
