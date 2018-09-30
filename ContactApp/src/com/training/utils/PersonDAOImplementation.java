@@ -129,6 +129,19 @@ private Connection conn;
 		
 		ps.executeUpdate();
 	}
+	
+	@Override
+	public void addContactNumber(long id, Long number) throws SQLException{
+		// TODO Auto-generated method stub
+		String sql="insert into contactnumbershv values(?,?)";
+		PreparedStatement ps=conn.prepareStatement(sql);
+		
+		ps.setLong(1, id);
+		ps.setLong(2, number);
+		
+		ps.executeUpdate();
+	}
+
 
 	@Override
 	public void updateContactNumber(Person person, long prevNumber, long newNumber) throws SQLException{

@@ -49,4 +49,14 @@
     <servlet-name>addContact</servlet-name>
     <url-pattern>/add</url-pattern>
   </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>newNumber</display-name>
+    <servlet-name>newNumber</servlet-name>
+    <servlet-class>com.training.servlets.newNumber</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>newNumber</servlet-name>
+    <url-pattern>/newNum</url-pattern>
+  </servlet-mapping>
 </web-app>

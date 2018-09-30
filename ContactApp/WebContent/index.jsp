@@ -30,7 +30,8 @@
 		<td><% out.println(c.getPerson().getEmail());%></td>
 		<td><% out.println(c.getRelation());%></td>
 		<td>
-		<select multiple="multiple">
+		<form method="post" action="removeNumber">
+		<select multiple="multiple" name="selectNumbers" id="selectNumbers">
 			<% for(Long number:c.getPerson().getNumbers()){
 				out.println(number);
 				
@@ -40,15 +41,21 @@
 			
 			<% } %>
 		</select>
+		<input type="submit" value="Delete Selected">
+		</form>
 		</td>
 		<td>
 		<form method="post" action="removeContact">
-			<input type="submit" value="Remove">
-			<% request.setAttribute("contactId", c.getContactId()); %>
+			<input type="submit" value="Remove Contact" id="remove<% out.println(c.getContactId()); %>>">
 		</form>
-		<form method="post" action="removeNumbers">
-			<input type="submit" value="Remove Numbers">
-			<!-- <% request.setAttribute("contactId", c.getContactId()); %> -->
+		<form method="post" action="newNumber">
+			<label for="newNumber">New Number</label>
+			<input type="text" name="newNumber"/>
+			<input type="submit" value="Add Number">
+			<% request.setAttribute("contactId", c.getContactId());%>
+		</form>
+		<form method="post" action="editContact">
+			<input type="submit" value="Edit Contact" id="edit"+<% out.println(c.getContactId()); %>>
 		</form>
 		</td>
 	</tr>
@@ -61,7 +68,6 @@ ContactNumbers(PersonId,number);-->
 <form method="post" action="viewCategoryWise">
 	<input type="submit" value="View Contacts by Categories">
 </form>
-<a href="editContactForm.html"><input type="button" value="Edit Contact"></a>
 <a href="addContactForm.html"><input type="button" value="Add Contact"></a>
 </body>
 </html>

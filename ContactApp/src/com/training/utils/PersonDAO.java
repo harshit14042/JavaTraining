@@ -11,4 +11,5 @@ public interface PersonDAO extends DAO<Person> {
 
 	public void removeContactNumber(Person person, long number) throws SQLException;
 	public void addContactNumber(Person person,Long number) throws SQLException;
+	void addContactNumber(long id, Long number) throws SQLException;
 }
