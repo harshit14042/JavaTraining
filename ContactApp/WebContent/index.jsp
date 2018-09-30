@@ -37,25 +37,27 @@
 				
 			%>
 			
-				<option value="<% out.println(c.getPerson().getId()+" "+number); %>"></option>
+				<option value=<% out.println(number); %>></option>
 			
 			<% } %>
+			
+		<!-- https://stackoverflow.com/questions/10658945/getting-checkbox-values-from-a-servlet -->
+			
 		</select>
-		<input type="submit" value="Delete Selected">
+		<input type="submit" value="Delete Selected" onClick=<% request.setAttribute("contactId", c.getContactId()); %>>
 		</form>
 		</td>
 		<td>
 		<form method="post" action="removeContact">
-			<input type="submit" value="Remove Contact" id="remove<% out.println(c.getContactId()); %>>">
+			<input type="submit" value="Remove Contact" onClick=<% request.setAttribute("contactId", c.getContactId()); %>>
 		</form>
 		<form method="post" action="newNumber">
 			<label for="newNumber">New Number</label>
 			<input type="text" name="newNumber"/>
-			<input type="submit" value="Add Number">
-			<% request.setAttribute("contactId", c.getContactId());%>
+			<input type="submit" value="Add Number" onClick=<% request.setAttribute("contactId", c.getContactId()); %>>
 		</form>
 		<form method="post" action="editContact">
-			<input type="submit" value="Edit Contact" id="edit"+<% out.println(c.getContactId()); %>>
+			<input type="submit" value="Edit Contact" onClick=<% request.setAttribute("contactId", c.getContactId()); %>>
 		</form>
 		</td>
 	</tr>
