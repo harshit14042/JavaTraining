@@ -4,12 +4,11 @@ import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
-import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.HashSet;
-import java.util.List;
 import java.util.Map;
 import java.util.Set;
+import java.util.TreeSet;
 
 import com.training.entity.Contact;
 import com.training.entity.Person;
@@ -53,9 +52,9 @@ public class ContactDAOImplementation implements ContactDAO {
 		return rowAdded;
 	}
 	
-	public Set<Contact> getContacts(ResultSet rs) throws SQLException{
+	public TreeSet<Contact> getContacts(ResultSet rs) throws SQLException{
 		Map<Person,Set<Long>> personToNumbers=new HashMap<>();
-		Set<Contact> contactList=new HashSet<Contact>();
+		TreeSet<Contact> contactList=new TreeSet<Contact>();
 		while(rs.next()){
 			long number=rs.getLong("number");
 			String firstName=rs.getString("firstname");
@@ -84,11 +83,11 @@ public class ContactDAOImplementation implements ContactDAO {
 	}
 
 	@Override
-	public Set<Contact> findAll() throws SQLException {
+	public TreeSet<Contact> findAll() throws SQLException {
 		// TODO Auto-generated method stub
 		String sql="select * from contactshv inner join personshv on contactshv.personId=personshv.personId inner join contactnumbershv on contactnumbershv.personid=personshv.personid";
 		PreparedStatement ps=null;
-		Set<Contact> contacts=new HashSet<>();
+		TreeSet<Contact> contacts=new TreeSet<>();
 		try{
 			ps=conn.prepareStatement(sql);
 			ResultSet rs=ps.executeQuery();

@@ -39,4 +39,14 @@
     <servlet-name>removeContact</servlet-name>
     <url-pattern>/remove</url-pattern>
   </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>addContact</display-name>
+    <servlet-name>addContact</servlet-name>
+    <servlet-class>com.training.servlets.addContact</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>addContact</servlet-name>
+    <url-pattern>/add</url-pattern>
+  </servlet-mapping>
 </web-app>

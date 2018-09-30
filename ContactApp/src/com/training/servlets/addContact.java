@@ -3,8 +3,8 @@ package com.training.servlets;
 import java.io.IOException;
 import java.io.InputStream;
 import java.sql.Connection;
-import java.sql.SQLException;
-import java.util.TreeSet;
+import java.util.HashSet;
+import java.util.Set;
 
 import javax.servlet.RequestDispatcher;
 import javax.servlet.ServletException;
@@ -14,20 +14,21 @@ import javax.servlet.http.HttpServletResponse;
 
 import com.training.entity.Contact;
 import com.training.entity.ContactList;
+import com.training.entity.Person;
 import com.training.utils.ContactDAO;
 import com.training.utils.ContactDAOImplementation;
 import com.training.utils.DbConnections;
 
 /**
- * Servlet implementation class viewCategoryWise
+ * Servlet implementation class addContact
  */
-public class viewCategoryWise extends HttpServlet {
+public class addContact extends HttpServlet {
 	private static final long serialVersionUID = 1L;
        
     /**
      * @see HttpServlet#HttpServlet()
      */
-    public viewCategoryWise() {
+    public addContact() {
         super();
         // TODO Auto-generated constructor stub
     }
@@ -47,24 +48,33 @@ public class viewCategoryWise extends HttpServlet {
 		// TODO Auto-generated method stub
 		//doGet(request, response);
 		ClassLoader clsLdr=Thread.currentThread().getContextClassLoader();
-		InputStream inStream=clsLdr.getResourceAsStream("JDBC.properties");
+		InputStream instream=clsLdr.getResourceAsStream("JDBC.properties");
 		
-		Connection conn=DbConnections.getConnection(inStream);
+		Connection conn=DbConnections.getConnection(instream);
 		
 		ContactDAO dao=new ContactDAOImplementation(conn);
-		RequestDispatcher dispatcher=request.getRequestDispatcher("categoryWiseView.jsp");
-		try {
-			TreeSet<Contact> contacts=dao.findAll();
-			ContactList contactList=new ContactList(contacts);
-			request.setAttribute("friendList", contactList.getFriends());
-			request.setAttribute("relativeList", contactList.getRelatives());
-			request.setAttribute("officeList", contactList.getOffice());
-		} catch (SQLException e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
-		}
-		dispatcher.forward(request, response);
 		
+		RequestDispatcher dispatcher=request.getRequestDispatcher("/Index");
+		
+		long id=ContactList.getContactId();
+		
+		String firstName=request.getParameter("firstName");
+		String lastName=request.getParameter("lastName");
+		String email=request.getParameter("email");
+		Set<Long> numbers=new HashSet<>();
+		numbers.add(Long.parseLong(request.getParameter("number")));
+		
+		String relation=request.getParameter("relation");
+		
+		Person person=new Person(++id, firstName, lastName, numbers, email);
+		
+		Contact contact=new Contact(id, person, relation);
+		
+		ContactList.setContactId(id);
+		
+		dao.add(contact);
+		
+		dispatcher.forward(request, response);
 	}
 
 }

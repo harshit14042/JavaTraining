@@ -9,6 +9,13 @@ public class ContactList {
 	private static final String officeString="Office";
 	
 	private static long contactId=0;
+	public static long getContactId() {
+		return contactId;
+	}
+	public static void setContactId(long contactId) {
+		ContactList.contactId = contactId;
+	}
+
 	private TreeSet<Contact> allContacts;
 	private TreeSet<Contact> friends;
 	private TreeSet<Contact> relatives;
@@ -75,6 +82,24 @@ public class ContactList {
 		this.typeToList.put(officeString,this.office);
 	}
 	
+	public TreeSet<Contact> getFriends() {
+		return friends;
+	}
+	public void setFriends(TreeSet<Contact> friends) {
+		this.friends = friends;
+	}
+	public TreeSet<Contact> getRelatives() {
+		return relatives;
+	}
+	public void setRelatives(TreeSet<Contact> relatives) {
+		this.relatives = relatives;
+	}
+	public TreeSet<Contact> getOffice() {
+		return office;
+	}
+	public void setOffice(TreeSet<Contact> office) {
+		this.office = office;
+	}
 	public ContactList() {
 		super();
 		arrangeContacts();

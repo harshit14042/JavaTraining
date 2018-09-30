@@ -3,7 +3,7 @@ package com.training.utils;
 import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.SQLException;
-import java.util.Set;
+import java.util.TreeSet;
 
 import com.training.entity.Person;
 
@@ -46,7 +46,7 @@ private Connection conn;
 	}
 
 	@Override
-	public Set<Person> findAll() throws SQLException {
+	public TreeSet<Person> findAll() throws SQLException {
 		// TODO Auto-generated method stub
 		
 		return null;

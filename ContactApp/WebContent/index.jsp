@@ -61,11 +61,7 @@ ContactNumbers(PersonId,number);-->
 <form method="post" action="viewCategoryWise">
 	<input type="submit" value="View Contacts by Categories">
 </form>
-<form method="post" action="editContact">
-	<input type="submit" value="Edit Contacts">
-</form>
-<form method="post" action="addContact">
-	<input type="submit" value="Add Contact">
-</form>
+<a href="editContactForm.html"><input type="button" value="Edit Contact"></a>
+<a href="addContactForm.html"><input type="button" value="Add Contact"></a>
 </body>
 </html>
