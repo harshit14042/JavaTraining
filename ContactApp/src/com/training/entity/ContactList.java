@@ -92,10 +92,10 @@ public class ContactList {
 	
 	
 	
-	public boolean addContact(String firstName,String lastName,String email,String relation,long numbers){
+	public boolean addContact(String firstName,String lastName,String email,String relation,Set<Long> numbers){
 		boolean status=false;
-		Person person=new Person(firstName,lastName,numbers,email);
-		Contact contact=new Contact(++contactId,person,relation);
+		Person person=new Person(++contactId,firstName,lastName,numbers,email);
+		Contact contact=new Contact(contactId,person,relation);
 		addContact(contact);
 		status = true;
 		return status;

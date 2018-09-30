@@ -1,10 +1,13 @@
 package com.training.entity;
 
+import java.util.*;
+
 public class Person {
+	private long id;
 	private String firstName;
 	private String lastName;
-	private long number;
 	private String email;
+	private Set<Long> numbers;
 	
 	public void editEmail(String email){
 		this.setEmail(email);
@@ -14,16 +17,24 @@ public class Person {
 		this.setFirstName(firstName);
 	}
 	
+	public long getId() {
+		return id;
+	}
+
+	public void setId(long id) {
+		this.id = id;
+	}
+
 	public void editLastName(String lastName){
 		this.setLastName(lastName);
 	}
 	
-	public void removeNumber(long num){
-		this.number=0;
+	public void removeNumber(Long num){
+		this.numbers.remove(num);
 	}
 	
-	public void addNumber(long num){
-		this.number=num;
+	public void addNumber(Long num){
+		this.numbers.add(num);
 	}
 	
 	public String getFirstName() {
@@ -38,11 +49,11 @@ public class Person {
 	public void setLastName(String lastName) {
 		this.lastName = lastName;
 	}
-	public long getNumber() {
-		return number;
+	public Set<Long> getNumbers() {
+		return numbers;
 	}
-	public void setNumber(long number) {
-		this.number = number;
+	public void setNumbers(Set<Long> numbers) {
+		this.numbers=numbers;
 	}
 	public String getEmail() {
 		return email;
@@ -52,7 +63,7 @@ public class Person {
 	}
 	@Override
 	public String toString() {
-		return "Person [firstName=" + firstName + ", lastName=" + lastName + ", numbers=" + number + ", email=" + email
+		return "Person [firstName=" + firstName + ", lastName=" + lastName + ", numbers=" + numbers + ", email=" + email
 				+ "]";
 	}
 	@Override
@@ -84,11 +95,12 @@ public class Person {
 			return false;
 		return true;
 	}
-	public Person(String firstName, String lastName, long numbers, String email) {
+	public Person(long id,String firstName, String lastName, Set<Long> numbers, String email) {
 		super();
+		this.id=id;
 		this.firstName = firstName;
 		this.lastName = lastName;
-		this.number = number;
+		this.numbers = numbers;
 		this.email = email;
 	}
 	public Person() {

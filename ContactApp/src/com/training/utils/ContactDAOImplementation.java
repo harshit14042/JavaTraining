@@ -5,7 +5,11 @@ import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.HashSet;
 import java.util.List;
+import java.util.Map;
+import java.util.Set;
 
 import com.training.entity.Contact;
 import com.training.entity.Person;
@@ -49,31 +53,46 @@ public class ContactDAOImplementation implements ContactDAO {
 		return rowAdded;
 	}
 	
-	public Contact convertToContact(ResultSet rs) throws SQLException{
-		long number=rs.getLong("number");
-		String firstName=rs.getString("firstname");
-		String lastName=rs.getString("lastName");
-		String email=rs.getString("email");
-		Person person=new Person(firstName,lastName,number,email);
-		
-		String relation=rs.getString("relation");
-		long contactId=rs.getLong("contcatid");
-		Contact contact=new Contact(contactId, person, relation);
-		return contact;
+	public Set<Contact> getContacts(ResultSet rs) throws SQLException{
+		Map<Person,Set<Long>> personToNumbers=new HashMap<>();
+		Set<Contact> contactList=new HashSet<Contact>();
+		while(rs.next()){
+			long number=rs.getLong("number");
+			String firstName=rs.getString("firstname");
+			String lastName=rs.getString("lastName");
+			String email=rs.getString("email");
+			long contactId=rs.getLong("contactid");
+			Set<Long> numberList=new HashSet<>();
+			numberList.add(number);
+			Person person=new Person(contactId,firstName, lastName, numberList, email);
+			if(personToNumbers.containsKey(person)){
+				Set<Long> numbers=personToNumbers.get(person);
+				numbers.add(number);
+				person.setNumbers(numbers);
+				personToNumbers.put(person, numbers);
+			}
+			else{
+				personToNumbers.put(person, numberList);
+			}
+			
+			String relation=rs.getString("relation");
+			
+			Contact contact=new Contact(contactId, person, relation);
+			contactList.add(contact);
+		}
+		return contactList;
 	}
 
 	@Override
-	public List<Contact> findAll() throws SQLException {
+	public Set<Contact> findAll() throws SQLException {
 		// TODO Auto-generated method stub
-		String sql="select * from contactshv inner join personshv on contactshv.personId=personshv.personId";
+		String sql="select * from contactshv inner join personshv on contactshv.personId=personshv.personId inner join contactnumbershv on contactnumbershv.personid=personshv.personid";
 		PreparedStatement ps=null;
-		List<Contact> contacts=new ArrayList<>();
+		Set<Contact> contacts=new HashSet<>();
 		try{
 			ps=conn.prepareStatement(sql);
 			ResultSet rs=ps.executeQuery();
-			while(rs.next()){
-				contacts.add(convertToContact(rs));
-			}
+			contacts=getContacts(rs);
 		}catch(Exception e){
 			e.printStackTrace();
 		}
@@ -88,22 +107,49 @@ public class ContactDAOImplementation implements ContactDAO {
 		return contacts;
 	}
 
+	public int removeByPersonId(String sql,long personId) throws SQLException{
+		PreparedStatement ps=conn.prepareStatement(sql);
+		ps.setLong(1, personId);
+		return ps.executeUpdate();
+	}
+	
+	
+	
 	@Override
 	public int remove(long key) throws SQLException {
 		// TODO Auto-generated method stub
-		String sql="select personId from contactshv where contactid=?";
+		String sql1="select personid from contactshv where contactid=?";
+		PreparedStatement ps=conn.prepareStatement(sql1);
+		ps.setLong(1, key);
+		ResultSet rs=ps.executeQuery();
+		if(rs.next()){
+			long personId=rs.getLong("personid");
+			String sql="delete from personshv where personid=?";
+			int rows=removeByPersonId(sql, personId);
+			sql="delete from contactshv where personid=?";
+			rows=removeByPersonId(sql, personId);
+			sql="delete from contactnumbershv where personid=?";
+			rows=removeByPersonId(sql, personId);
+		}
 		return 0;
 	}
 
 	@Override
 	public Contact findByPrimaryKey(long key) throws SQLException {
 		// TODO Auto-generated method stub
+		
 		return null;
 	}
 
 	@Override
-	public void updateRelation(Contact contact, String relation) {
+	public void updateRelation(Contact contact, String relation) throws SQLException{
 		// TODO Auto-generated method stub
+		String sql="update contactshv set relation=? where contactid=?";
+		
+		PreparedStatement ps=conn.prepareStatement(sql);
+		ps.setString(1, relation);
+		ps.setLong(2, contact.getContactId());
+		ps.executeUpdate();	
 		
 	}
 	
