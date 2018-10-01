@@ -1,15 +1,12 @@
 package com.training.entity;
 
+import java.util.*;
+
 public class Contact implements Comparable<Contact>{
 	private long contactId;
 	private Person person;
 	private String relation;
-	
-	
-	public void editRelation(String relation){
-		this.setRelation(relation);
-	}
-	
+	private Set<Long> numbers;
 	public long getContactId() {
 		return contactId;
 	}
@@ -19,7 +16,7 @@ public class Contact implements Comparable<Contact>{
 	public Person getPerson() {
 		return person;
 	}
-	public void setPersons(Person person) {
+	public void setPerson(Person person) {
 		this.person = person;
 	}
 	public String getRelation() {
@@ -28,25 +25,22 @@ public class Contact implements Comparable<Contact>{
 	public void setRelation(String relation) {
 		this.relation = relation;
 	}
+	public Set<Long> getNumbers() {
+		return numbers;
+	}
+	public void setNumbers(Set<Long> numbers) {
+		this.numbers = numbers;
+	}
 	@Override
 	public String toString() {
-		return "Contact [contactId=" + contactId + ", persons=" + person + ", relation=" + relation + "]";
-	}
-	public Contact(long contactId, Person person, String relation) {
-		super();
-		this.contactId = contactId;
-		this.person = person;
-		this.relation = relation;
-	}
-	public Contact() {
-		super();
+		return "Contact [contactId=" + contactId + ", person=" + person + ", relation=" + relation + ", numbers="
+				+ numbers + "]";
 	}
 	@Override
 	public int hashCode() {
 		final int prime = 31;
 		int result = 1;
 		result = prime * result + (int) (contactId ^ (contactId >>> 32));
-		result = prime * result + ((person == null) ? 0 : person.hashCode());
 		return result;
 	}
 	@Override
@@ -60,22 +54,35 @@ public class Contact implements Comparable<Contact>{
 		Contact other = (Contact) obj;
 		if (contactId != other.contactId)
 			return false;
-		if (person == null) {
-			if (other.person != null)
-				return false;
-		} else if (!person.equals(other.person))
-			return false;
 		return true;
 	}
-	@Override
-	public int compareTo(Contact contact) {
-		// TODO Auto-generated method stub
-		int comp=this.getPerson().getFirstName().compareTo(contact.getPerson().getFirstName());
-		if(comp==0){
-			comp=this.getPerson().getLastName().compareTo(contact.getPerson().getLastName());
-		}
-		return comp;
+	public Contact(long contactId, Person person, String relation, Set<Long> numbers) {
+		super();
+		this.contactId = contactId;
+		this.person = person;
+		this.relation = relation;
+		this.numbers = numbers;
 	}
+	public Contact() {
+		super();
+		// TODO Auto-generated constructor stub
+	}
+	@Override
+	public int compareTo(Contact arg0) {
+		// TODO Auto-generated method stub
+		return Long.compare(this.getContactId(), arg0.getContactId());
+	}
+	public void addNumber(long num) {
+		// TODO Auto-generated method stub
+		this.getNumbers().add(num);
+		
+	}
+	public void editRelation(String newVal) {
+		// TODO Auto-generated method stub
+		this.setRelation(newVal);
+	}
+	
+	
 	
 	
 }

@@ -64,9 +64,10 @@
 	<% } %>
 
 </table>
-<!--Person(PersonId,FirstName,LastName,email)
-Contacts(ContactId,PersonId,relation)
-ContactNumbers(PersonId,number);-->
+<!--
+Person(PersonId,FirstName,LastName,email,relation)
+ContactNumbers(PersonId,number);
+-->
 <form method="post" action="viewCategoryWise">
 	<input type="submit" value="View Contacts by Categories">
 </form>
