@@ -7,6 +7,7 @@ public class ContactList {
 	private static final String relativeString="Relative";
 	private static final String friendString="Friend";
 	private static final String officeString="Office";
+	private TreeSet<Contact> allContacts;
 	
 	private static long contactId=0;
 	public static long getContactId() {
@@ -15,19 +16,11 @@ public class ContactList {
 	public static void setContactId(long contactId) {
 		ContactList.contactId = contactId;
 	}
-
-	private TreeSet<Contact> allContacts; 
-	private Map<String,TreeSet<Contact>> typeToList=new HashMap<>();
 	public Set<Contact> getAllContacts() {
 		return allContacts;
 	}
 	public void setAllContacts(TreeSet<Contact> allContacts) {
 		this.allContacts = allContacts;
-	}
-	@Override
-	public String toString() {
-		return "ContactList [allContacts=" + allContacts + ", friends=" + friends + ", relatives=" + relatives
-				+ ", office=" + office + "]";
 	}
 	@Override
 	public int hashCode() {
@@ -55,69 +48,58 @@ public class ContactList {
 	public ContactList(TreeSet<Contact> allContacts) {
 		super();
 		this.allContacts = allContacts;
-		arrangeContacts();
 	}
 	
-	private void arrangeContacts(){
-		this.allContacts=new TreeSet<>();
-		this.friends=new TreeSet<>();
-		this.relatives=new TreeSet<>();
-		this.office=new TreeSet<>();
+	public TreeSet<Contact> getFriendList(){
+		TreeSet<Contact> friends=new TreeSet<>();
+		
 		for(Contact contact:this.allContacts){
-			if(contact.getRelation().equals(relativeString)){
-				this.relatives.add(contact);
-			}
-			else if(contact.getRelation().equals(friendString)){
-				this.friends.add(contact);
-			}
-			else{
-				this.office.add(contact);
+			if(contact.getRelation().equals(friendString)){
+				friends.add(contact);
 			}
 		}
-		this.typeToList.put(friendString,this.friends);
-		this.typeToList.put(relativeString,this.relatives);
-		this.typeToList.put(officeString,this.office);
-	}
-	
-	public TreeSet<Contact> getFriends() {
 		return friends;
 	}
-	public void setFriends(TreeSet<Contact> friends) {
-		this.friends = friends;
-	}
-	public TreeSet<Contact> getRelatives() {
+	
+	public TreeSet<Contact> getRelativeList(){
+		TreeSet<Contact> relatives=new TreeSet<>();
+		
+		for(Contact contact:this.allContacts){
+			if(contact.getRelation().equals(relativeString)){
+				relatives.add(contact);
+			}
+		}
 		return relatives;
 	}
-	public void setRelatives(TreeSet<Contact> relatives) {
-		this.relatives = relatives;
-	}
-	public TreeSet<Contact> getOffice() {
+	
+	public TreeSet<Contact> getOfficeList(){
+		TreeSet<Contact> office=new TreeSet<>();
+		
+		for(Contact contact:this.allContacts){
+			if(contact.getRelation().equals(officeString)){
+				office.add(contact);
+			}
+		}
 		return office;
-	}
-	public void setOffice(TreeSet<Contact> office) {
-		this.office = office;
 	}
 	public ContactList() {
 		super();
-		arrangeContacts();
 	}
 	
 	public boolean deleteContact(Contact contact){
-		this.typeToList.get(contact.getRelation()).remove(contact);
 		return this.allContacts.remove(contact);
 	}
 	
 	public boolean addContact(Contact contact){
-		this.typeToList.get(contact.getRelation()).add(contact);
 		return this.getAllContacts().add(contact);
 	}
 	
 	
 	
-	public boolean addContact(String firstName,String lastName,String email,String relation,Set<Long> numbers){
+	public boolean addContact(String firstName,String lastName,String email,String relation,TreeSet<Long> numbers){
 		boolean status=false;
-		Person person=new Person(++contactId,firstName,lastName,numbers,email);
-		Contact contact=new Contact(contactId,person,relation);
+		Person person=new Person(firstName,lastName,email);
+		Contact contact=new Contact(++contactId,person,relation,numbers);
 		addContact(contact);
 		status = true;
 		return status;

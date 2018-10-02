@@ -6,7 +6,7 @@ public class Contact implements Comparable<Contact>{
 	private long contactId;
 	private Person person;
 	private String relation;
-	private Set<Long> numbers;
+	private TreeSet<Long> numbers;
 	public long getContactId() {
 		return contactId;
 	}
@@ -28,7 +28,7 @@ public class Contact implements Comparable<Contact>{
 	public Set<Long> getNumbers() {
 		return numbers;
 	}
-	public void setNumbers(Set<Long> numbers) {
+	public void setNumbers(TreeSet<Long> numbers) {
 		this.numbers = numbers;
 	}
 	@Override
@@ -56,7 +56,7 @@ public class Contact implements Comparable<Contact>{
 			return false;
 		return true;
 	}
-	public Contact(long contactId, Person person, String relation, Set<Long> numbers) {
+	public Contact(long contactId, Person person, String relation, TreeSet<Long> numbers) {
 		super();
 		this.contactId = contactId;
 		this.person = person;

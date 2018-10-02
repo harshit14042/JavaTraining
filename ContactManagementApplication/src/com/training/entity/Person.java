@@ -3,6 +3,10 @@ package com.training.entity;
 import java.util.*;
 
 public class Person {
+	@Override
+	public String toString() {
+		return "Person [firstName=" + firstName + ", lastName=" + lastName + ", email=" + email + "]";
+	}
 	private String firstName;
 	private String lastName;
 	private String email;
@@ -68,6 +72,13 @@ public class Person {
 			return false;
 		return true;
 	}
+	public Person(String firstName, String lastName, String email) {
+		super();
+		this.firstName = firstName;
+		this.lastName = lastName;
+		this.email = email;
+	}
+
 	public Person() {
 		super();
 		// TODO Auto-generated constructor stub
