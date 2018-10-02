@@ -133,4 +133,14 @@ public class ContactList {
 		return results;
 	}
 	
+	public Contact getContactByName(String nameToSearch){
+		Contact contact=null;
+		for(Contact c:allContacts){
+			if(c.getPerson().getFirstName().equals(nameToSearch) || c.getPerson().getLastName().equals(nameToSearch) || nameToSearch.equals(c.getPerson())){
+				contact=c;
+			}
+		}
+		return contact;
+	}
+	
 }

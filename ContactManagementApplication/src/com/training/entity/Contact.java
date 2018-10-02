@@ -33,8 +33,13 @@ public class Contact implements Comparable<Contact>{
 	}
 	@Override
 	public String toString() {
-		return "Contact [contactId=" + contactId + ", person=" + person + ", relation=" + relation + ", numbers="
-				+ numbers + "]";
+		String s="";
+		s="First Name: "+this.getPerson().getFirstName()+"\nLast Name: "+this.getPerson().getLastName()+"\nEmail: "+this.getPerson().getEmail()+"\nRelation: "+this.getRelation()+"\nContact Number:";
+		s+="\n";
+		for(long num:this.getNumbers()){
+			s+=(num+"\n");
+		}
+		return s;
 	}
 	@Override
 	public int hashCode() {

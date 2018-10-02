@@ -90,10 +90,7 @@ public class Application {
 				break;
 			case 2:
 				for(Contact con:contactSet){
-					System.out.println("First Name: "+con.getPerson().getFirstName()+"\nLast Name: "+con.getPerson().getLastName()+"\nEmail: "+con.getPerson().getEmail()+"\nRelation: "+con.getRelation()+"\nContact Number:");
-					for(long num:con.getNumbers()){
-						System.out.print(num+"\n");
-					}
+					System.out.println(con.toString());
 				}
 				break;
 			case 3:
@@ -273,14 +270,8 @@ public class Application {
 			case 7:
 				System.out.println("Enter Name to Search Contact");
 				String nameToSearch=s.next();
-				for(Contact c:contactSet){
-					if(c.getPerson().getFirstName().equals(nameToSearch) || c.getPerson().getLastName().equals(nameToSearch)){
-							System.out.println("First Name: "+c.getPerson().getFirstName()+"\nLast Name: "+c.getPerson().getLastName()+"\nEmail: "+c.getPerson().getEmail()+"\nRelation: "+c.getRelation()+"\nContact Number:");
-							for(long num:c.getNumbers()){
-								System.out.print(num+"\n");
-							}
-					}
-				}
+				ContactList contactList=new ContactList(contactSet);
+				System.out.println(contactList.getContactByName(nameToSearch).toString());
 				break;
 			default:
 				break;
