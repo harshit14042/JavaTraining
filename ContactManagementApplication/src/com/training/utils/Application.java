@@ -97,18 +97,22 @@ public class Application {
 				ContactList list=new ContactList(contactSet);
 				System.out.println("1. Friends\n2. Relatives\n3. Office\nEnter the choice");
 				ch=s.nextInt();
+				Set<Contact> categoryContactList=list.getAllContacts();
 				switch(ch){
 				case 1:
-					System.out.println(list.getFriendList());
+					categoryContactList=list.getFriendList();
+					System.out.println("Friends: "+categoryContactList.size()+"\n"+categoryContactList);
 					break;
 				case 2:
-					System.out.println(list.getRelativeList());
+					categoryContactList=list.getRelativeList();
+					System.out.println("Friends: "+categoryContactList.size()+"\n"+categoryContactList);
 					break;
 				case 3:
-					System.out.println(list.getOfficeList());
+					categoryContactList=list.getOfficeList();
+					System.out.println("Friends: "+categoryContactList.size()+"\n"+categoryContactList);
 					break;
 				default:
-					System.out.println(list.getAllContacts());
+					System.out.println("Friends: "+categoryContactList.size()+"\n"+categoryContactList);
 					break;
 				}
 				break;

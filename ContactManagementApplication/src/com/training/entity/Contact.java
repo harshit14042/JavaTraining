@@ -85,7 +85,7 @@ public class Contact implements Comparable<Contact>{
 	@Override
 	public int compareTo(Contact arg0) {
 		// TODO Auto-generated method stub
-		return this.getPerson().getFirstName().compareTo(arg0.getPerson().getFirstName());
+		return this.getPerson().getFirstName().toUpperCase().compareTo(arg0.getPerson().getFirstName().toUpperCase());
 		
 	}
 	public void addNumber(long num) {
