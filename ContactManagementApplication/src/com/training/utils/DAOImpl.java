@@ -28,7 +28,9 @@ public class DAOImpl implements DAO<Contact>{
 			if(rs.next()){
 				ContactList.contactId=rs.getLong(1);
 			}
-			ContactList.contactId=0;
+			else{
+				ContactList.contactId=0;
+			}
 		} catch (SQLException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();

@@ -82,10 +82,10 @@ public class Application {
 					System.out.println("Number Already Exists");
 					break;
 				}
-				TreeSet<Long> phNumbers=new TreeSet<>();
-				phNumbers.add(number);
+				TreeSet<Long> phContactNumbers=new TreeSet<>();
+				phContactNumbers.add(number);
 				Person person=new Person(firstName, lastName, email);
-				Contact contact=new Contact(person, relation, phNumbers);
+				Contact contact=new Contact(person, relation, phContactNumbers);
 				dao.add(contact);
 				break;
 			case 2:
@@ -250,6 +250,10 @@ public class Application {
 					ch=s.nextInt();
 					System.out.println("Enter the new Number");
 					newNum=s.nextLong();
+					if(phNumbers.contains(newNum)){
+						System.out.println("Number Already Exists");
+						break;
+					}
 					try {
 						dao.updateContactNumber(idToNum.get(ch), newNum);
 					} catch (SQLException e) {
@@ -271,10 +275,17 @@ public class Application {
 				System.out.println("Enter Name to Search Contact");
 				String nameToSearch=s.next();
 				ContactList contactList=new ContactList(contactSet);
-				System.out.println(contactList.getContactByName(nameToSearch).toString());
+				Set<Contact> searchedContacts=contactList.getContactByName(nameToSearch);
+				searchedContacts.forEach(System.out::println);
 				break;
 			default:
 				break;
+			}
+			try {
+				init(dao);
+			} catch (SQLException e) {
+				// TODO Auto-generated catch block
+				e.printStackTrace();
 			}
 		}while(choice!=0);
 	}

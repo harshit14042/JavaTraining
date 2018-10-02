@@ -133,14 +133,14 @@ public class ContactList {
 		return results;
 	}
 	
-	public Contact getContactByName(String nameToSearch){
-		Contact contact=null;
+	public Set<Contact> getContactByName(String nameToSearch){
+		Set<Contact> contactList=new HashSet<>();
 		for(Contact c:allContacts){
 			if(c.getPerson().getFirstName().equals(nameToSearch) || c.getPerson().getLastName().equals(nameToSearch) || nameToSearch.equals(c.getPerson())){
-				contact=c;
+				contactList.add(c);
 			}
 		}
-		return contact;
+		return contactList;
 	}
 	
 }
