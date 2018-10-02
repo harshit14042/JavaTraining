@@ -9,7 +9,7 @@ public class DbConnections {
 		
 		try {
 			Properties props=new Properties();
-			FileInputStream inStream=new FileInputStream(new File("jdbc.properties"));
+			FileInputStream inStream=new FileInputStream(new File("src/JDBC.properties"));
 			props.load(inStream);
 			Class.forName(props.getProperty("db.driverClass"));
 			String url=props.getProperty("db.url");

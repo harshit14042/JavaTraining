@@ -4,12 +4,12 @@ import java.util.*;
 
 public class ContactList {
 	
-	private static final String relativeString="Relative";
-	private static final String friendString="Friend";
-	private static final String officeString="Office";
+	public static final String relativeString="Relative";
+	public static final String friendString="Friend";
+	public static final String officeString="Office";
 	private TreeSet<Contact> allContacts;
 	
-	private static long contactId=0;
+	public static long contactId=0;
 	public static long getContactId() {
 		return contactId;
 	}

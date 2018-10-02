@@ -4,13 +4,9 @@ import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
-import java.util.HashMap;
-import java.util.HashSet;
-import java.util.Map;
-import java.util.Set;
-import java.util.TreeSet;
-
+import java.util.*;
 import com.training.entity.Contact;
+import com.training.entity.ContactList;
 import com.training.entity.Person;
 
 public class DAOImpl implements DAO<Contact>{
@@ -23,6 +19,20 @@ public class DAOImpl implements DAO<Contact>{
 	public DAOImpl(Connection conn) {
 		super();
 		this.conn=conn;
+		try {
+			String sql="select max(contactid) from contactlisthv";
+			PreparedStatement ps=conn.prepareStatement(sql);
+			
+			ResultSet rs=ps.executeQuery();
+			
+			if(rs.next()){
+				ContactList.contactId=rs.getLong(1);
+			}
+			ContactList.contactId=0;
+		} catch (SQLException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
 		// TODO Auto-generated constructor stub
 	}
 	
@@ -69,7 +79,7 @@ public class DAOImpl implements DAO<Contact>{
 	@Override
 	public TreeSet<Contact> findAll() throws SQLException {
 		// TODO Auto-generated method stub
-		String sql="select * from contactlisthv";
+		String sql="select * from contactlisthv order by firstname";
 		PreparedStatement ps=null;
 		TreeSet<Contact> contacts=new TreeSet<>();
 		try{
@@ -149,7 +159,7 @@ public class DAOImpl implements DAO<Contact>{
 	@Override
 	public void updateContactNumber(long prevNumber, long newNumber) throws SQLException {
 		// TODO Auto-generated method stub
-		String sql="update contactnumbershv set number=? where number=?";
+		String sql="update contactnumbershv set phnumber=? where phnumber=?";
 		PreparedStatement ps=conn.prepareStatement(sql);
 		ps.setLong(1, newNumber);
 		ps.setLong(2, prevNumber);
@@ -159,7 +169,7 @@ public class DAOImpl implements DAO<Contact>{
 	@Override
 	public void removeContactNumber(long number) throws SQLException {
 		// TODO Auto-generated method stub
-		String sql="delete from contactnumbershv where number=?";
+		String sql="delete from contactnumbershv where phnumber=?";
 		PreparedStatement ps=conn.prepareStatement(sql);
 		ps.setLong(1, number);
 		ps.executeUpdate();
@@ -181,13 +191,10 @@ public class DAOImpl implements DAO<Contact>{
 	@Override
 	public int updateContactList(Contact contact, String propertyName, String updatedValue) throws SQLException {
 		// TODO Auto-generated method stub
-		String sql="update contactlisthv set ?=? where contactid=?";
+		String sql="update contactlisthv set "+propertyName+"=? where contactid=?";
 		PreparedStatement ps=conn.prepareStatement(sql);
-		
-		ps.setString(1, propertyName);
-		ps.setString(2, updatedValue);
-		ps.setLong(3,contact.getContactId());
-		
+		ps.setString(1, updatedValue);
+		ps.setLong(2,contact.getContactId());
 		return ps.executeUpdate();
 	}
 
@@ -196,13 +203,12 @@ public class DAOImpl implements DAO<Contact>{
 	public TreeSet<Long> getNumbersById(long Id) throws SQLException {
 		// TODO Auto-generated method stub
 		TreeSet<Long> numbers=new TreeSet<>();
-		String sql="select numbers from contactnumbershv where contactid=?";
+		String sql="select phnumber from contactnumbershv where contactid=?";
 		PreparedStatement ps=conn.prepareStatement(sql);
 		ps.setLong(1, Id);
-		
 		ResultSet rs=ps.executeQuery();
 		while(rs.next()){
-			numbers.add(rs.getLong(0));
+			numbers.add(rs.getLong(1));
 		}
 		return numbers;
 	}

@@ -55,14 +55,24 @@ public class Contact implements Comparable<Contact>{
 		if (contactId != other.contactId)
 			return false;
 		return true;
-	}
-	public Contact(long contactId, Person person, String relation, TreeSet<Long> numbers) {
+	}	
+	
+	public Contact(long contactId,Person person, String relation, TreeSet<Long> numbers) {
 		super();
 		this.contactId = contactId;
 		this.person = person;
 		this.relation = relation;
 		this.numbers = numbers;
 	}
+	
+	public Contact(Person person, String relation, TreeSet<Long> numbers) {
+		super();
+		this.contactId = ++ContactList.contactId;
+		this.person = person;
+		this.relation = relation;
+		this.numbers = numbers;
+	}
+	
 	public Contact() {
 		super();
 		// TODO Auto-generated constructor stub
@@ -70,7 +80,8 @@ public class Contact implements Comparable<Contact>{
 	@Override
 	public int compareTo(Contact arg0) {
 		// TODO Auto-generated method stub
-		return Long.compare(this.getContactId(), arg0.getContactId());
+		return 1;//Character.compare(this.getPerson().getFirstName().charAt(0), arg0.getPerson().getFirstName().charAt(0));
+		
 	}
 	public void addNumber(long num) {
 		// TODO Auto-generated method stub
