@@ -80,7 +80,7 @@ public class Contact implements Comparable<Contact>{
 	@Override
 	public int compareTo(Contact arg0) {
 		// TODO Auto-generated method stub
-		return 1;//Character.compare(this.getPerson().getFirstName().charAt(0), arg0.getPerson().getFirstName().charAt(0));
+		return this.getPerson().getFirstName().compareTo(arg0.getPerson().getFirstName());
 		
 	}
 	public void addNumber(long num) {

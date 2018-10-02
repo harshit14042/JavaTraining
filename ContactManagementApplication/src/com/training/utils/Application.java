@@ -3,8 +3,10 @@ package com.training.utils;
 import java.sql.Connection;
 import java.sql.SQLException;
 import java.util.HashMap;
+import java.util.HashSet;
 import java.util.Map;
 import java.util.Scanner;
+import java.util.Set;
 import java.util.TreeSet;
 
 import com.training.entity.Contact;
@@ -13,23 +15,32 @@ import com.training.entity.Person;
 
 public class Application {
 	
-	public static TreeSet<Contact> getContacts(DAO dao){
-		TreeSet<Contact> contacts=null;
+	public static TreeSet<Contact> contactSet=null;
+	
+	public static TreeSet<String> peopleNames=null;
+	
+	public static TreeSet<Long> phNumbers=null;
+	
+	public static void init(DAO dao) throws SQLException{
 		try {
-			contacts = dao.findAll();
+			contactSet = dao.findAll();
 		} catch (SQLException e) {
-			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
-		return contacts;
-		
+		peopleNames=dao.getAllNames();
+		phNumbers=dao.getAllNumbers();
 	}
 
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
 		Connection conn=DbConnections.getConnection();
 		DAO dao=new DAOImpl(conn);
 		int choice=0;
+		try {
+			init(dao);
+		} catch (SQLException e2) {
+			// TODO Auto-generated catch block
+			e2.printStackTrace();
+		}
 		Scanner s=new Scanner(System.in);
 		do{
 			System.out.println("Enter the choice");
@@ -41,6 +52,10 @@ public class Application {
 				String firstName=s.next();
 				System.out.println("Enter the Last Name");
 				String lastName=s.next();
+				if(peopleNames.contains(firstName+" "+lastName)){
+					System.out.println("Name already exists");
+					break;
+				}
 				System.out.println("Enter the email id");
 				String email=s.next();
 				System.out.println("Enter the Relation\n1. Friend\n2. Relative\n3. Office");
@@ -57,11 +72,16 @@ public class Application {
 					relation=ContactList.officeString;
 					break;
 				default:
+					relation=ContactList.friendString;
 					break;
 				}
 				
 				System.out.println("Enter the Number");
 				long number=s.nextLong();
+				if(phNumbers.contains(number)){
+					System.out.println("Number Already Exists");
+					break;
+				}
 				TreeSet<Long> phNumbers=new TreeSet<>();
 				phNumbers.add(number);
 				Person person=new Person(firstName, lastName, email);
@@ -69,10 +89,15 @@ public class Application {
 				dao.add(contact);
 				break;
 			case 2:
-				System.out.println(getContacts(dao));
+				for(Contact con:contactSet){
+					System.out.println("First Name: "+con.getPerson().getFirstName()+"\nLast Name: "+con.getPerson().getLastName()+"\nEmail: "+con.getPerson().getEmail()+"\nRelation: "+con.getRelation()+"\nContact Number:");
+					for(long num:con.getNumbers()){
+						System.out.print(num+"\n");
+					}
+				}
 				break;
 			case 3:
-				ContactList list=new ContactList(getContacts(dao));
+				ContactList list=new ContactList(contactSet);
 				System.out.println("1. Friends\n2. Relatives\n3. Office\nEnter the choice");
 				ch=s.nextInt();
 				switch(ch){
@@ -91,26 +116,28 @@ public class Application {
 				}
 				break;
 			case 4:
-				for(Contact c:getContacts(dao)){
+				for(Contact c:contactSet){
 					System.out.println(c.getContactId()+" "+c.getPerson().getFirstName()+" "+c.getPerson().getLastName());
 				}
 				System.out.println("Enter the Id to delete");
 				long idToDelete=s.nextLong();
 				try {
 					dao.removeContact(idToDelete);
+					init(dao);
 				} catch (SQLException e) {
 					// TODO Auto-generated catch block
 					e.printStackTrace();
 				}
+				
 				break;
 			case 5:
-				for(Contact c:getContacts(dao)){
+				for(Contact c:contactSet){
 					System.out.println(c.getContactId()+" "+c.getPerson().getFirstName()+" "+c.getPerson().getLastName());
 				}
 				System.out.println("Enter the Id to delete");
 				long idToDeleteNumber=s.nextLong();
 				Map<Integer,Long> sIDtoNumber=new HashMap<>();
-				for(Contact c:getContacts(dao)){
+				for(Contact c:contactSet){
 					if(c.getContactId()==idToDeleteNumber){
 						int count=0;
 						
@@ -122,6 +149,7 @@ public class Application {
 						int ch1=s.nextInt();
 						try {
 							dao.removeContactNumber(sIDtoNumber.get(ch1));
+							init(dao);
 						} catch (SQLException e) {
 							// TODO Auto-generated catch block
 							e.printStackTrace();
@@ -130,13 +158,13 @@ public class Application {
 				}
 				break;
 			case 6:
-				for(Contact c:getContacts(dao)){
+				for(Contact c:contactSet){
 					System.out.println(c.getContactId()+" "+c.getPerson().getFirstName()+" "+c.getPerson().getLastName());
 				}
 				System.out.println("Enter the Id to Edit");
 				ch=s.nextInt();
 				contact=null;
-				for(Contact c:getContacts(dao)){
+				for(Contact c:contactSet){
 					if(c.getContactId()==ch){
 						contact=c;
 					}
@@ -192,7 +220,17 @@ public class Application {
 						//System.out.println(list.getOfficeList());
 						newVal=ContactList.officeString;
 						break;
+					default:
+						newVal=ContactList.friendString;
+						break;
 					}
+					try {
+						dao.updateContactList(contact, "relation", newVal);
+					} catch (SQLException e1) {
+						// TODO Auto-generated catch block
+						e1.printStackTrace();
+					}
+					
 					break;
 				case 5:
 					System.out.println("Enter the number");
@@ -222,14 +260,25 @@ public class Application {
 						e.printStackTrace();
 					}
 					break;
+				default:
+					break;
+				}
+				try {
+					init(dao);
+				} catch (SQLException e) {
+					// TODO Auto-generated catch block
+					e.printStackTrace();
 				}
 				break;
 			case 7:
 				System.out.println("Enter Name to Search Contact");
 				String nameToSearch=s.next();
-				for(Contact c:getContacts(dao)){
+				for(Contact c:contactSet){
 					if(c.getPerson().getFirstName().equals(nameToSearch) || c.getPerson().getLastName().equals(nameToSearch)){
-						System.out.println(c.toString());
+							System.out.println("First Name: "+c.getPerson().getFirstName()+"\nLast Name: "+c.getPerson().getLastName()+"\nEmail: "+c.getPerson().getEmail()+"\nRelation: "+c.getRelation()+"\nContact Number:");
+							for(long num:c.getNumbers()){
+								System.out.print(num+"\n");
+							}
 					}
 				}
 				break;

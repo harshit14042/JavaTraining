@@ -39,7 +39,6 @@ public class DAOImpl implements DAO<Contact>{
 
 	@Override
 	public int add(Contact contact) {
-		// TODO Auto-generated method stub
 		String sql="insert into contactlisthv values(?,?,?,?,?)";
 		PreparedStatement pstmt=null;
 		int rowAdded=0;
@@ -211,6 +210,34 @@ public class DAOImpl implements DAO<Contact>{
 			numbers.add(rs.getLong(1));
 		}
 		return numbers;
+	}
+
+
+	@Override
+	public TreeSet<Long> getAllNumbers() throws SQLException {
+		// TODO Auto-generated method stub
+		TreeSet<Long> numberList=new TreeSet<>();
+		String sql="select phnumber from contactnumbershv";
+		PreparedStatement p=conn.prepareStatement(sql);
+		ResultSet rs=p.executeQuery();
+		while(rs.next()){
+			numberList.add(rs.getLong(1));
+		}
+		return numberList;
+	}
+
+
+	@Override
+	public TreeSet<String> getAllNames() throws SQLException {
+		// TODO Auto-generated method stub
+		TreeSet<String> nameList=new TreeSet<>();
+		String sql="select firstname,lastname from contactListhv";
+		PreparedStatement p=conn.prepareStatement(sql);
+		ResultSet rs=p.executeQuery();
+		while(rs.next()){
+			nameList.add(rs.getString(1)+" "+rs.getString(2));
+		}
+		return nameList;
 	}
 
 }

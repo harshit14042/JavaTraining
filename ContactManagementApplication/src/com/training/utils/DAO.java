@@ -23,4 +23,7 @@ public interface DAO<T> {
 	void addContactNumber(long id, Long number) throws SQLException;
 	//void updateContactNumber(Person person, long prevNumber, long newNumber) throws SQLException;
 	void updateContactNumber(long prevNumber, long newNumber) throws SQLException;
+	public TreeSet<Long> getAllNumbers() throws SQLException;
+	
+	public TreeSet<String> getAllNames() throws SQLException;
 }
