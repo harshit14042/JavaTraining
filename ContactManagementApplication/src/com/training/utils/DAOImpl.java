@@ -31,6 +31,7 @@ public class DAOImpl implements DAO<Contact>{
 			else{
 				ContactList.contactId=0;
 			}
+			System.out.println(ContactList.contactId);
 		} catch (SQLException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
