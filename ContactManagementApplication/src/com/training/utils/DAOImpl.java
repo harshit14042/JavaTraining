@@ -242,4 +242,43 @@ public class DAOImpl implements DAO<Contact>{
 		return nameList;
 	}
 
+
+	@Override
+	public TreeSet<Contact> getContactsByRelation(String searchedRelation) throws SQLException {
+		// TODO Auto-generated method stub
+		String sql="select * from contactlisthv where relation=?";
+		PreparedStatement ps=null;
+		TreeSet<Contact> contacts=new TreeSet<>();
+		try{
+			ps=conn.prepareStatement(sql);
+			ps.setString(1, searchedRelation);
+			ResultSet rs=ps.executeQuery();
+			while(rs.next()){
+				String firstName=rs.getString("firstname");
+				String lastName=rs.getString("lastname");
+				String email=rs.getString("email");
+				Long key=rs.getLong("contactid");
+				TreeSet<Long> numbers=getNumbersById(key);
+				
+				String relation=rs.getString("relation");
+				
+				Person person=new Person(firstName, lastName, email);
+				
+				Contact contact=new Contact(key, person, relation, numbers);
+				contacts.add(contact);
+			}
+		}catch(Exception e){
+			e.printStackTrace();
+		}
+		finally{
+			try {
+				ps.close();
+			} catch (SQLException e) {
+				e.printStackTrace();
+			}
+		}
+		
+		return contacts;
+	}
+
 }

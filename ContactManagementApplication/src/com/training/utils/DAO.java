@@ -26,4 +26,6 @@ public interface DAO<T> {
 	public TreeSet<Long> getAllNumbers() throws SQLException;
 	
 	public TreeSet<String> getAllNames() throws SQLException;
+	
+	public TreeSet<Contact> getContactsByRelation(String relation) throws SQLException;
 }

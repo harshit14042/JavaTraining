@@ -94,26 +94,34 @@ public class Application {
 				}
 				break;
 			case 3:
-				ContactList list=new ContactList(contactSet);
+				//ContactList list=new ContactList(contactSet);
 				System.out.println("1. Friends\n2. Relatives\n3. Office\nEnter the choice");
 				ch=s.nextInt();
-				Set<Contact> categoryContactList=list.getAllContacts();
+				
+				try{
+					Set<Contact> categoryContactList=dao.findAll();
 				switch(ch){
 				case 1:
-					categoryContactList=list.getFriendList();
+					categoryContactList=dao.getContactsByRelation(ContactList.friendString);
 					System.out.println("Friends: "+categoryContactList.size()+"\n"+categoryContactList);
 					break;
 				case 2:
-					categoryContactList=list.getRelativeList();
+					//categoryContactList=list.getRelativeList();
+					categoryContactList=dao.getContactsByRelation(ContactList.relativeString);
 					System.out.println("Friends: "+categoryContactList.size()+"\n"+categoryContactList);
 					break;
 				case 3:
-					categoryContactList=list.getOfficeList();
+					//categoryContactList=list.getOfficeList();
+					categoryContactList=dao.getContactsByRelation(ContactList.officeString);
 					System.out.println("Friends: "+categoryContactList.size()+"\n"+categoryContactList);
 					break;
 				default:
 					System.out.println("Friends: "+categoryContactList.size()+"\n"+categoryContactList);
 					break;
+				}
+				}
+				catch(Exception e){
+					e.printStackTrace();
 				}
 				break;
 			case 4:
