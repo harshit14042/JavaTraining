@@ -8,6 +8,8 @@
 <title>Insert title here</title>
 </head>
 <body>
+<%-- --%>
+<!--  -->
 <c:out value="Designed By IMDB"/>
 <c:out value="${initParam.copyright}"/>
 </body>
