@@ -108,15 +108,15 @@ public class Application {
 				case 2:
 					//categoryContactList=list.getRelativeList();
 					categoryContactList=dao.getContactsByRelation(ContactList.relativeString);
-					System.out.println("Friends: "+categoryContactList.size()+"\n"+categoryContactList);
+					System.out.println("Relatives: "+categoryContactList.size()+"\n"+categoryContactList);
 					break;
 				case 3:
 					//categoryContactList=list.getOfficeList();
 					categoryContactList=dao.getContactsByRelation(ContactList.officeString);
-					System.out.println("Friends: "+categoryContactList.size()+"\n"+categoryContactList);
+					System.out.println("Office: "+categoryContactList.size()+"\n"+categoryContactList);
 					break;
 				default:
-					System.out.println("Friends: "+categoryContactList.size()+"\n"+categoryContactList);
+					System.out.println("All: "+categoryContactList.size()+"\n"+categoryContactList);
 					break;
 				}
 				}

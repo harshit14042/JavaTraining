@@ -136,7 +136,7 @@ public class ContactList {
 	public Set<Contact> getContactByName(String nameToSearch){
 		Set<Contact> contactList=new HashSet<>();
 		for(Contact c:allContacts){
-			if(c.getPerson().getFirstName().equals(nameToSearch) || c.getPerson().getLastName().equals(nameToSearch) || nameToSearch.equals(c.getPerson())){
+			if(c.getPerson().getFirstName().toLowerCase().equals(nameToSearch.toLowerCase()) || c.getPerson().getLastName().toLowerCase().equals(nameToSearch.toLowerCase()) || nameToSearch.toLowerCase().equals(c.getPerson().getFirstName().toLowerCase()+" "+c.getPerson().getLastName().toLowerCase())){
 				contactList.add(c);
 			}
 		}
