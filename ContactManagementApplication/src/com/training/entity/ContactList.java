@@ -9,7 +9,7 @@ public class ContactList {
 	public static final String officeString="Office";
 	private TreeSet<Contact> allContacts;
 	
-	public static long contactId=0;
+	private static long contactId=0;
 	public static long getContactId() {
 		return contactId;
 	}

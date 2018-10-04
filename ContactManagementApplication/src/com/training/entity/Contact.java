@@ -72,7 +72,10 @@ public class Contact implements Comparable<Contact>{
 	
 	public Contact(Person person, String relation, TreeSet<Long> numbers) {
 		super();
-		this.contactId = ++ContactList.contactId;
+		long newCustomerId=ContactList.getContactId();
+		newCustomerId++;
+		ContactList.setContactId(newCustomerId);
+		this.contactId = newCustomerId;
 		this.person = person;
 		this.relation = relation;
 		this.numbers = numbers;

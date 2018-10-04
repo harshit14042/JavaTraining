@@ -26,10 +26,10 @@ public class DAOImpl implements DAO<Contact>{
 			ResultSet rs=ps.executeQuery();
 			
 			if(rs.next()){
-				ContactList.contactId=rs.getLong(1);
+				ContactList.setContactId(rs.getLong(1));
 			}
 			else{
-				ContactList.contactId=0;
+				ContactList.setContactId(0);
 			}
 			//System.out.println(ContactList.contactId);
 		} catch (SQLException e) {
