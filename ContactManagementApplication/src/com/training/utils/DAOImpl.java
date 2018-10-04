@@ -253,11 +253,7 @@ public class DAOImpl implements DAO<Contact>{
 				Contact contact=new Contact(key, person, relation, numbers);
 				contacts.add(contact);
 			}
-			try {
-				ps.close();
-			} catch (SQLException e) {
-				e.printStackTrace();
-			}
+			ps.close();
 		
 		return contacts;
 	}

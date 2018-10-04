@@ -123,10 +123,10 @@ public class ContactList {
 		}
 	}
 	
-	public TreeSet<Contact> getContactDetails(String Name){
+	public TreeSet<Contact> getContactDetails(String name){
 		TreeSet<Contact> results=new TreeSet<>();
 		for(Contact contact:allContacts){
-			if(contact.getPerson().getFirstName().equals(Name) || contact.getPerson().getLastName().equals(Name)){
+			if(contact.getPerson().getFirstName().equals(name) || contact.getPerson().getLastName().equals(name)){
 				results.add(contact);
 			}
 		}

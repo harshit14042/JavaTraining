@@ -85,12 +85,14 @@ public class Application {
 				dao.add(contact);
 				break;
 			case 2:
+				System.out.println("Friends: "+dao.getContactsByRelation(ContactList.friendString).size());
+				System.out.println("Relatives: "+dao.getContactsByRelation(ContactList.relativeString).size());
+				System.out.println("Office: "+dao.getContactsByRelation(ContactList.officeString).size());
 				for(Contact con:contactSet){
 					System.out.println(con.toString());
 				}
 				break;
 			case 3:
-				//ContactList list=new ContactList(contactSet);
 				System.out.println("1. Friends\n2. Relatives\n3. Office\nEnter the choice");
 				ch=s.nextInt();
 					Set<Contact> categoryContactList=dao.findAll();
@@ -100,12 +102,10 @@ public class Application {
 					System.out.println("Friends: "+categoryContactList.size()+"\n"+categoryContactList);
 					break;
 				case 2:
-					//categoryContactList=list.getRelativeList();
 					categoryContactList=dao.getContactsByRelation(ContactList.relativeString);
 					System.out.println("Relatives: "+categoryContactList.size()+"\n"+categoryContactList);
 					break;
 				case 3:
-					//categoryContactList=list.getOfficeList();
 					categoryContactList=dao.getContactsByRelation(ContactList.officeString);
 					System.out.println("Office: "+categoryContactList.size()+"\n"+categoryContactList);
 					break;
