@@ -34,7 +34,7 @@ public class Application {
 	public static void main(String[] args) {
 		Connection conn=DbConnections.getConnection();
 		DAO dao=new DAOImpl(conn);
-		int choice=0;
+		int choice=3;
 		try {
 			init(dao);
 		Scanner s=new Scanner(System.in);

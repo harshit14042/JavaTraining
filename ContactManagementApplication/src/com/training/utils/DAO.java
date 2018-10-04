@@ -4,7 +4,7 @@ import java.sql.SQLException;
 import java.util.*;
 
 import com.training.entity.Contact;
-import com.training.entity.Person;
+
 
 public interface DAO<T> {
 	public int add(T obj) throws SQLException;

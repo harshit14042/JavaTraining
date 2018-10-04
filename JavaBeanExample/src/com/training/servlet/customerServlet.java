@@ -1,6 +1,7 @@
 package com.training.servlet;
 
 import java.io.IOException;
+import java.io.InputStream;
 import java.sql.SQLException;
 
 import javax.servlet.RequestDispatcher;
@@ -36,7 +37,11 @@ public class customerServlet extends HttpServlet {
 		HttpSession session=request.getSession();
 		Customer cust=(Customer)session.getAttribute("customerBean");
 //		response.getWriter().println(cust.toString());
-		DAO dao=new CustomerDAOImpl();
+		
+		ClassLoader clsLdr=Thread.currentThread().getContextClassLoader();
+		InputStream inStream=clsLdr.getResourceAsStream("JDBC.properties");
+		
+		DAO dao=new CustomerDAOImpl(inStream);
 		System.out.println(cust.toString());
 		int rows;
 		try {
@@ -45,11 +50,12 @@ public class customerServlet extends HttpServlet {
 				request.setAttribute("status","Record Added Successfully");
 			else
 				request.setAttribute("status","Record Not Added");
+			request.setAttribute("customers", dao.getAllCustomers());
 		} catch (SQLException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
-		RequestDispatcher dispatcher=request.getRequestDispatcher("addCustomer.jsp");
+		RequestDispatcher dispatcher=request.getRequestDispatcher("showCustomers.jsp");
 		dispatcher.forward(request, response);
 	}
 

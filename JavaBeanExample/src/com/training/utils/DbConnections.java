@@ -4,12 +4,11 @@ import java.io.*;
 import java.util.*;
 public class DbConnections {
 	
-	public static Connection getConnection(){
+	public static Connection getConnection(InputStream inStream){
 		Connection conn=null;
 		
 		try {
 			Properties props=new Properties();
-			FileInputStream inStream=new FileInputStream(new File("C:/Users/AC31841/Desktop/Java Workspace/JavaBeanExample/WebContent/WEB-INF/JDBC.properties"));
 			props.load(inStream);
 			Class.forName(props.getProperty("db.driverClass"));
 			String url=props.getProperty("db.url");

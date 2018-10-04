@@ -7,6 +7,7 @@ public class ContactList {
 	public static final String relativeString="Relative";
 	public static final String friendString="Friend";
 	public static final String officeString="Office";
+	
 	private TreeSet<Contact> allContacts;
 	
 	private static long contactId=0;
