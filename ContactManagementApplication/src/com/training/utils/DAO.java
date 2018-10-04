@@ -7,7 +7,7 @@ import com.training.entity.Contact;
 import com.training.entity.Person;
 
 public interface DAO<T> {
-	public int add(T obj);
+	public int add(T obj) throws SQLException;
 	public TreeSet<T> findAll() throws SQLException;
 	
 	//TO DO

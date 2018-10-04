@@ -37,10 +37,6 @@ public class Application {
 		int choice=0;
 		try {
 			init(dao);
-		} catch (SQLException e2) {
-			// TODO Auto-generated catch block
-			e2.printStackTrace();
-		}
 		Scanner s=new Scanner(System.in);
 		do{
 			System.out.println("Enter the choice");
@@ -97,8 +93,6 @@ public class Application {
 				//ContactList list=new ContactList(contactSet);
 				System.out.println("1. Friends\n2. Relatives\n3. Office\nEnter the choice");
 				ch=s.nextInt();
-				
-				try{
 					Set<Contact> categoryContactList=dao.findAll();
 				switch(ch){
 				case 1:
@@ -119,10 +113,6 @@ public class Application {
 					System.out.println("All: "+categoryContactList.size()+"\n"+categoryContactList);
 					break;
 				}
-				}
-				catch(Exception e){
-					e.printStackTrace();
-				}
 				break;
 			case 4:
 				for(Contact c:contactSet){
@@ -130,12 +120,8 @@ public class Application {
 				}
 				System.out.println("Enter the Id to delete");
 				long idToDelete=s.nextLong();
-				try {
 					dao.removeContact(idToDelete);
-				} catch (SQLException e) {
-					// TODO Auto-generated catch block
-					e.printStackTrace();
-				}
+				
 				
 				break;
 			case 5:
@@ -155,12 +141,8 @@ public class Application {
 						}
 						System.out.println("Enter the Id to delete");
 						int ch1=s.nextInt();
-						try {
 							dao.removeContactNumber(sIDtoNumber.get(ch1));
-						} catch (SQLException e) {
-							// TODO Auto-generated catch block
-							e.printStackTrace();
-						}
+						
 					}
 				}
 				break;
@@ -183,32 +165,20 @@ public class Application {
 				case 1:
 					System.out.println("Enter the new First Name");
 					String newVal=s.next();
-					try {
 						dao.updateContactList(contact, "firstname", newVal);
-					} catch (SQLException e) {
-						// TODO Auto-generated catch block
-						e.printStackTrace();
-					}
+					
 					break;
 				case 2:
 					System.out.println("Enter the new Last Name");
 					newVal=s.next();
-					try {
 						dao.updateContactList(contact, "lastname", newVal);
-					} catch (SQLException e) {
-						// TODO Auto-generated catch block
-						e.printStackTrace();
-					}
+					
 					break;
 				case 3:
 					System.out.println("Enter the new Email Id");
 					newVal=s.next();
-					try {
 						dao.updateContactList(contact, "email", newVal);
-					} catch (SQLException e) {
-						// TODO Auto-generated catch block
-						e.printStackTrace();
-					}
+					
 					break;
 				case 4:
 					System.out.println("1. Friends\n2. Relatives\n3. Office\nEnter the choice");
@@ -231,23 +201,15 @@ public class Application {
 						newVal=ContactList.friendString;
 						break;
 					}
-					try {
 						dao.updateContactList(contact, "relation", newVal);
-					} catch (SQLException e1) {
-						// TODO Auto-generated catch block
-						e1.printStackTrace();
-					}
+					
 					
 					break;
 				case 5:
 					System.out.println("Enter the number");
 					long newNum=s.nextLong();
-					try {
 						dao.addContactNumber(contact.getContactId(), newNum);
-					} catch (SQLException e) {
-						// TODO Auto-generated catch block
-						e.printStackTrace();
-					}
+					
 					break;
 				case 6:
 					int count=0;
@@ -264,12 +226,7 @@ public class Application {
 						System.out.println("Number Already Exists");
 						break;
 					}
-					try {
 						dao.updateContactNumber(idToNum.get(ch), newNum);
-					} catch (SQLException e) {
-						// TODO Auto-generated catch block
-						e.printStackTrace();
-					}
 					break;
 				default:
 					break;
@@ -293,6 +250,10 @@ public class Application {
 			}
 		}while(choice!=0);
 		s.close();
+		} catch (SQLException e2) {
+			// TODO Auto-generated catch block
+			e2.printStackTrace();
+		}
 	}
 
 }

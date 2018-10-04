@@ -41,11 +41,10 @@ public class DAOImpl implements DAO<Contact>{
 	
 
 	@Override
-	public int add(Contact contact) {
+	public int add(Contact contact) throws SQLException {
 		String sql="insert into contactlisthv values(?,?,?,?,?)";
 		PreparedStatement pstmt=null;
 		int rowAdded=0;
-		try {
 			pstmt=conn.prepareStatement(sql);
 			pstmt.setLong(1, contact.getContactId());
 			pstmt.setString(2, contact.getPerson().getFirstName());
@@ -60,19 +59,7 @@ public class DAOImpl implements DAO<Contact>{
 				pstmt.setLong(2, n);
 				rowAdded+=pstmt.executeUpdate();
 			}
-			
-		} catch (Exception e) {
-			// TODO: handle exception
-			e.printStackTrace();
-		}
-		finally{
-			try {
 				pstmt.close();
-			} catch (SQLException e) {
-				// TODO Auto-generated catch block
-				e.printStackTrace();
-			}
-		}
 		return rowAdded;
 	}
 
@@ -84,7 +71,6 @@ public class DAOImpl implements DAO<Contact>{
 		String sql="select * from contactlisthv order by firstname";
 		PreparedStatement ps=null;
 		TreeSet<Contact> contacts=new TreeSet<>();
-		try{
 			ps=conn.prepareStatement(sql);
 			ResultSet rs=ps.executeQuery();
 			while(rs.next()){
@@ -101,17 +87,7 @@ public class DAOImpl implements DAO<Contact>{
 				Contact contact=new Contact(key, person, relation, numbers);
 				contacts.add(contact);
 			}
-		}catch(Exception e){
-			e.printStackTrace();
-		}
-		finally{
-			try {
 				ps.close();
-			} catch (SQLException e) {
-				e.printStackTrace();
-			}
-		}
-		
 		return contacts;
 	}
 
@@ -260,7 +236,6 @@ public class DAOImpl implements DAO<Contact>{
 		String sql="select * from contactlisthv where relation=?";
 		PreparedStatement ps=null;
 		TreeSet<Contact> contacts=new TreeSet<>();
-		try{
 			ps=conn.prepareStatement(sql);
 			ps.setString(1, searchedRelation);
 			ResultSet rs=ps.executeQuery();
@@ -278,16 +253,11 @@ public class DAOImpl implements DAO<Contact>{
 				Contact contact=new Contact(key, person, relation, numbers);
 				contacts.add(contact);
 			}
-		}catch(Exception e){
-			e.printStackTrace();
-		}
-		finally{
 			try {
 				ps.close();
 			} catch (SQLException e) {
 				e.printStackTrace();
 			}
-		}
 		
 		return contacts;
 	}
