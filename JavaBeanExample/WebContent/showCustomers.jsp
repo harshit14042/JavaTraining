@@ -8,6 +8,10 @@
 <title>Insert title here</title>
 </head>
 <body>
+<c:if test="${sessionScope.isLoggedIn}">
+	
+
+<%@include file="header.html" %>
 <table border="1">
 	<tr>
 		<td>Customer Id</td>
@@ -23,6 +27,12 @@
 </c:forEach>
 </table>
 <br/>
-<a href="addCustomer.jsp">Add Another Customer</a>
+<a href="index.jsp">Go Back</a>
+</c:if>
+<c:if test="${!sessionScope.isLoggedIn}">
+<c:out value="Not Logged In"></c:out>
+<a href="index.jsp">Login Page</a>
+</c:if>
+<jsp:include page="footer.jsp"></jsp:include>
 </body>
 </html>

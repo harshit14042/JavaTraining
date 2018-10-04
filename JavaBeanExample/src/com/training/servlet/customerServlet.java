@@ -35,21 +35,13 @@ public class customerServlet extends HttpServlet {
 	 */
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		HttpSession session=request.getSession();
-		Customer cust=(Customer)session.getAttribute("customerBean");
 //		response.getWriter().println(cust.toString());
 		
 		ClassLoader clsLdr=Thread.currentThread().getContextClassLoader();
 		InputStream inStream=clsLdr.getResourceAsStream("JDBC.properties");
 		
 		DAO dao=new CustomerDAOImpl(inStream);
-		System.out.println(cust.toString());
-		int rows;
 		try {
-			rows = dao.add(cust);
-			if(rows>0)
-				request.setAttribute("status","Record Added Successfully");
-			else
-				request.setAttribute("status","Record Not Added");
 			request.setAttribute("customers", dao.getAllCustomers());
 		} catch (SQLException e) {
 			// TODO Auto-generated catch block
@@ -65,7 +57,25 @@ public class customerServlet extends HttpServlet {
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		// TODO Auto-generated method stub
 		doGet(request, response);
+//		HttpSession session=request.getSession();
+//		Customer cust=(Customer)session.getAttribute("customerBean");
+////		response.getWriter().println(cust.toString());
+//		
+//		ClassLoader clsLdr=Thread.currentThread().getContextClassLoader();
+//		InputStream inStream=clsLdr.getResourceAsStream("JDBC.properties");
+//		
+//		DAO dao=new CustomerDAOImpl(inStream);
+//		System.out.println(cust.toString());
+//		int rows;
+//		try {
+//			rows = dao.add(cust);
+//		} catch (SQLException e) {
+//			// TODO Auto-generated catch block
+//			e.printStackTrace();
+//		}
+//		RequestDispatcher dispatcher=request.getRequestDispatcher("index.jsp");
+//		dispatcher.forward(request, response);
+//	}
 	}
-
 	
 }
