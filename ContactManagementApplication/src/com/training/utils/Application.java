@@ -300,6 +300,7 @@ public class Application {
 				e.printStackTrace();
 			}
 		}while(choice!=0);
+		s.close();
 	}
 
 }

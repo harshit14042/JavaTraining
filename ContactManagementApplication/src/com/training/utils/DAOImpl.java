@@ -127,7 +127,9 @@ public class DAOImpl implements DAO<Contact>{
 		ps=conn.prepareStatement(sql1);
 		ps.setLong(1, key);
 		rows+=ps.executeUpdate();
+		ps.close();
 		return rows;
+		
 		//return 0;
 	}
 
@@ -152,6 +154,7 @@ public class DAOImpl implements DAO<Contact>{
 			
 			contact=new Contact(key, person, relation, numbers);
 		}
+		ps.close();
 		return contact;
 	}
 	
@@ -165,6 +168,7 @@ public class DAOImpl implements DAO<Contact>{
 		ps.setLong(1, newNumber);
 		ps.setLong(2, prevNumber);
 		ps.executeUpdate();
+		ps.close();
 	}
 
 	@Override
@@ -174,6 +178,7 @@ public class DAOImpl implements DAO<Contact>{
 		PreparedStatement ps=conn.prepareStatement(sql);
 		ps.setLong(1, number);
 		ps.executeUpdate();
+		ps.close();
 	}
 
 	@Override
@@ -186,6 +191,7 @@ public class DAOImpl implements DAO<Contact>{
 		ps.setLong(1, id);
 		ps.setLong(2, number);
 		ps.executeUpdate();
+		ps.close();
 	}
 
 
@@ -196,7 +202,9 @@ public class DAOImpl implements DAO<Contact>{
 		PreparedStatement ps=conn.prepareStatement(sql);
 		ps.setString(1, updatedValue);
 		ps.setLong(2,contact.getContactId());
-		return ps.executeUpdate();
+		int rows=ps.executeUpdate();
+		ps.close();
+		return rows;
 	}
 
 
@@ -211,6 +219,7 @@ public class DAOImpl implements DAO<Contact>{
 		while(rs.next()){
 			numbers.add(rs.getLong(1));
 		}
+		ps.close();
 		return numbers;
 	}
 
@@ -225,6 +234,7 @@ public class DAOImpl implements DAO<Contact>{
 		while(rs.next()){
 			numberList.add(rs.getLong(1));
 		}
+		p.close();
 		return numberList;
 	}
 
@@ -239,6 +249,7 @@ public class DAOImpl implements DAO<Contact>{
 		while(rs.next()){
 			nameList.add(rs.getString(1)+" "+rs.getString(2));
 		}
+		p.close();
 		return nameList;
 	}
 
