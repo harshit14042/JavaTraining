@@ -132,7 +132,6 @@ public class Application {
 				long idToDelete=s.nextLong();
 				try {
 					dao.removeContact(idToDelete);
-					init(dao);
 				} catch (SQLException e) {
 					// TODO Auto-generated catch block
 					e.printStackTrace();
@@ -158,7 +157,6 @@ public class Application {
 						int ch1=s.nextInt();
 						try {
 							dao.removeContactNumber(sIDtoNumber.get(ch1));
-							init(dao);
 						} catch (SQLException e) {
 							// TODO Auto-generated catch block
 							e.printStackTrace();
@@ -275,12 +273,6 @@ public class Application {
 					break;
 				default:
 					break;
-				}
-				try {
-					init(dao);
-				} catch (SQLException e) {
-					// TODO Auto-generated catch block
-					e.printStackTrace();
 				}
 				break;
 			case 7:
