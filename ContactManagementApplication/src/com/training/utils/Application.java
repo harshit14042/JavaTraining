@@ -87,7 +87,7 @@ public class Application {
 			case 2:
 				System.out.println("Friends: "+dao.getContactsByRelation(ContactList.friendString).size());
 				System.out.println("Relatives: "+dao.getContactsByRelation(ContactList.relativeString).size());
-				System.out.println("Office: "+dao.getContactsByRelation(ContactList.officeString).size());
+				System.out.println("Office: "+dao.getContactsByRelation(ContactList.officeString).size()+"\n");
 				for(Contact con:contactSet){
 					System.out.println(con.toString());
 				}
