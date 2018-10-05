@@ -34,6 +34,8 @@ public class DemoServlet extends HttpServlet {
 		
 		response.addCookie(ck);
 		
+		Cookie ckColor=new Cookie("bgColor",request.getParameter("bgColor"));
+		
 		RequestDispatcher dispatcher=request.getRequestDispatcher("Catalog.jsp");
 		
 		dispatcher.forward(request, response);

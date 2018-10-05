@@ -7,12 +7,27 @@
 <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
 <title>Insert title here</title>
 </head>
-<body>
+<%!String bgColor;%>
 <%
 
-	Cookie[] cks=request.getCookies();
-	List<Cookie> list=Arrays.asList(cks);
-	List<String> ckyName=list.stream().filter(cky -> cky.getName().equals("searchedItem")).map(cky->cky.getValue()).collect(Collectors.toList());
+Cookie[] cks=request.getCookies();
+List<Cookie> list=Arrays.asList(cks);
+List<String> ckyName=list.stream().filter(cky -> cky.getName().equals("bgColor")).map(cky->cky.getValue()).collect(Collectors.toList());
+if(ckyName.size()>0){
+	bgColor=ckyName.get(0);
+}
+else{
+	bgColor="#FFFFFF";
+}
+
+
+%>
+<body style="background-color:<%out.println(bgColor);%>">
+<%
+
+	cks=request.getCookies();
+	list=Arrays.asList(cks);
+	ckyName=list.stream().filter(cky -> cky.getName().equals("searchedItem")).map(cky->cky.getValue()).collect(Collectors.toList());
 	
 	List<String> items=ItemList.getItems().get(ckyName.get(0));
 	
