@@ -11,7 +11,15 @@
 </head>
 <script>
 function change(){
+	
+	alert("Hello"+document.getElementById("plan"));
+	
+	if(parseInt(document.getElementById("plan").value)==1){
 	document.getElementById("amount").innerHTML="400";
+	}
+	else{
+		document.getElementById("amount").innerHTML="200";
+	}
 }
 </script>
 <style>
@@ -58,7 +66,7 @@ border: 1px solid black;
 	<label for="mobileNumber">Mobile Number</label>
 	<input type="text" id="mobileNumber" name="mobileNumber" required="required" value="<%=mobileNumber%>"/>
 	<label for="plan">Plan</label>
-	<select name="plan" onchange="change()">
+	<select name="plan" id="plan" onchange="change()">
 		<option value="1" <%if(plan==1)out.println("selected");%>>Plan 1</option>
 		<option value="2" <%if(plan==2)out.println("selected");%>>Plan 2</option>
 		<option value="3" <%if(plan==3)out.println("selected");%>>Plan 3</option>
