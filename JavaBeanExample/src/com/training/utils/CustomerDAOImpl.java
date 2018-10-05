@@ -14,9 +14,10 @@ public class CustomerDAOImpl implements DAO{
 
 	private Connection conn;
 	
-	public CustomerDAOImpl(InputStream inStream){
+	public CustomerDAOImpl(Connection con){
 		super();
-		conn=DbConnections.getConnection(inStream);
+//		conn=DbConnections.getConnection(inStream);
+		this.conn=con;
 	}
 	
 	@Override

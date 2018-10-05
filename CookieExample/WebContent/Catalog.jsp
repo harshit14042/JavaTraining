@@ -22,7 +22,7 @@ else{
 
 
 %>
-<body style="background-color:<%out.println(bgColor);%>">
+<body style="background-color:<%=bgColor%>">
 <%
 
 	cks=request.getCookies();
