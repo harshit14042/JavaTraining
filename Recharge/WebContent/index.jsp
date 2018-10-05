@@ -1,3 +1,4 @@
+<%@page import="javax.servlet.http.*,java.util.*,java.util.stream.*"%>
 <%@ page language="java" contentType="text/html; charset=ISO-8859-1"
     pageEncoding="ISO-8859-1"%>
     <%@taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
@@ -10,7 +11,7 @@
 </head>
 <script>
 function change(){
-	document.getElementById("amount").innerHTML=400;
+	document.getElementById("amount").innerHTML="400";
 }
 </script>
 <style>
@@ -26,6 +27,28 @@ border: 1px solid black;
 }
 </style>
 <body>
+<%!String mobileNumber;Integer plan=1; %>
+
+<%
+	Cookie[] cks=request.getCookies();
+
+	List<Cookie> list=Arrays.asList(cks);
+	
+	List<String> ckyName=list.stream().filter(cky -> cky.getName().equals("mobileNumber")).map(cky->cky.getValue()).collect(Collectors.toList());
+
+	if(ckyName.size()>0){
+		mobileNumber=ckyName.get(0);
+	}
+	else{
+		mobileNumber="";
+	}
+	
+	ckyName=list.stream().filter(cky -> cky.getName().equals("plan")).map(cky->cky.getValue()).collect(Collectors.toList());
+	if(ckyName.size()>0){
+		plan=Integer.parseInt(ckyName.get(0));
+	}
+	out.println(plan);
+%>
 <div class="left">
 	<%@include file="planList.html" %>
 </div>
@@ -33,17 +56,17 @@ border: 1px solid black;
 <div class="right">
 	<h1>Recharge</h1>
 	<label for="mobileNumber">Mobile Number</label>
-	<input type="text" id="mobileNumber" name="mobileNumber" required="required"/>
+	<input type="text" id="mobileNumber" name="mobileNumber" required="required" value="<%=mobileNumber%>"/>
 	<label for="plan">Plan</label>
-	<select name="plan" onchange="change">
-		<option value="plan1">Plan 1</option>
-		<option value="plan2">Plan 2</option>
-		<option value="plan3">Plan 3</option>
-		<option value="plan4">Plan 4</option>
-		<option value="plan5">Plan 5</option>
+	<select name="plan" onchange="change()">
+		<option value="1" <%if(plan==1)out.println("selected");%>>Plan 1</option>
+		<option value="2" <%if(plan==2)out.println("selected");%>>Plan 2</option>
+		<option value="3" <%if(plan==3)out.println("selected");%>>Plan 3</option>
+		<option value="4" <%if(plan==4)out.println("selected");%>>Plan 4</option>
+		<option value="5" <%if(plan==5)out.println("selected");%>>Plan 5</option>
 	</select>
 	<label for="amount">Amount</label>
-	<p id="amount"></p>
+	<p id="amount">100</p>
 	<input type="submit" value="Recharge"/>
 </div>
 </form>
