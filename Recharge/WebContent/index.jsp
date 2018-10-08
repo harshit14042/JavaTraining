@@ -82,8 +82,8 @@ border: 1px solid black;
 		<option value="4" <%if(plan==4)out.println("selected");%>>Plan 4</option>
 		<option value="5" <%if(plan==5)out.println("selected");%>>Plan 5</option>
 	</select>
-	<label for="amount">Amount</label>
-	<p id="amount"><%out.println(plan*100);%></p>
+	<br/>
+	<b>Amount:</b><p id="amount"><%out.print(plan*100);%></p>
 	<input type="submit" value="Recharge"/>
 </div>
 </form>
