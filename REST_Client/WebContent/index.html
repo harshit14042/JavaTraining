@@ -7,8 +7,11 @@
 <script type="text/javascript">
 
 $(function(){
-	$.get("http://10.140.0.159:8080/REST_WebServices/rest/quick",function(resp){
+	/*$.get("http://10.140.0.159:8080/REST_WebServices/rest/quick",function(resp){
 		$("#msg").html(resp);
+	});*/
+	$.get("http://localhost:8080/REST_WebServices/rest/customer/xmlFrmt",function(resp){
+		$("#msg").html(""+resp);
 	});
 });
 
