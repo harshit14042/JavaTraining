@@ -12,13 +12,22 @@
 <script>
 function change(){
 	
-	alert("Hello"+document.getElementById("plan"));
+	//alert("Hello"+document.getElementById("plan"));
 	
 	if(parseInt(document.getElementById("plan").value)==1){
-	document.getElementById("amount").innerHTML="400";
+	document.getElementById("amount").innerHTML="100";
+	}
+	else if(parseInt(document.getElementById("plan").value)==2){
+		document.getElementById("amount").innerHTML="200";
+	}
+	else if(parseInt(document.getElementById("plan").value)==3){
+		document.getElementById("amount").innerHTML="300";
+	}
+	else if(parseInt(document.getElementById("plan").value)==4){
+		document.getElementById("amount").innerHTML="400";
 	}
 	else{
-		document.getElementById("amount").innerHTML="200";
+		document.getElementById("amount").innerHTML="500";
 	}
 }
 </script>
