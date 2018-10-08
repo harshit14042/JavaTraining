@@ -57,5 +57,21 @@ public class Customer_Resource {
 		return CustomerDetails.addCustomer(new Customer(customerId,customerName,mobileNumber));
 	}
 	
+	@DELETE
+	@Path("remove")
+	public String removeCustomer(@QueryParam("custId")long key){
+		return CustomerDetails.removeCustomer(key);
+	}
+	
+	@PUT
+	@Path("update")
+	@Consumes(MediaType.APPLICATION_JSON)
+	public String updateCustomer(Customer cust,@QueryParam("custId")long key){
+		return CustomerDetails.updateMobileNumber(cust,key);
+	}
+	
+	
+//	@Produces(MediaType.TEXT_PLAIN)
+	
 	
 }

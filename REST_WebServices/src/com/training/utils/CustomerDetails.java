@@ -33,4 +33,17 @@ public class CustomerDetails {
 		}
 		return message;
 		}
+	
+	public static String removeCustomer(long key){
+		Customer cust=custList.remove(key);
+		return cust.getCustomerName();
+	}
+	
+	public static String updateMobileNumber(Customer cust,long key){
+		Customer foundCustomer=custList.get(key);
+		//cust.setMobileNumber(mobileNumber);
+		foundCustomer=cust;
+		custList.put(key, foundCustomer);
+		return "No changed to "+cust.getMobileNumber();
+	}
 }
