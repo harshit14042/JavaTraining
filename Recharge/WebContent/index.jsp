@@ -44,27 +44,27 @@ border: 1px solid black;
 }
 </style>
 <body>
-<%!String mobileNumber;Integer plan=1; %>
+<%!String mobileNumber="";Integer plan=1; %>
 
 <%
 	Cookie[] cks=request.getCookies();
 
 	List<Cookie> list=Arrays.asList(cks);
+	if(list.size()>1){
+		List<String> ckyName=list.stream().filter(cky -> cky.getName().equals("mobileNumber")).map(cky->cky.getValue()).collect(Collectors.toList());
 	
-	List<String> ckyName=list.stream().filter(cky -> cky.getName().equals("mobileNumber")).map(cky->cky.getValue()).collect(Collectors.toList());
-
-	if(ckyName.size()>0){
-		mobileNumber=ckyName.get(0);
+		if(ckyName.size()>0){
+			mobileNumber=ckyName.get(0);
+		}
+		else{
+			mobileNumber="";
+		}
+		
+		ckyName=list.stream().filter(cky -> cky.getName().equals("plan")).map(cky->cky.getValue()).collect(Collectors.toList());
+		if(ckyName.size()>0){
+			plan=Integer.parseInt(ckyName.get(0));
+		}
 	}
-	else{
-		mobileNumber="";
-	}
-	
-	ckyName=list.stream().filter(cky -> cky.getName().equals("plan")).map(cky->cky.getValue()).collect(Collectors.toList());
-	if(ckyName.size()>0){
-		plan=Integer.parseInt(ckyName.get(0));
-	}
-	out.println(plan);
 %>
 <div class="left">
 	<%@include file="planList.html" %>
@@ -83,7 +83,7 @@ border: 1px solid black;
 		<option value="5" <%if(plan==5)out.println("selected");%>>Plan 5</option>
 	</select>
 	<label for="amount">Amount</label>
-	<p id="amount">100</p>
+	<p id="amount"><%out.println(plan*100);%></p>
 	<input type="submit" value="Recharge"/>
 </div>
 </form>
