@@ -32,12 +32,12 @@ public class Customer_Resource {
 	
 	public Response getCustomerAsJSON(){
 
-		HashMap<Integer,Customer>custList=new HashMap<>();
+		/*HashMap<Integer,Customer>custList=new HashMap<>();
 		
 		custList.put(101, new Customer(101,"mia",9986756));
-		custList.put(102, new Customer(102,"lia",9986756));
+		custList.put(102, new Customer(102,"lia",9986756));*/
 		
-		return Response.status(200).entity(custList).build();
+		return Response.status(200).entity(CustomerDetails.getAllCustomer()).build();
 	
 	}	
 	@GET
@@ -76,6 +76,13 @@ public class Customer_Resource {
 		return CustomerDetails.updateMobileNumber(cust,key);
 	}
 	
+	@POST
+	@Path("addAsJson")
+	@Consumes(MediaType.APPLICATION_JSON)
+	public String addCustomer(Customer cust){
+		CustomerDetails.addCustomer(cust);
+		return cust.toString();
+	}
 	
 //	@Produces(MediaType.TEXT_PLAIN)
 	
