@@ -57,6 +57,12 @@ public class Customer_Resource {
 		return CustomerDetails.addCustomer(new Customer(customerId,customerName,mobileNumber));
 	}
 	
+	@POST
+	@Path("addCust/{custId}/{customeName}/{mobileNumber}")
+	public String addCust(@PathParam("customerId")long customerId,@PathParam("customerName")String customerName,@PathParam("mobileNumber")long mobileNumber){
+		return CustomerDetails.addCustomer(new Customer(customerId,customerName,mobileNumber));
+	}
+	
 	@DELETE
 	@Path("remove")
 	public String removeCustomer(@QueryParam("custId")long key){
