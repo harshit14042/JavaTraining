@@ -4244,3 +4244,81 @@ java.lang.UnsupportedOperationException
 				[Working copy] Teacher.java[*]: {CHILDREN | FINE GRAINED | PRIMARY RESOURCE}
 					Teacher[*]: {ANNOTATIONS}
 						@Component[-]: {}]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2018-10-11 15:30:37.595
+!MESSAGE changeEvent = org.eclipse.jdt.core.ElementChangedEvent[source=Java Model[*]: {CHILDREN}
+	SprinIoC[*]: {CHILDREN}
+		src[*]: {CHILDREN}
+			com.training.beans[*]: {CHILDREN}
+				[Working copy] Teacher.java[*]: {CHILDREN | FINE GRAINED | PRIMARY RESOURCE}
+					Teacher[*]: {ANNOTATIONS}
+						@Component[+]: {}]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2018-10-11 15:30:52.419
+!MESSAGE changeEvent = org.eclipse.jdt.core.ElementChangedEvent[source=Java Model[*]: {CHILDREN}
+	SprinIoC[*]: {CHILDREN}
+		src[*]: {CHILDREN}
+			com.training.apps[*]: {CHILDREN}
+				[Working copy] JavaConfigApplication.java[*]: {CONTENT | FINE GRAINED | PRIMARY RESOURCE}]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2018-10-11 15:31:12.227
+!MESSAGE changeEvent = org.eclipse.jdt.core.ElementChangedEvent[source=Java Model[*]: {CHILDREN}
+	SprinIoC[*]: {CHILDREN}
+		src[*]: {CHILDREN}
+			com.training.apps[*]: {CHILDREN}
+				[Working copy] JavaConfigApplication.java[*]: {CONTENT | FINE GRAINED | PRIMARY RESOURCE}]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2018-10-11 15:31:13.143
+!MESSAGE changeEvent = org.eclipse.jdt.core.ElementChangedEvent[source=Java Model[*]: {CHILDREN}
+	SprinIoC[*]: {CHILDREN}
+		src[*]: {CHILDREN}
+			com.training.apps[*]: {CHILDREN}
+				[Working copy] JavaConfigApplication.java[*]: {CONTENT | FINE GRAINED | PRIMARY RESOURCE}]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2018-10-11 15:35:01.550
+!MESSAGE changeEvent = org.eclipse.jdt.core.ElementChangedEvent[source=Java Model[*]: {CHILDREN}
+	SprinIoC[*]: {CHILDREN}
+		src[*]: {CHILDREN}
+			com.training.apps[*]: {CHILDREN}
+				[Working copy] QuickStartApplication.java[*]: {CONTENT | FINE GRAINED | PRIMARY RESOURCE}]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2018-10-11 15:35:38.689
+!MESSAGE changeEvent = org.eclipse.jdt.core.ElementChangedEvent[source=Java Model[*]: {CHILDREN}
+	SprinIoC[*]: {CHILDREN}
+		src[*]: {CHILDREN}
+			com.training.apps[*]: {CHILDREN}
+				[Working copy] QuickStartApplication.java[*]: {CHILDREN | FINE GRAINED | PRIMARY RESOURCE}
+					<import container>[*]: {CHILDREN | FINE GRAINED}
+						import org.springframework.context.annotation.AnnotationConfigApplicationContext[-]: {}]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2018-10-11 15:38:30.888
+!MESSAGE changeEvent = org.eclipse.jdt.core.ElementChangedEvent[source=Java Model[*]: {CHILDREN}
+	SprinIoC[*]: {CHILDREN}
+		src[*]: {CHILDREN}
+			com.training.beans[*]: {CHILDREN}
+				[Working copy] AppContext.java[*]: {PRIMARY RESOURCE}]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2018-10-11 15:43:28.575
+!MESSAGE changeEvent = org.eclipse.jdt.core.ElementChangedEvent[source=Java Model[*]: {CHILDREN}
+	SprinIoC[*]: {CHILDREN}
+		src[*]: {CHILDREN}
+			com.training.beans[*]: {CHILDREN}
+				[Working copy] AppContext.java[*]: {PRIMARY RESOURCE}]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2018-10-11 15:47:47.258
+!MESSAGE changeEvent = org.eclipse.jdt.core.ElementChangedEvent[source=Java Model[*]: {CHILDREN}
+	SprinIoC[*]: {CHILDREN}
+		src[*]: {CONTENT}
+			ResourceDelta(/SprinIoC/src/context.xml)[*]]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2018-10-11 15:48:05.797
+!MESSAGE changeEvent = org.eclipse.jdt.core.ElementChangedEvent[source=Java Model[*]: {CHILDREN}
+	SprinIoC[*]: {CHILDREN}
+		src[*]: {CONTENT}
+			ResourceDelta(/SprinIoC/src/context.xml)[*]]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2018-10-11 15:48:10.853
+!MESSAGE changeEvent = org.eclipse.jdt.core.ElementChangedEvent[source=Java Model[*]: {CHILDREN}
+	SprinIoC[*]: {CHILDREN}
+		src[*]: {CONTENT}
+			ResourceDelta(/SprinIoC/src/context.xml)[*]]

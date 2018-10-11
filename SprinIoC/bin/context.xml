@@ -32,7 +32,7 @@
 -->
 
 
-<context:annotation-config>
+<context:annotation-config/>
 	<context:component-scan base-package="com.training.beans"></context:component-scan>
-</context:annotation-config>
+
 </beans>

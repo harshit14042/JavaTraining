@@ -12,7 +12,10 @@ public class JavaConfigApplication {
 		// TODO Auto-generated method stub
 		try {
 			BeanFactory ctx=new AnnotationConfigApplicationContext(AppContext.class);
-			Teacher teacher=ctx.getBean(Teacher.class);
+			Teacher teacher=ctx.getBean("teacher",Teacher.class);
+			System.out.println(teacher);
+			
+			teacher=ctx.getBean("getTeacher",Teacher.class);
 			System.out.println(teacher);
 		} catch (Exception e) {
 			// TODO: handle exception
