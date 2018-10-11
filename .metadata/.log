@@ -6296,3 +6296,96 @@ java.lang.UnsupportedOperationException
 	at org.eclipse.core.internal.events.AutoBuildJob.doBuild(AutoBuildJob.java:145)
 	at org.eclipse.core.internal.events.AutoBuildJob.run(AutoBuildJob.java:235)
 	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.eclipse.jface.text 2 0 2018-10-11 17:30:52.900
+!MESSAGE Duplicate template id: 'org.eclipse.wst.xslt.templates.xpath.boolean'
+
+!ENTRY org.eclipse.jface.text 2 0 2018-10-11 17:30:52.925
+!MESSAGE Duplicate template id: 'org.eclipse.wst.xslt.templates.xpath.boolean'
+
+!ENTRY org.springframework.ide.eclipse.beans.core 2 0 2018-10-11 17:32:50.127
+!MESSAGE Error during AST class visiting
+!STACK 0
+java.io.FileNotFoundException: class path resource [com/training/controllers/WelcomeController.class] cannot be opened because it does not exist
+	at org.springframework.core.io.ClassPathResource.getInputStream(ClassPathResource.java:172)
+	at org.springframework.ide.eclipse.core.type.asm.SimpleClassReaderFactory.getClassReader(SimpleClassReaderFactory.java:67)
+	at org.springframework.ide.eclipse.core.type.asm.CachingClassReaderFactory.getClassReader(CachingClassReaderFactory.java:61)
+	at org.springframework.ide.eclipse.core.type.asm.SimpleClassReaderFactory.getClassReader(SimpleClassReaderFactory.java:63)
+	at org.springframework.ide.eclipse.beans.core.metadata.model.AbstractAnnotationReadingMetadataProvider.runAnnotationMetadataVisitor(AbstractAnnotationReadingMetadataProvider.java:135)
+	at org.springframework.ide.eclipse.beans.core.metadata.model.AbstractAnnotationReadingMetadataProvider.getAnnotationMetadata(AbstractAnnotationReadingMetadataProvider.java:117)
+	at org.springframework.ide.eclipse.beans.core.metadata.model.AbstractAnnotationReadingMetadataProvider.provideBeanMetadata(AbstractAnnotationReadingMetadataProvider.java:71)
+	at org.springframework.ide.eclipse.beans.core.metadata.internal.model.BeanMetadataBuilderJob$1.run(BeanMetadataBuilderJob.java:198)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.springframework.ide.eclipse.beans.core.metadata.internal.model.BeanMetadataBuilderJob.attachMetadataToBean(BeanMetadataBuilderJob.java:191)
+	at org.springframework.ide.eclipse.beans.core.metadata.internal.model.BeanMetadataBuilderJob.attachMetadata(BeanMetadataBuilderJob.java:170)
+	at org.springframework.ide.eclipse.beans.core.metadata.internal.model.BeanMetadataBuilderJob.run(BeanMetadataBuilderJob.java:141)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.eclipse.recommenders.types.rcp 1 4 2018-10-11 17:33:10.937
+!MESSAGE Full project indexing required:
+  [+] C:\Apache Software Foundation\Tomcat 9.0\lib\annotations-api.jar
+  [+] C:\Apache Software Foundation\Tomcat 9.0\lib\catalina-ant.jar
+  [+] C:\Apache Software Foundation\Tomcat 9.0\lib\catalina-ha.jar
+  [+] C:\Apache Software Foundation\Tomcat 9.0\lib\catalina-storeconfig.jar
+  [+] C:\Apache Software Foundation\Tomcat 9.0\lib\catalina-tribes.jar
+  [+] C:\Apache Software Foundation\Tomcat 9.0\lib\catalina.jar
+  [+] C:\Apache Software Foundation\Tomcat 9.0\lib\ecj-4.7.3a.jar
+  [+] C:\Apache Software Foundation\Tomcat 9.0\lib\el-api.jar
+  [+] C:\Apache Software Foundation\Tomcat 9.0\lib\jasper-el.jar
+  [+] C:\Apache Software Foundation\Tomcat 9.0\lib\jasper.jar
+  [+] C:\Apache Software Foundation\Tomcat 9.0\lib\jaspic-api.jar
+  [+] C:\Apache Software Foundation\Tomcat 9.0\lib\jsp-api.jar
+  [+] C:\Apache Software Foundation\Tomcat 9.0\lib\jstl-1.2.jar
+  [+] C:\Apache Software Foundation\Tomcat 9.0\lib\ojdbc8.jar
+  [+] C:\Apache Software Foundation\Tomcat 9.0\lib\servlet-api.jar
+  [+] C:\Apache Software Foundation\Tomcat 9.0\lib\standard-1.1.2.jar
+  [+] C:\Apache Software Foundation\Tomcat 9.0\lib\tomcat-api.jar
+  [+] C:\Apache Software Foundation\Tomcat 9.0\lib\tomcat-coyote.jar
+  [+] C:\Apache Software Foundation\Tomcat 9.0\lib\tomcat-dbcp.jar
+  [+] C:\Apache Software Foundation\Tomcat 9.0\lib\tomcat-i18n-es.jar
+  [+] C:\Apache Software Foundation\Tomcat 9.0\lib\tomcat-i18n-fr.jar
+  [+] C:\Apache Software Foundation\Tomcat 9.0\lib\tomcat-i18n-ja.jar
+  [+] C:\Apache Software Foundation\Tomcat 9.0\lib\tomcat-jdbc.jar
+  [+] C:\Apache Software Foundation\Tomcat 9.0\lib\tomcat-jni.jar
+  [+] C:\Apache Software Foundation\Tomcat 9.0\lib\tomcat-util-scan.jar
+  [+] C:\Apache Software Foundation\Tomcat 9.0\lib\tomcat-util.jar
+  [+] C:\Apache Software Foundation\Tomcat 9.0\lib\tomcat-websocket.jar
+  [+] C:\Apache Software Foundation\Tomcat 9.0\lib\websocket-api.jar
+  [+] C:\Program Files\Java\jre1.8.0_151\lib\charsets.jar
+  [+] C:\Program Files\Java\jre1.8.0_151\lib\ext\access-bridge-64.jar
+  [+] C:\Program Files\Java\jre1.8.0_151\lib\ext\cldrdata.jar
+  [+] C:\Program Files\Java\jre1.8.0_151\lib\ext\dnsns.jar
+  [+] C:\Program Files\Java\jre1.8.0_151\lib\ext\jaccess.jar
+  [+] C:\Program Files\Java\jre1.8.0_151\lib\ext\jfxrt.jar
+  [+] C:\Program Files\Java\jre1.8.0_151\lib\ext\localedata.jar
+  [+] C:\Program Files\Java\jre1.8.0_151\lib\ext\nashorn.jar
+  [+] C:\Program Files\Java\jre1.8.0_151\lib\ext\sunec.jar
+  [+] C:\Program Files\Java\jre1.8.0_151\lib\ext\sunjce_provider.jar
+  [+] C:\Program Files\Java\jre1.8.0_151\lib\ext\sunmscapi.jar
+  [+] C:\Program Files\Java\jre1.8.0_151\lib\ext\sunpkcs11.jar
+  [+] C:\Program Files\Java\jre1.8.0_151\lib\ext\zipfs.jar
+  [+] C:\Program Files\Java\jre1.8.0_151\lib\jce.jar
+  [+] C:\Program Files\Java\jre1.8.0_151\lib\jfr.jar
+  [+] C:\Program Files\Java\jre1.8.0_151\lib\jsse.jar
+  [+] C:\Program Files\Java\jre1.8.0_151\lib\resources.jar
+  [+] C:\Program Files\Java\jre1.8.0_151\lib\rt.jar
+  [+] C:\Users\AC31841\Downloads\commons-logging-1.2.jar
+  [+] C:\Users\AC31841\Downloads\spring-framework-4.2.5.RELEASE-dist\spring-framework-4.2.5.RELEASE\libs\spring-aop-4.2.5.RELEASE.jar
+  [+] C:\Users\AC31841\Downloads\spring-framework-4.2.5.RELEASE-dist\spring-framework-4.2.5.RELEASE\libs\spring-aspects-4.2.5.RELEASE.jar
+  [+] C:\Users\AC31841\Downloads\spring-framework-4.2.5.RELEASE-dist\spring-framework-4.2.5.RELEASE\libs\spring-beans-4.2.5.RELEASE.jar
+  [+] C:\Users\AC31841\Downloads\spring-framework-4.2.5.RELEASE-dist\spring-framework-4.2.5.RELEASE\libs\spring-context-4.2.5.RELEASE.jar
+  [+] C:\Users\AC31841\Downloads\spring-framework-4.2.5.RELEASE-dist\spring-framework-4.2.5.RELEASE\libs\spring-context-support-4.2.5.RELEASE.jar
+  [+] C:\Users\AC31841\Downloads\spring-framework-4.2.5.RELEASE-dist\spring-framework-4.2.5.RELEASE\libs\spring-core-4.2.5.RELEASE.jar
+  [+] C:\Users\AC31841\Downloads\spring-framework-4.2.5.RELEASE-dist\spring-framework-4.2.5.RELEASE\libs\spring-expression-4.2.5.RELEASE.jar
+  [+] C:\Users\AC31841\Downloads\spring-framework-4.2.5.RELEASE-dist\spring-framework-4.2.5.RELEASE\libs\spring-web-4.2.5.RELEASE.jar
+  [+] C:\Users\AC31841\Downloads\spring-framework-4.2.5.RELEASE-dist\spring-framework-4.2.5.RELEASE\libs\spring-webmvc-4.2.5.RELEASE.jar
+
+!STACK 0
+org.eclipse.recommenders.utils.Logs$LogTraceException
+	at org.eclipse.recommenders.utils.Logs$LogTraceException.newTrace(Logs.java:381)
+	at org.eclipse.recommenders.utils.Logs.log(Logs.java:134)
+	at org.eclipse.recommenders.internal.types.rcp.ProjectTypesIndex.needsRebuild(ProjectTypesIndex.java:169)
+	at org.eclipse.recommenders.internal.types.rcp.ProjectTypesIndex.startUp(ProjectTypesIndex.java:122)
+	at com.google.common.util.concurrent.AbstractIdleService$2$1.run(AbstractIdleService.java:54)
+	at com.google.common.util.concurrent.Callables$3.run(Callables.java:93)
+	at java.lang.Thread.run(Unknown Source)
