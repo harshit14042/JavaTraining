@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+<script type="text/javascript" src="jquery1-7-2.js"></script>
+<script>
+	$('#btn').on('click',function(){
+		$.ajax({
+			url="http://localhost:8080/spice"
+		});
+	});
+</script>
+</head>
+<body>
+<select id="src" name="src">
+	<option value="Delhi">Delhi</option>
+	<option value="Pune">Pune</option>
+	<option value="Bangalore">Bangalore</option>
+</select>
+<select id="dest" name="dest">
+	<option value="Delhi">Delhi</option>
+	<option value="Pune">Pune</option>
+	<option value="Bangalore">Bangalore</option>
+</select>
+<input type="button" id='btn' value="Submit"/>
+<div id="details">
+</div>
+</body>
+</html>
