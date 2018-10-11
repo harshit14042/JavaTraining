@@ -1,7 +1,13 @@
 package com.training.beans;
 
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Value;
+import org.springframework.stereotype.Component;
+
+@Component("teacher")
 public class Teacher {
 
+	@Value("Valverde")
 	private String teacherName;
 	public Teacher() {
 		super();
@@ -28,6 +34,8 @@ public class Teacher {
 	public void setStudent(Student student) {
 		this.student = student;
 	}
+	
+	@Autowired
 	private Student student;
 	
 }

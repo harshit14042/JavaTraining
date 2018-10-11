@@ -1,7 +1,12 @@
 package com.training.beans;
 
+import org.springframework.beans.factory.annotation.Value;
+import org.springframework.stereotype.Component;
+
+@Component("student")
 public class Student {
 
+	@Value("Toni")
 	private String studentName;
 
 	public String getStudentName() {
