@@ -17,4 +17,9 @@ public class WelcomeController {
 		return mdlView;
 	}
 	
+	@RequestMapping("/details")
+	public ModelAndView details() {
+		mdlView.setViewName("details");
+		return mdlView;
+	}
 }

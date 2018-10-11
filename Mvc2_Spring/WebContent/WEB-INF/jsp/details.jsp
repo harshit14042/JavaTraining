@@ -7,7 +7,6 @@
 <title>Insert title here</title>
 </head>
 <body>
-	<h1>${heading }</h1>
-	<a href="details">Details</a>
+Details
 </body>
 </html>
