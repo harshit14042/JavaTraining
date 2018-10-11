@@ -3903,3 +3903,344 @@ org.eclipse.recommenders.utils.Logs$LogTraceException
 
 !ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2018-10-11 15:12:55.290
 !MESSAGE executing callback sts4.classpath.VhNiKCld SUCCESS [done]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2018-10-11 15:14:25.540
+!MESSAGE changeEvent = org.eclipse.jdt.core.ElementChangedEvent[source=Java Model[*]: {CHILDREN}
+	SprinIoC[*]: {CHILDREN}
+		src[*]: {CONTENT}
+			ResourceDelta(/SprinIoC/src/context.xml)[*]]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2018-10-11 15:14:31.557
+!MESSAGE changeEvent = org.eclipse.jdt.core.ElementChangedEvent[source=Java Model[*]: {CHILDREN}
+	SprinIoC[*]: {CHILDREN}
+		src[*]: {CONTENT}
+			ResourceDelta(/SprinIoC/src/context.xml)[*]]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2018-10-11 15:15:54.037
+!MESSAGE changeEvent = org.eclipse.jdt.core.ElementChangedEvent[source=Java Model[*]: {CHILDREN}
+	SprinIoC[*]: {CHILDREN}
+		src[*]: {CHILDREN}
+			com.training.apps[*]: {CHILDREN}
+				[Working copy] QuickStartApplication.java[*]: {PRIMARY RESOURCE}]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2018-10-11 15:17:09.774
+!MESSAGE changeEvent = org.eclipse.jdt.core.ElementChangedEvent[source=Java Model[*]: {CHILDREN}
+	BloodDonor[*]: {CONTENT}
+		ResourceDelta(/BloodDonor/build)[*]
+	FirstMaven[*]: {CONTENT}
+		ResourceDelta(/FirstMaven/src)[*]
+		ResourceDelta(/FirstMaven/target)[*]]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2018-10-11 15:17:12.388
+!MESSAGE changeEvent = org.eclipse.jdt.core.ElementChangedEvent[source=Java Model[*]: {CHILDREN}
+	JAX_WS_MT[*]: {CONTENT}
+		ResourceDelta(/JAX_WS_MT/build)[*]]
+
+!ENTRY org.eclipse.core.resources 4 2 2018-10-11 15:17:12.639
+!MESSAGE Problems occurred when invoking code from plug-in: "org.eclipse.core.resources".
+!STACK 0
+java.lang.UnsupportedOperationException
+	at com.sun.nio.zipfs.ZipFileSystemProvider.newFileSystem(ZipFileSystemProvider.java:123)
+	at java.nio.file.FileSystems.newFileSystem(Unknown Source)
+	at java.nio.file.FileSystems.newFileSystem(Unknown Source)
+	at org.eclipse.jdt.internal.core.builder.ClasspathMultiReleaseJar.initializeVersions(ClasspathMultiReleaseJar.java:118)
+	at org.eclipse.jdt.internal.core.builder.ClasspathMultiReleaseJar.<init>(ClasspathMultiReleaseJar.java:45)
+	at org.eclipse.jdt.internal.core.builder.ClasspathLocation.forLibrary(ClasspathLocation.java:156)
+	at org.eclipse.jdt.internal.core.builder.NameEnvironment.computeClasspathLocations(NameEnvironment.java:274)
+	at org.eclipse.jdt.internal.core.builder.NameEnvironment.<init>(NameEnvironment.java:62)
+	at org.eclipse.jdt.internal.core.builder.JavaBuilder.initializeBuilder(JavaBuilder.java:623)
+	at org.eclipse.jdt.internal.core.builder.JavaBuilder.clean(JavaBuilder.java:301)
+	at org.eclipse.core.internal.events.BuildManager$2.run(BuildManager.java:800)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:219)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:262)
+	at org.eclipse.core.internal.events.BuildManager$1.run(BuildManager.java:315)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:318)
+	at org.eclipse.core.internal.events.BuildManager.basicBuildLoop(BuildManager.java:370)
+	at org.eclipse.core.internal.events.BuildManager.build(BuildManager.java:391)
+	at org.eclipse.core.internal.resources.Workspace.buildInternal(Workspace.java:504)
+	at org.eclipse.core.internal.resources.Workspace.build(Workspace.java:404)
+	at org.eclipse.ui.internal.ide.dialogs.CleanDialog.doClean(CleanDialog.java:455)
+	at org.eclipse.ui.internal.ide.dialogs.CleanDialog$1.runInWorkspace(CleanDialog.java:207)
+	at org.eclipse.core.internal.resources.InternalWorkspaceJob.run(InternalWorkspaceJob.java:42)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2018-10-11 15:17:13.022
+!MESSAGE changeEvent = org.eclipse.jdt.core.ElementChangedEvent[source=Java Model[*]: {CHILDREN}
+	REST_WebServices[*]: {CONTENT}
+		ResourceDelta(/REST_WebServices/build)[*]
+	SecondProject[*]: {CONTENT}
+		ResourceDelta(/SecondProject/src)[*]
+		ResourceDelta(/SecondProject/target)[*]]
+
+!ENTRY org.eclipse.core.resources 4 75 2018-10-11 15:17:13.040
+!MESSAGE Errors occurred during the build.
+!SUBENTRY 1 org.eclipse.jdt.core 4 75 2018-10-11 15:17:13.040
+!MESSAGE Errors running builder 'Java Builder' on project 'REST_Client'.
+!STACK 0
+java.lang.UnsupportedOperationException
+	at com.sun.nio.zipfs.ZipFileSystemProvider.newFileSystem(ZipFileSystemProvider.java:123)
+	at java.nio.file.FileSystems.newFileSystem(Unknown Source)
+	at java.nio.file.FileSystems.newFileSystem(Unknown Source)
+	at org.eclipse.jdt.internal.core.builder.ClasspathMultiReleaseJar.initializeVersions(ClasspathMultiReleaseJar.java:118)
+	at org.eclipse.jdt.internal.core.builder.ClasspathMultiReleaseJar.<init>(ClasspathMultiReleaseJar.java:45)
+	at org.eclipse.jdt.internal.core.builder.ClasspathLocation.forLibrary(ClasspathLocation.java:156)
+	at org.eclipse.jdt.internal.core.builder.NameEnvironment.computeClasspathLocations(NameEnvironment.java:274)
+	at org.eclipse.jdt.internal.core.builder.NameEnvironment.<init>(NameEnvironment.java:62)
+	at org.eclipse.jdt.internal.core.builder.JavaBuilder.initializeBuilder(JavaBuilder.java:623)
+	at org.eclipse.jdt.internal.core.builder.JavaBuilder.clean(JavaBuilder.java:301)
+	at org.eclipse.core.internal.events.BuildManager$2.run(BuildManager.java:800)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:219)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:262)
+	at org.eclipse.core.internal.events.BuildManager$1.run(BuildManager.java:315)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:318)
+	at org.eclipse.core.internal.events.BuildManager.basicBuildLoop(BuildManager.java:370)
+	at org.eclipse.core.internal.events.BuildManager.build(BuildManager.java:391)
+	at org.eclipse.core.internal.resources.Workspace.buildInternal(Workspace.java:504)
+	at org.eclipse.core.internal.resources.Workspace.build(Workspace.java:404)
+	at org.eclipse.ui.internal.ide.dialogs.CleanDialog.doClean(CleanDialog.java:455)
+	at org.eclipse.ui.internal.ide.dialogs.CleanDialog$1.runInWorkspace(CleanDialog.java:207)
+	at org.eclipse.core.internal.resources.InternalWorkspaceJob.run(InternalWorkspaceJob.java:42)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2018-10-11 15:17:18.878
+!MESSAGE changeEvent = org.eclipse.jdt.core.ElementChangedEvent[source=Java Model[*]: {CHILDREN}
+	BloodDonor[*]: {CONTENT}
+		ResourceDelta(/BloodDonor/WebContent)[*]
+		ResourceDelta(/BloodDonor/build)[*]
+	FirstMaven[*]: {CONTENT}
+		ResourceDelta(/FirstMaven/src)[*]
+		ResourceDelta(/FirstMaven/target)[*]]
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2018-10-11 15:17:19.376
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2018-10-11 15:17:19.406
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2018-10-11 15:17:20.963
+!MESSAGE changeEvent = org.eclipse.jdt.core.ElementChangedEvent[source=Java Model[*]: {CHILDREN}
+	JAX_WS_MT[*]: {CONTENT}
+		ResourceDelta(/JAX_WS_MT/build)[*]]
+
+!ENTRY org.eclipse.core.resources 4 2 2018-10-11 15:17:22.048
+!MESSAGE Problems occurred when invoking code from plug-in: "org.eclipse.core.resources".
+!STACK 0
+java.lang.UnsupportedOperationException
+	at com.sun.nio.zipfs.ZipFileSystemProvider.newFileSystem(ZipFileSystemProvider.java:123)
+	at java.nio.file.FileSystems.newFileSystem(Unknown Source)
+	at java.nio.file.FileSystems.newFileSystem(Unknown Source)
+	at org.eclipse.jdt.internal.core.builder.ClasspathMultiReleaseJar.initializeVersions(ClasspathMultiReleaseJar.java:118)
+	at org.eclipse.jdt.internal.core.builder.ClasspathMultiReleaseJar.<init>(ClasspathMultiReleaseJar.java:45)
+	at org.eclipse.jdt.internal.core.builder.ClasspathLocation.forLibrary(ClasspathLocation.java:156)
+	at org.eclipse.jdt.internal.core.builder.NameEnvironment.computeClasspathLocations(NameEnvironment.java:274)
+	at org.eclipse.jdt.internal.core.builder.NameEnvironment.<init>(NameEnvironment.java:62)
+	at org.eclipse.jdt.internal.core.builder.JavaBuilder.initializeBuilder(JavaBuilder.java:623)
+	at org.eclipse.jdt.internal.core.builder.JavaBuilder.build(JavaBuilder.java:174)
+	at org.eclipse.core.internal.events.BuildManager$2.run(BuildManager.java:798)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:219)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:262)
+	at org.eclipse.core.internal.events.BuildManager$1.run(BuildManager.java:315)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:318)
+	at org.eclipse.core.internal.events.BuildManager.basicBuildLoop(BuildManager.java:370)
+	at org.eclipse.core.internal.events.BuildManager.build(BuildManager.java:391)
+	at org.eclipse.core.internal.events.AutoBuildJob.doBuild(AutoBuildJob.java:145)
+	at org.eclipse.core.internal.events.AutoBuildJob.run(AutoBuildJob.java:235)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2018-10-11 15:17:22.586
+!MESSAGE changeEvent = org.eclipse.jdt.core.ElementChangedEvent[source=Java Model[*]: {CHILDREN}
+	REST_WebServices[*]: {CONTENT}
+		ResourceDelta(/REST_WebServices/build)[*]]
+
+!ENTRY org.eclipse.core.resources 4 75 2018-10-11 15:17:23.686
+!MESSAGE Errors occurred during the build.
+!SUBENTRY 1 org.eclipse.jdt.core 4 75 2018-10-11 15:17:23.686
+!MESSAGE Errors running builder 'Java Builder' on project 'REST_Client'.
+!STACK 0
+java.lang.UnsupportedOperationException
+	at com.sun.nio.zipfs.ZipFileSystemProvider.newFileSystem(ZipFileSystemProvider.java:123)
+	at java.nio.file.FileSystems.newFileSystem(Unknown Source)
+	at java.nio.file.FileSystems.newFileSystem(Unknown Source)
+	at org.eclipse.jdt.internal.core.builder.ClasspathMultiReleaseJar.initializeVersions(ClasspathMultiReleaseJar.java:118)
+	at org.eclipse.jdt.internal.core.builder.ClasspathMultiReleaseJar.<init>(ClasspathMultiReleaseJar.java:45)
+	at org.eclipse.jdt.internal.core.builder.ClasspathLocation.forLibrary(ClasspathLocation.java:156)
+	at org.eclipse.jdt.internal.core.builder.NameEnvironment.computeClasspathLocations(NameEnvironment.java:274)
+	at org.eclipse.jdt.internal.core.builder.NameEnvironment.<init>(NameEnvironment.java:62)
+	at org.eclipse.jdt.internal.core.builder.JavaBuilder.initializeBuilder(JavaBuilder.java:623)
+	at org.eclipse.jdt.internal.core.builder.JavaBuilder.build(JavaBuilder.java:174)
+	at org.eclipse.core.internal.events.BuildManager$2.run(BuildManager.java:798)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:219)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:262)
+	at org.eclipse.core.internal.events.BuildManager$1.run(BuildManager.java:315)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:318)
+	at org.eclipse.core.internal.events.BuildManager.basicBuildLoop(BuildManager.java:370)
+	at org.eclipse.core.internal.events.BuildManager.build(BuildManager.java:391)
+	at org.eclipse.core.internal.events.AutoBuildJob.doBuild(AutoBuildJob.java:145)
+	at org.eclipse.core.internal.events.AutoBuildJob.run(AutoBuildJob.java:235)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2018-10-11 15:17:24.144
+!MESSAGE changeEvent = org.eclipse.jdt.core.ElementChangedEvent[source=Java Model[*]: {CHILDREN}
+	REST_Client[*]: {CONTENT}
+		ResourceDelta(/REST_Client/.project)[*]
+	Recharge[*]: {CONTENT}
+		ResourceDelta(/Recharge/.project)[*]
+	SecondProject[*]: {CONTENT}
+		ResourceDelta(/SecondProject/src)[*]
+		ResourceDelta(/SecondProject/target)[*]]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2018-10-11 15:18:59.711
+!MESSAGE changeEvent = org.eclipse.jdt.core.ElementChangedEvent[source=Java Model[*]: {CHILDREN}
+	SprinIoC[*]: {CHILDREN}
+		src[*]: {CHILDREN}
+			com.training.beans[*]: {CHILDREN}
+				[Working copy] AppContext.java[*]: {PRIMARY WORKING COPY}]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2018-10-11 15:19:01.216
+!MESSAGE changeEvent = org.eclipse.jdt.core.ElementChangedEvent[source=Java Model[*]: {CHILDREN}
+	SprinIoC[*]: {CHILDREN}
+		src[*]: {CHILDREN}
+			com.training.beans[*]: {CHILDREN}
+				[Working copy] AppContext.java[*]: {PRIMARY RESOURCE}]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2018-10-11 15:19:52.999
+!MESSAGE changeEvent = org.eclipse.jdt.core.ElementChangedEvent[source=Java Model[*]: {CHILDREN}
+	SprinIoC[*]: {CHILDREN}
+		src[*]: {CHILDREN}
+			com.training.apps[*]: {CHILDREN}
+				[Working copy] JavaConfigApplication.java[*]: {PRIMARY WORKING COPY}]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2018-10-11 15:19:54.504
+!MESSAGE changeEvent = org.eclipse.jdt.core.ElementChangedEvent[source=Java Model[*]: {CHILDREN}
+	SprinIoC[*]: {CHILDREN}
+		src[*]: {CHILDREN}
+			com.training.apps[*]: {CHILDREN}
+				[Working copy] JavaConfigApplication.java[*]: {PRIMARY RESOURCE}]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2018-10-11 15:19:58.587
+!MESSAGE changeEvent = org.eclipse.jdt.core.ElementChangedEvent[source=Java Model[*]: {CHILDREN}
+	SprinIoC[*]: {CHILDREN}
+		src[*]: {CHILDREN}
+			com.training.apps[*]: {CHILDREN}
+				[Working copy] JavaConfigApplication.java[*]: {PRIMARY RESOURCE}]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2018-10-11 15:20:06.235
+!MESSAGE changeEvent = org.eclipse.jdt.core.ElementChangedEvent[source=Java Model[*]: {CHILDREN}
+	SprinIoC[*]: {CHILDREN}
+		src[*]: {CHILDREN}
+			com.training.apps[*]: {CHILDREN}
+				[Working copy] JavaConfigApplication.java[*]: {PRIMARY RESOURCE}]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2018-10-11 15:20:39.918
+!MESSAGE changeEvent = org.eclipse.jdt.core.ElementChangedEvent[source=Java Model[*]: {CHILDREN}
+	SprinIoC[*]: {CHILDREN}
+		src[*]: {CHILDREN}
+			com.training.apps[*]: {CHILDREN}
+				[Working copy] JavaConfigApplication.java[*]: {CONTENT | FINE GRAINED | PRIMARY RESOURCE}]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2018-10-11 15:20:39.933
+!MESSAGE changeEvent = org.eclipse.jdt.core.ElementChangedEvent[source=Java Model[*]: {CHILDREN}
+	SprinIoC[*]: {CHILDREN}
+		src[*]: {CHILDREN}
+			com.training.beans[*]: {CHILDREN}
+				[Working copy] AppContext.java[*]: {PRIMARY RESOURCE}]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2018-10-11 15:21:21.084
+!MESSAGE changeEvent = org.eclipse.jdt.core.ElementChangedEvent[source=Java Model[*]: {CHILDREN}
+	SprinIoC[*]: {CHILDREN}
+		src[*]: {CHILDREN}
+			com.training.apps[*]: {CHILDREN}
+				[Working copy] JavaConfigApplication.java[*]: {CONTENT | FINE GRAINED | PRIMARY RESOURCE}]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2018-10-11 15:21:27.553
+!MESSAGE changeEvent = org.eclipse.jdt.core.ElementChangedEvent[source=Java Model[*]: {CHILDREN}
+	SprinIoC[*]: {CHILDREN}
+		src[*]: {CHILDREN}
+			com.training.apps[*]: {CHILDREN}
+				[Working copy] JavaConfigApplication.java[*]: {CHILDREN | FINE GRAINED | PRIMARY RESOURCE}
+					<import container>[*]: {CHILDREN | FINE GRAINED}
+						import com.training.beans.AppContext[+]: {}]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2018-10-11 15:22:02.407
+!MESSAGE changeEvent = org.eclipse.jdt.core.ElementChangedEvent[source=Java Model[*]: {CHILDREN}
+	SprinIoC[*]: {CHILDREN}
+		src[*]: {CHILDREN}
+			com.training.apps[*]: {CHILDREN}
+				[Working copy] JavaConfigApplication.java[*]: {PRIMARY RESOURCE}]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2018-10-11 15:22:14.549
+!MESSAGE changeEvent = org.eclipse.jdt.core.ElementChangedEvent[source=Java Model[*]: {CHILDREN}
+	SprinIoC[*]: {CHILDREN}
+		src[*]: {CHILDREN}
+			com.training.apps[*]: {CHILDREN}
+				[Working copy] JavaConfigApplication.java[*]: {PRIMARY RESOURCE}]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2018-10-11 15:23:35.692
+!MESSAGE changeEvent = org.eclipse.jdt.core.ElementChangedEvent[source=Java Model[*]: {CHILDREN}
+	SprinIoC[*]: {CHILDREN}
+		src[*]: {CHILDREN}
+			com.training.beans[*]: {CHILDREN}
+				[Working copy] AppContext.java[*]: {PRIMARY RESOURCE}]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2018-10-11 15:23:41.995
+!MESSAGE changeEvent = org.eclipse.jdt.core.ElementChangedEvent[source=Java Model[*]: {CHILDREN}
+	SprinIoC[*]: {CHILDREN}
+		src[*]: {CHILDREN}
+			com.training.beans[*]: {CHILDREN}
+				[Working copy] AppContext.java[*]: {PRIMARY RESOURCE}]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2018-10-11 15:23:54.801
+!MESSAGE changeEvent = org.eclipse.jdt.core.ElementChangedEvent[source=Java Model[*]: {CHILDREN}
+	SprinIoC[*]: {CHILDREN}
+		src[*]: {CHILDREN}
+			com.training.beans[*]: {CHILDREN}
+				[Working copy] AppContext.java[*]: {PRIMARY RESOURCE}]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2018-10-11 15:24:12.889
+!MESSAGE changeEvent = org.eclipse.jdt.core.ElementChangedEvent[source=Java Model[*]: {CHILDREN}
+	SprinIoC[*]: {CHILDREN}
+		src[*]: {CHILDREN}
+			com.training.beans[*]: {CHILDREN}
+				[Working copy] AppContext.java[*]: {CHILDREN | FINE GRAINED | PRIMARY RESOURCE}
+					AppContext[*]: {CHILDREN | FINE GRAINED}
+						getTeacher()[+]: {}]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2018-10-11 15:24:17.334
+!MESSAGE changeEvent = org.eclipse.jdt.core.ElementChangedEvent[source=Java Model[*]: {CHILDREN}
+	SprinIoC[*]: {CHILDREN}
+		src[*]: {CHILDREN}
+			com.training.beans[*]: {CHILDREN}
+				[Working copy] AppContext.java[*]: {PRIMARY RESOURCE}]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2018-10-11 15:25:07.685
+!MESSAGE changeEvent = org.eclipse.jdt.core.ElementChangedEvent[source=Java Model[*]: {CHILDREN}
+	SprinIoC[*]: {CHILDREN}
+		src[*]: {CHILDREN}
+			com.training.beans[*]: {CHILDREN}
+				[Working copy] AppContext.java[*]: {PRIMARY RESOURCE}]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2018-10-11 15:25:34.339
+!MESSAGE changeEvent = org.eclipse.jdt.core.ElementChangedEvent[source=Java Model[*]: {CHILDREN}
+	SprinIoC[*]: {CHILDREN}
+		src[*]: {CHILDREN}
+			com.training.beans[*]: {CHILDREN}
+				[Working copy] AppContext.java[*]: {CHILDREN | FINE GRAINED | PRIMARY RESOURCE}
+					AppContext[*]: {ANNOTATIONS}
+						@ComponentScan[*]: {CONTENT}]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2018-10-11 15:26:34.947
+!MESSAGE changeEvent = org.eclipse.jdt.core.ElementChangedEvent[source=Java Model[*]: {CHILDREN}
+	SprinIoC[*]: {CHILDREN}
+		src[*]: {CHILDREN}
+			com.training.beans[*]: {CHILDREN}
+				[Working copy] Teacher.java[*]: {CHILDREN | FINE GRAINED | PRIMARY RESOURCE}
+					Teacher[*]: {ANNOTATIONS}
+						@Component[-]: {}]

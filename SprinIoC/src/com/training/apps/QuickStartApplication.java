@@ -28,8 +28,8 @@ public class QuickStartApplication {
 		Teacher teacher=fact.getBean("teacher", Teacher.class);
 		System.out.println(teacher.getTeacherName()+" "+teacher.getStudent().getStudentName());
 		
-		teacher=fact.getBean("teacherEx2", Teacher.class);
-		System.out.println(teacher.getTeacherName()+" "+teacher.getStudent().getStudentName());
+		/*teacher=fact.getBean("teacherEx2", Teacher.class);
+		System.out.println(teacher.getTeacherName()+" "+teacher.getStudent().getStudentName());*/
 	}
 
 }
