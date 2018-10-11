@@ -2687,3 +2687,959 @@ org.xml.sax.SAXParseException; lineNumber: 9; columnNumber: 1; Element type "bea
 		src[*]: {CHILDREN}
 			com.training.apps[*]: {CHILDREN}
 				[Working copy] QuickStartApplication.java[*]: {CONTENT | FINE GRAINED | PRIMARY RESOURCE}]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2018-10-11 14:03:35.173
+!MESSAGE changeEvent = org.eclipse.jdt.core.ElementChangedEvent[source=Java Model[*]: {CHILDREN}
+	SprinIoC[*]: {CHILDREN}
+		src[*]: {CHILDREN}
+			com.training.beans[*]: {CHILDREN}
+				[Working copy] Invoice.java[*]: {CHILDREN | FINE GRAINED | PRIMARY RESOURCE}
+					Invoice[*]: {CHILDREN | FINE GRAINED}
+						customer[+]: {}
+						customerName[-]: {}]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2018-10-11 14:04:14.971
+!MESSAGE changeEvent = org.eclipse.jdt.core.ElementChangedEvent[source=Java Model[*]: {CHILDREN}
+	SprinIoC[*]: {CHILDREN}
+		src[*]: {CHILDREN}
+			com.training.beans[*]: {CHILDREN}
+				Customer.java[+]: {}]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2018-10-11 14:04:15.063
+!MESSAGE changeEvent = org.eclipse.jdt.core.ElementChangedEvent[source=Java Model[*]: {CHILDREN}
+	SprinIoC[*]: {CHILDREN}
+		src[*]: {CHILDREN}
+			com.training.beans[*]: {CHILDREN}
+				[Working copy] Customer.java[*]: {PRIMARY WORKING COPY}]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2018-10-11 14:04:33.410
+!MESSAGE changeEvent = org.eclipse.jdt.core.ElementChangedEvent[source=Java Model[*]: {CHILDREN}
+	SprinIoC[*]: {CHILDREN}
+		src[*]: {CHILDREN}
+			com.training.beans[*]: {CHILDREN}
+				[Working copy] Customer.java[*]: {PRIMARY RESOURCE}]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2018-10-11 14:04:56.318
+!MESSAGE changeEvent = org.eclipse.jdt.core.ElementChangedEvent[source=Java Model[*]: {CHILDREN}
+	SprinIoC[*]: {CHILDREN}
+		src[*]: {CHILDREN}
+			com.training.beans[*]: {CHILDREN}
+				[Working copy] Invoice.java[*]: {PRIMARY RESOURCE}]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2018-10-11 14:05:03.136
+!MESSAGE changeEvent = org.eclipse.jdt.core.ElementChangedEvent[source=Java Model[*]: {CHILDREN}
+	SprinIoC[*]: {CHILDREN}
+		src[*]: {CHILDREN}
+			com.training.beans[*]: {CHILDREN}
+				[Working copy] Invoice.java[*]: {CONTENT | FINE GRAINED | PRIMARY RESOURCE}]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2018-10-11 14:05:13.740
+!MESSAGE changeEvent = org.eclipse.jdt.core.ElementChangedEvent[source=Java Model[*]: {CHILDREN}
+	SprinIoC[*]: {CHILDREN}
+		src[*]: {CHILDREN}
+			com.training.beans[*]: {CHILDREN}
+				[Working copy] Invoice.java[+]: {}]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2018-10-11 14:05:13.746
+!MESSAGE changeEvent = org.eclipse.jdt.core.ElementChangedEvent[source=Java Model[*]: {CHILDREN}
+	SprinIoC[*]: {CHILDREN}
+		src[*]: {CHILDREN}
+			com.training.beans[*]: {CHILDREN}
+				[Working copy] Invoice.java[-]: {}]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2018-10-11 14:05:17.259
+!MESSAGE changeEvent = org.eclipse.jdt.core.ElementChangedEvent[source=Java Model[*]: {CHILDREN}
+	SprinIoC[*]: {CHILDREN}
+		src[*]: {CHILDREN}
+			com.training.beans[*]: {CHILDREN}
+				[Working copy] Invoice.java[*]: {CHILDREN | FINE GRAINED | PRIMARY RESOURCE}
+					Invoice[*]: {CHILDREN | FINE GRAINED}
+						getCustomerName()[*]: {CONTENT}]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2018-10-11 14:05:21.171
+!MESSAGE changeEvent = org.eclipse.jdt.core.ElementChangedEvent[source=Java Model[*]: {CHILDREN}
+	SprinIoC[*]: {CHILDREN}
+		src[*]: {CHILDREN}
+			com.training.beans[*]: {CHILDREN}
+				[Working copy] Invoice.java[*]: {CONTENT | FINE GRAINED | PRIMARY RESOURCE}]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2018-10-11 14:05:32.290
+!MESSAGE changeEvent = org.eclipse.jdt.core.ElementChangedEvent[source=Java Model[*]: {CHILDREN}
+	SprinIoC[*]: {CHILDREN}
+		src[*]: {CHILDREN}
+			com.training.beans[*]: {CHILDREN}
+				[Working copy] Invoice.java[*]: {PRIMARY RESOURCE}]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2018-10-11 14:05:35.685
+!MESSAGE changeEvent = org.eclipse.jdt.core.ElementChangedEvent[source=Java Model[*]: {CHILDREN}
+	SprinIoC[*]: {CHILDREN}
+		src[*]: {CHILDREN}
+			com.training.beans[*]: {CHILDREN}
+				[Working copy] Invoice.java[*]: {CONTENT | FINE GRAINED | PRIMARY RESOURCE}]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2018-10-11 14:06:13.016
+!MESSAGE changeEvent = org.eclipse.jdt.core.ElementChangedEvent[source=Java Model[*]: {CHILDREN}
+	SprinIoC[*]: {CHILDREN}
+		src[*]: {CHILDREN}
+			com.training.beans[*]: {CHILDREN}
+				[Working copy] Customer.java[*]: {PRIMARY RESOURCE}]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2018-10-11 14:06:52.416
+!MESSAGE changeEvent = org.eclipse.jdt.core.ElementChangedEvent[source=Java Model[*]: {CHILDREN}
+	SprinIoC[*]: {CHILDREN}
+		src[*]: {CONTENT}
+			ResourceDelta(/SprinIoC/src/context.xml)[*]]
+
+!ENTRY org.springframework.ide.eclipse.beans.core 1 0 2018-10-11 14:06:52.554
+!MESSAGE Error occured processing '/SprinIoC/src/context.xml'
+!STACK 0
+org.xml.sax.SAXParseException; lineNumber: 10; columnNumber: 1; Element type "bean" must be followed by either attribute specifications, ">" or "/>".
+	at org.apache.xerces.parsers.DOMParser.parse(Unknown Source)
+	at org.springframework.ide.eclipse.core.io.xml.XercesDocumentLoader.loadDocument(XercesDocumentLoader.java:48)
+	at org.springframework.beans.factory.xml.XmlBeanDefinitionReader.doLoadDocument(XmlBeanDefinitionReader.java:429)
+	at org.springframework.beans.factory.xml.XmlBeanDefinitionReader.doLoadBeanDefinitions(XmlBeanDefinitionReader.java:391)
+	at org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:336)
+	at org.springframework.ide.eclipse.beans.core.internal.model.BeansConfig$2.loadBeanDefinitions(BeansConfig.java:394)
+	at org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:304)
+	at org.springframework.ide.eclipse.beans.core.internal.model.BeansConfig$3.call(BeansConfig.java:453)
+	at org.springframework.ide.eclipse.beans.core.internal.model.BeansConfig$3.call(BeansConfig.java:1)
+	at java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Unknown Source)
+	at java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2018-10-11 14:06:52.560
+!MESSAGE changeEvent = org.eclipse.jdt.core.ElementChangedEvent[source=Java Model[*]: {CHILDREN}
+	SprinIoC[*]: {CHILDREN}
+		src[*]: {CONTENT}
+			ResourceDelta(/SprinIoC/src/context.xml)[*]]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2018-10-11 14:07:10.251
+!MESSAGE changeEvent = org.eclipse.jdt.core.ElementChangedEvent[source=Java Model[*]: {CHILDREN}
+	SprinIoC[*]: {CHILDREN}
+		src[*]: {CONTENT}
+			ResourceDelta(/SprinIoC/src/context.xml)[*]]
+
+!ENTRY org.springframework.ide.eclipse.beans.core 1 0 2018-10-11 14:07:10.436
+!MESSAGE Error occured processing '/SprinIoC/src/context.xml'
+!STACK 0
+org.xml.sax.SAXParseException; lineNumber: 9; columnNumber: 54; Element or attribute do not match QName production: QName::=(NCName':')?NCName. 
+	at org.apache.xerces.parsers.DOMParser.parse(Unknown Source)
+	at org.springframework.ide.eclipse.core.io.xml.XercesDocumentLoader.loadDocument(XercesDocumentLoader.java:48)
+	at org.springframework.beans.factory.xml.XmlBeanDefinitionReader.doLoadDocument(XmlBeanDefinitionReader.java:429)
+	at org.springframework.beans.factory.xml.XmlBeanDefinitionReader.doLoadBeanDefinitions(XmlBeanDefinitionReader.java:391)
+	at org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:336)
+	at org.springframework.ide.eclipse.beans.core.internal.model.BeansConfig$2.loadBeanDefinitions(BeansConfig.java:394)
+	at org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:304)
+	at org.springframework.ide.eclipse.beans.core.internal.model.BeansConfig$3.call(BeansConfig.java:453)
+	at org.springframework.ide.eclipse.beans.core.internal.model.BeansConfig$3.call(BeansConfig.java:1)
+	at java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Unknown Source)
+	at java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2018-10-11 14:07:10.447
+!MESSAGE changeEvent = org.eclipse.jdt.core.ElementChangedEvent[source=Java Model[*]: {CHILDREN}
+	SprinIoC[*]: {CHILDREN}
+		src[*]: {CONTENT}
+			ResourceDelta(/SprinIoC/src/context.xml)[*]]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2018-10-11 14:07:46.205
+!MESSAGE changeEvent = org.eclipse.jdt.core.ElementChangedEvent[source=Java Model[*]: {CHILDREN}
+	SprinIoC[*]: {CHILDREN}
+		src[*]: {CHILDREN}
+			com.training.beans[*]: {CHILDREN}
+				[Working copy] Customer.java[*]: {CHILDREN | FINE GRAINED | PRIMARY RESOURCE}
+					Customer[*]: {CHILDREN | FINE GRAINED}
+						mobileNumber[+]: {}
+						mobileNumberumber[-]: {}]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2018-10-11 14:08:14.430
+!MESSAGE changeEvent = org.eclipse.jdt.core.ElementChangedEvent[source=Java Model[*]: {CHILDREN}
+	SprinIoC[*]: {CHILDREN}
+		src[*]: {CHILDREN}
+			com.training.beans[*]: {CHILDREN}
+				[Working copy] Customer.java[*]: {PRIMARY RESOURCE}]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2018-10-11 14:08:46.429
+!MESSAGE changeEvent = org.eclipse.jdt.core.ElementChangedEvent[source=Java Model[*]: {CHILDREN}
+	SprinIoC[*]: {CHILDREN}
+		src[*]: {CONTENT}
+			ResourceDelta(/SprinIoC/src/context.xml)[*]]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2018-10-11 14:08:46.627
+!MESSAGE changeEvent = org.eclipse.jdt.core.ElementChangedEvent[source=Java Model[*]: {CHILDREN}
+	SprinIoC[*]: {CHILDREN}
+		src[*]: {CONTENT}
+			ResourceDelta(/SprinIoC/src/context.xml)[*]]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2018-10-11 14:08:57.947
+!MESSAGE changeEvent = org.eclipse.jdt.core.ElementChangedEvent[source=Java Model[*]: {CHILDREN}
+	SprinIoC[*]: {CHILDREN}
+		src[*]: {CONTENT}
+			ResourceDelta(/SprinIoC/src/context.xml)[*]]
+
+!ENTRY org.springframework.ide.eclipse.beans.core 1 0 2018-10-11 14:08:58.104
+!MESSAGE Error occured processing '/SprinIoC/src/context.xml'
+!STACK 0
+org.xml.sax.SAXParseException; lineNumber: 7; columnNumber: 89; Open quote is expected for attribute "p:customer" associated with an  element type  "bean".
+	at org.apache.xerces.parsers.DOMParser.parse(Unknown Source)
+	at org.springframework.ide.eclipse.core.io.xml.XercesDocumentLoader.loadDocument(XercesDocumentLoader.java:48)
+	at org.springframework.beans.factory.xml.XmlBeanDefinitionReader.doLoadDocument(XmlBeanDefinitionReader.java:429)
+	at org.springframework.beans.factory.xml.XmlBeanDefinitionReader.doLoadBeanDefinitions(XmlBeanDefinitionReader.java:391)
+	at org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:336)
+	at org.springframework.ide.eclipse.beans.core.internal.model.BeansConfig$2.loadBeanDefinitions(BeansConfig.java:394)
+	at org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:304)
+	at org.springframework.ide.eclipse.beans.core.internal.model.BeansConfig$3.call(BeansConfig.java:453)
+	at org.springframework.ide.eclipse.beans.core.internal.model.BeansConfig$3.call(BeansConfig.java:1)
+	at java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Unknown Source)
+	at java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2018-10-11 14:08:58.109
+!MESSAGE changeEvent = org.eclipse.jdt.core.ElementChangedEvent[source=Java Model[*]: {CHILDREN}
+	SprinIoC[*]: {CHILDREN}
+		src[*]: {CONTENT}
+			ResourceDelta(/SprinIoC/src/context.xml)[*]]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2018-10-11 14:09:03.251
+!MESSAGE changeEvent = org.eclipse.jdt.core.ElementChangedEvent[source=Java Model[*]: {CHILDREN}
+	SprinIoC[*]: {CHILDREN}
+		src[*]: {CONTENT}
+			ResourceDelta(/SprinIoC/src/context.xml)[*]]
+
+!ENTRY org.springframework.ide.eclipse.beans.core 1 0 2018-10-11 14:09:03.431
+!MESSAGE Error occured processing '/SprinIoC/src/context.xml'
+!STACK 0
+org.xml.sax.SAXParseException; lineNumber: 7; columnNumber: 126; Element type "bean" must be followed by either attribute specifications, ">" or "/>".
+	at org.apache.xerces.parsers.DOMParser.parse(Unknown Source)
+	at org.springframework.ide.eclipse.core.io.xml.XercesDocumentLoader.loadDocument(XercesDocumentLoader.java:48)
+	at org.springframework.beans.factory.xml.XmlBeanDefinitionReader.doLoadDocument(XmlBeanDefinitionReader.java:429)
+	at org.springframework.beans.factory.xml.XmlBeanDefinitionReader.doLoadBeanDefinitions(XmlBeanDefinitionReader.java:391)
+	at org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:336)
+	at org.springframework.ide.eclipse.beans.core.internal.model.BeansConfig$2.loadBeanDefinitions(BeansConfig.java:394)
+	at org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:304)
+	at org.springframework.ide.eclipse.beans.core.internal.model.BeansConfig$3.call(BeansConfig.java:453)
+	at org.springframework.ide.eclipse.beans.core.internal.model.BeansConfig$3.call(BeansConfig.java:1)
+	at java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Unknown Source)
+	at java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2018-10-11 14:09:03.436
+!MESSAGE changeEvent = org.eclipse.jdt.core.ElementChangedEvent[source=Java Model[*]: {CHILDREN}
+	SprinIoC[*]: {CHILDREN}
+		src[*]: {CONTENT}
+			ResourceDelta(/SprinIoC/src/context.xml)[*]]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2018-10-11 14:09:22.367
+!MESSAGE changeEvent = org.eclipse.jdt.core.ElementChangedEvent[source=Java Model[*]: {CHILDREN}
+	SprinIoC[*]: {CHILDREN}
+		src[*]: {CONTENT}
+			ResourceDelta(/SprinIoC/src/context.xml)[*]]
+
+!ENTRY org.springframework.ide.eclipse.beans.core 1 0 2018-10-11 14:09:22.507
+!MESSAGE Error occured processing '/SprinIoC/src/context.xml'
+!STACK 0
+org.xml.sax.SAXParseException; lineNumber: 7; columnNumber: 137; Element type "bean" must be followed by either attribute specifications, ">" or "/>".
+	at org.apache.xerces.parsers.DOMParser.parse(Unknown Source)
+	at org.springframework.ide.eclipse.core.io.xml.XercesDocumentLoader.loadDocument(XercesDocumentLoader.java:48)
+	at org.springframework.beans.factory.xml.XmlBeanDefinitionReader.doLoadDocument(XmlBeanDefinitionReader.java:429)
+	at org.springframework.beans.factory.xml.XmlBeanDefinitionReader.doLoadBeanDefinitions(XmlBeanDefinitionReader.java:391)
+	at org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:336)
+	at org.springframework.ide.eclipse.beans.core.internal.model.BeansConfig$2.loadBeanDefinitions(BeansConfig.java:394)
+	at org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:304)
+	at org.springframework.ide.eclipse.beans.core.internal.model.BeansConfig$3.call(BeansConfig.java:453)
+	at org.springframework.ide.eclipse.beans.core.internal.model.BeansConfig$3.call(BeansConfig.java:1)
+	at java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Unknown Source)
+	at java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2018-10-11 14:09:22.511
+!MESSAGE changeEvent = org.eclipse.jdt.core.ElementChangedEvent[source=Java Model[*]: {CHILDREN}
+	SprinIoC[*]: {CHILDREN}
+		src[*]: {CONTENT}
+			ResourceDelta(/SprinIoC/src/context.xml)[*]]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2018-10-11 14:10:29.019
+!MESSAGE changeEvent = org.eclipse.jdt.core.ElementChangedEvent[source=Java Model[*]: {CHILDREN}
+	SprinIoC[*]: {CHILDREN}
+		src[*]: {CONTENT}
+			ResourceDelta(/SprinIoC/src/context.xml)[*]]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2018-10-11 14:10:29.218
+!MESSAGE changeEvent = org.eclipse.jdt.core.ElementChangedEvent[source=Java Model[*]: {CHILDREN}
+	SprinIoC[*]: {CHILDREN}
+		src[*]: {CONTENT}
+			ResourceDelta(/SprinIoC/src/context.xml)[*]]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2018-10-11 14:11:04.892
+!MESSAGE changeEvent = org.eclipse.jdt.core.ElementChangedEvent[source=Java Model[*]: {CHILDREN}
+	SprinIoC[*]: {CHILDREN}
+		src[*]: {CONTENT}
+			ResourceDelta(/SprinIoC/src/context.xml)[*]]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2018-10-11 14:11:33.547
+!MESSAGE changeEvent = org.eclipse.jdt.core.ElementChangedEvent[source=Java Model[*]: {CHILDREN}
+	SprinIoC[*]: {CHILDREN}
+		src[*]: {CHILDREN}
+			com.training.beans[*]: {CHILDREN}
+				Product.java[+]: {}]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2018-10-11 14:11:33.670
+!MESSAGE changeEvent = org.eclipse.jdt.core.ElementChangedEvent[source=Java Model[*]: {CHILDREN}
+	SprinIoC[*]: {CHILDREN}
+		src[*]: {CHILDREN}
+			com.training.beans[*]: {CHILDREN}
+				[Working copy] Product.java[*]: {PRIMARY WORKING COPY}]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2018-10-11 14:12:06.767
+!MESSAGE changeEvent = org.eclipse.jdt.core.ElementChangedEvent[source=Java Model[*]: {CHILDREN}
+	SprinIoC[*]: {CHILDREN}
+		src[*]: {CHILDREN}
+			com.training.beans[*]: {CHILDREN}
+				[Working copy] Product.java[*]: {PRIMARY RESOURCE}]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2018-10-11 14:12:29.336
+!MESSAGE changeEvent = org.eclipse.jdt.core.ElementChangedEvent[source=Java Model[*]: {CHILDREN}
+	SprinIoC[*]: {CHILDREN}
+		src[*]: {CHILDREN}
+			com.training.beans[*]: {CHILDREN}
+				[Working copy] Product.java[*]: {CONTENT | FINE GRAINED | PRIMARY RESOURCE}]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2018-10-11 14:13:03.258
+!MESSAGE changeEvent = org.eclipse.jdt.core.ElementChangedEvent[source=Java Model[*]: {CHILDREN}
+	SprinIoC[*]: {CHILDREN}
+		src[*]: {CHILDREN}
+			com.training.beans[*]: {CHILDREN}
+				[Working copy] Product.java[*]: {CHILDREN | FINE GRAINED | PRIMARY RESOURCE}
+					Product[*]: {CHILDREN | FINE GRAINED}
+						ratePerUnit[+]: {}
+						rate[-]: {}]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2018-10-11 14:13:26.066
+!MESSAGE changeEvent = org.eclipse.jdt.core.ElementChangedEvent[source=Java Model[*]: {CHILDREN}
+	SprinIoC[*]: {CHILDREN}
+		src[*]: {CHILDREN}
+			com.training.beans[*]: {CHILDREN}
+				[Working copy] Product.java[*]: {PRIMARY RESOURCE}]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2018-10-11 14:13:50.197
+!MESSAGE changeEvent = org.eclipse.jdt.core.ElementChangedEvent[source=Java Model[*]: {CHILDREN}
+	SprinIoC[*]: {CHILDREN}
+		src[*]: {CHILDREN}
+			com.training.beans[*]: {CHILDREN}
+				[Working copy] Invoice.java[*]: {CHILDREN | FINE GRAINED | PRIMARY RESOURCE}
+					Invoice[*]: {CHILDREN | FINE GRAINED}
+						productList[+]: {}]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2018-10-11 14:13:53.589
+!MESSAGE changeEvent = org.eclipse.jdt.core.ElementChangedEvent[source=Java Model[*]: {CHILDREN}
+	SprinIoC[*]: {CHILDREN}
+		src[*]: {CHILDREN}
+			com.training.beans[*]: {CHILDREN}
+				[Working copy] Invoice.java[*]: {CHILDREN | FINE GRAINED | PRIMARY RESOURCE}
+					<import container>[*]: {CHILDREN | FINE GRAINED}
+						import java.util.List[+]: {}]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2018-10-11 14:14:16.187
+!MESSAGE changeEvent = org.eclipse.jdt.core.ElementChangedEvent[source=Java Model[*]: {CHILDREN}
+	SprinIoC[*]: {CHILDREN}
+		C:\Program Files\Java\jre1.8.0_151\lib\resources.jar[*]: {CHILDREN}
+			com[*]: {CHILDREN}
+				[Working copy] _xxx.java[+]: {}]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2018-10-11 14:15:12.420
+!MESSAGE changeEvent = org.eclipse.jdt.core.ElementChangedEvent[source=Java Model[*]: {CHILDREN}
+	SprinIoC[*]: {CHILDREN}
+		src[*]: {CONTENT}
+			ResourceDelta(/SprinIoC/src/context.xml)[*]]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2018-10-11 14:15:19.692
+!MESSAGE changeEvent = org.eclipse.jdt.core.ElementChangedEvent[source=Java Model[*]: {CHILDREN}
+	SprinIoC[*]: {CHILDREN}
+		src[*]: {CONTENT}
+			ResourceDelta(/SprinIoC/src/context.xml)[*]]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2018-10-11 14:15:19.841
+!MESSAGE changeEvent = org.eclipse.jdt.core.ElementChangedEvent[source=Java Model[*]: {CHILDREN}
+	SprinIoC[*]: {CHILDREN}
+		src[*]: {CONTENT}
+			ResourceDelta(/SprinIoC/src/context.xml)[*]]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2018-10-11 14:15:53.681
+!MESSAGE changeEvent = org.eclipse.jdt.core.ElementChangedEvent[source=Java Model[*]: {CHILDREN}
+	SprinIoC[*]: {CHILDREN}
+		src[*]: {CONTENT}
+			ResourceDelta(/SprinIoC/src/context.xml)[*]]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2018-10-11 14:15:53.838
+!MESSAGE changeEvent = org.eclipse.jdt.core.ElementChangedEvent[source=Java Model[*]: {CHILDREN}
+	SprinIoC[*]: {CHILDREN}
+		src[*]: {CONTENT}
+			ResourceDelta(/SprinIoC/src/context.xml)[*]]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2018-10-11 14:16:24.215
+!MESSAGE changeEvent = org.eclipse.jdt.core.ElementChangedEvent[source=Java Model[*]: {CHILDREN}
+	SprinIoC[*]: {CHILDREN}
+		src[*]: {CONTENT}
+			ResourceDelta(/SprinIoC/src/context.xml)[*]]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2018-10-11 14:17:10.296
+!MESSAGE changeEvent = org.eclipse.jdt.core.ElementChangedEvent[source=Java Model[*]: {CHILDREN}
+	SprinIoC[*]: {CHILDREN}
+		src[*]: {CONTENT}
+			ResourceDelta(/SprinIoC/src/context.xml)[*]]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2018-10-11 14:17:10.509
+!MESSAGE changeEvent = org.eclipse.jdt.core.ElementChangedEvent[source=Java Model[*]: {CHILDREN}
+	SprinIoC[*]: {CHILDREN}
+		src[*]: {CONTENT}
+			ResourceDelta(/SprinIoC/src/context.xml)[*]]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2018-10-11 14:17:34.227
+!MESSAGE changeEvent = org.eclipse.jdt.core.ElementChangedEvent[source=Java Model[*]: {CHILDREN}
+	SprinIoC[*]: {CHILDREN}
+		src[*]: {CONTENT}
+			ResourceDelta(/SprinIoC/src/context.xml)[*]]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2018-10-11 14:17:34.441
+!MESSAGE changeEvent = org.eclipse.jdt.core.ElementChangedEvent[source=Java Model[*]: {CHILDREN}
+	SprinIoC[*]: {CHILDREN}
+		src[*]: {CONTENT}
+			ResourceDelta(/SprinIoC/src/context.xml)[*]]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2018-10-11 14:17:36.618
+!MESSAGE changeEvent = org.eclipse.jdt.core.ElementChangedEvent[source=Java Model[*]: {CHILDREN}
+	SprinIoC[*]: {CHILDREN}
+		src[*]: {CONTENT}
+			ResourceDelta(/SprinIoC/src/context.xml)[*]]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2018-10-11 14:17:36.780
+!MESSAGE changeEvent = org.eclipse.jdt.core.ElementChangedEvent[source=Java Model[*]: {CHILDREN}
+	SprinIoC[*]: {CHILDREN}
+		src[*]: {CONTENT}
+			ResourceDelta(/SprinIoC/src/context.xml)[*]]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2018-10-11 14:17:46.872
+!MESSAGE changeEvent = org.eclipse.jdt.core.ElementChangedEvent[source=Java Model[*]: {CHILDREN}
+	SprinIoC[*]: {CHILDREN}
+		src[*]: {CONTENT}
+			ResourceDelta(/SprinIoC/src/context.xml)[*]]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2018-10-11 14:17:47.096
+!MESSAGE changeEvent = org.eclipse.jdt.core.ElementChangedEvent[source=Java Model[*]: {CHILDREN}
+	SprinIoC[*]: {CHILDREN}
+		src[*]: {CONTENT}
+			ResourceDelta(/SprinIoC/src/context.xml)[*]]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2018-10-11 14:18:08.242
+!MESSAGE changeEvent = org.eclipse.jdt.core.ElementChangedEvent[source=Java Model[*]: {CHILDREN}
+	SprinIoC[*]: {CHILDREN}
+		src[*]: {CONTENT}
+			ResourceDelta(/SprinIoC/src/context.xml)[*]]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2018-10-11 14:18:08.444
+!MESSAGE changeEvent = org.eclipse.jdt.core.ElementChangedEvent[source=Java Model[*]: {CHILDREN}
+	SprinIoC[*]: {CHILDREN}
+		src[*]: {CONTENT}
+			ResourceDelta(/SprinIoC/src/context.xml)[*]]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2018-10-11 14:18:47.714
+!MESSAGE changeEvent = org.eclipse.jdt.core.ElementChangedEvent[source=Java Model[*]: {CHILDREN}
+	SprinIoC[*]: {CHILDREN}
+		src[*]: {CONTENT}
+			ResourceDelta(/SprinIoC/src/context.xml)[*]]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2018-10-11 14:18:47.914
+!MESSAGE changeEvent = org.eclipse.jdt.core.ElementChangedEvent[source=Java Model[*]: {CHILDREN}
+	SprinIoC[*]: {CHILDREN}
+		src[*]: {CONTENT}
+			ResourceDelta(/SprinIoC/src/context.xml)[*]]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2018-10-11 14:19:44.748
+!MESSAGE changeEvent = org.eclipse.jdt.core.ElementChangedEvent[source=Java Model[*]: {CHILDREN}
+	SprinIoC[*]: {CHILDREN}
+		src[*]: {CHILDREN}
+			com.training.beans[*]: {CHILDREN}
+				[Working copy] Invoice.java[*]: {PRIMARY RESOURCE}]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2018-10-11 14:19:44.909
+!MESSAGE changeEvent = org.eclipse.jdt.core.ElementChangedEvent[source=Java Model[*]: {CHILDREN}
+	SprinIoC[*]: {CHILDREN}
+		src[*]: {CONTENT}
+			ResourceDelta(/SprinIoC/src/context.xml)[*]]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2018-10-11 14:21:36.118
+!MESSAGE changeEvent = org.eclipse.jdt.core.ElementChangedEvent[source=Java Model[*]: {CHILDREN}
+	SprinIoC[*]: {CHILDREN}
+		src[*]: {CHILDREN}
+			com.training.beans[*]: {CHILDREN}
+				[Working copy] Invoice.java[*]: {CONTENT | FINE GRAINED | PRIMARY RESOURCE}]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2018-10-11 14:21:49.712
+!MESSAGE changeEvent = org.eclipse.jdt.core.ElementChangedEvent[source=Java Model[*]: {CHILDREN}
+	SprinIoC[*]: {CHILDREN}
+		src[*]: {CHILDREN}
+			com.training.beans[*]: {CHILDREN}
+				[Working copy] Invoice.java[*]: {CONTENT | FINE GRAINED | PRIMARY RESOURCE}]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2018-10-11 14:22:05.250
+!MESSAGE changeEvent = org.eclipse.jdt.core.ElementChangedEvent[source=Java Model[*]: {CHILDREN}
+	SprinIoC[*]: {CHILDREN}
+		src[*]: {CHILDREN}
+			com.training.apps[*]: {CHILDREN}
+				[Working copy] QuickStartApplication.java[*]: {PRIMARY RESOURCE}]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2018-10-11 14:22:11.108
+!MESSAGE changeEvent = org.eclipse.jdt.core.ElementChangedEvent[source=Java Model[*]: {CHILDREN}
+	SprinIoC[*]: {CHILDREN}
+		src[*]: {CHILDREN}
+			com.training.apps[*]: {CHILDREN}
+				[Working copy] QuickStartApplication.java[*]: {CONTENT | FINE GRAINED | PRIMARY RESOURCE}]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2018-10-11 14:22:19.075
+!MESSAGE changeEvent = org.eclipse.jdt.core.ElementChangedEvent[source=Java Model[*]: {CHILDREN}
+	SprinIoC[*]: {CHILDREN}
+		src[*]: {CHILDREN}
+			com.training.apps[*]: {CHILDREN}
+				[Working copy] QuickStartApplication.java[*]: {CONTENT | FINE GRAINED | PRIMARY RESOURCE}]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2018-10-11 14:22:38.290
+!MESSAGE changeEvent = org.eclipse.jdt.core.ElementChangedEvent[source=Java Model[*]: {CHILDREN}
+	SprinIoC[*]: {CHILDREN}
+		src[*]: {CHILDREN}
+			com.training.apps[*]: {CHILDREN}
+				[Working copy] QuickStartApplication.java[*]: {PRIMARY RESOURCE}]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2018-10-11 14:23:28.136
+!MESSAGE changeEvent = org.eclipse.jdt.core.ElementChangedEvent[source=Java Model[*]: {CHILDREN}
+	SprinIoC[*]: {CHILDREN}
+		src[*]: {CONTENT}
+			ResourceDelta(/SprinIoC/src/context.xml)[*]]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2018-10-11 14:23:28.382
+!MESSAGE changeEvent = org.eclipse.jdt.core.ElementChangedEvent[source=Java Model[*]: {CHILDREN}
+	SprinIoC[*]: {CHILDREN}
+		src[*]: {CONTENT}
+			ResourceDelta(/SprinIoC/src/context.xml)[*]]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2018-10-11 14:24:31.924
+!MESSAGE changeEvent = org.eclipse.jdt.core.ElementChangedEvent[source=Java Model[*]: {CHILDREN}
+	SprinIoC[*]: {CHILDREN}
+		src[*]: {CHILDREN}
+			com.training.beans[*]: {CHILDREN}
+				[Working copy] Invoice.java[*]: {PRIMARY RESOURCE}]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2018-10-11 14:24:32.198
+!MESSAGE changeEvent = org.eclipse.jdt.core.ElementChangedEvent[source=Java Model[*]: {CHILDREN}
+	SprinIoC[*]: {CHILDREN}
+		src[*]: {CONTENT}
+			ResourceDelta(/SprinIoC/src/context.xml)[*]]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2018-10-11 14:25:57.650
+!MESSAGE changeEvent = org.eclipse.jdt.core.ElementChangedEvent[source=Java Model[*]: {CHILDREN}
+	SprinIoC[*]: {CHILDREN}
+		src[*]: {CONTENT}
+			ResourceDelta(/SprinIoC/src/context.xml)[*]]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2018-10-11 14:25:57.805
+!MESSAGE changeEvent = org.eclipse.jdt.core.ElementChangedEvent[source=Java Model[*]: {CHILDREN}
+	SprinIoC[*]: {CHILDREN}
+		src[*]: {CONTENT}
+			ResourceDelta(/SprinIoC/src/context.xml)[*]]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2018-10-11 14:28:29.261
+!MESSAGE changeEvent = org.eclipse.jdt.core.ElementChangedEvent[source=Java Model[*]: {CHILDREN}
+	SprinIoC[*]: {CHILDREN}
+		src[*]: {CONTENT}
+			ResourceDelta(/SprinIoC/src/context.xml)[*]]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2018-10-11 14:29:31.796
+!MESSAGE changeEvent = org.eclipse.jdt.core.ElementChangedEvent[source=Java Model[*]: {CHILDREN}
+	SprinIoC[*]: {CHILDREN}
+		src[*]: {CONTENT}
+			ResourceDelta(/SprinIoC/src/context.xml)[*]]
+
+!ENTRY org.springframework.ide.eclipse.beans.core 1 0 2018-10-11 14:29:31.942
+!MESSAGE Error occured processing '/SprinIoC/src/context.xml'
+!STACK 0
+org.xml.sax.SAXParseException; lineNumber: 13; columnNumber: 3; The element type "bean" must be terminated by the matching end-tag "</bean>".
+	at org.apache.xerces.parsers.DOMParser.parse(Unknown Source)
+	at org.springframework.ide.eclipse.core.io.xml.XercesDocumentLoader.loadDocument(XercesDocumentLoader.java:48)
+	at org.springframework.beans.factory.xml.XmlBeanDefinitionReader.doLoadDocument(XmlBeanDefinitionReader.java:429)
+	at org.springframework.beans.factory.xml.XmlBeanDefinitionReader.doLoadBeanDefinitions(XmlBeanDefinitionReader.java:391)
+	at org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:336)
+	at org.springframework.ide.eclipse.beans.core.internal.model.BeansConfig$2.loadBeanDefinitions(BeansConfig.java:394)
+	at org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:304)
+	at org.springframework.ide.eclipse.beans.core.internal.model.BeansConfig$3.call(BeansConfig.java:453)
+	at org.springframework.ide.eclipse.beans.core.internal.model.BeansConfig$3.call(BeansConfig.java:1)
+	at java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Unknown Source)
+	at java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2018-10-11 14:29:31.947
+!MESSAGE changeEvent = org.eclipse.jdt.core.ElementChangedEvent[source=Java Model[*]: {CHILDREN}
+	SprinIoC[*]: {CHILDREN}
+		src[*]: {CONTENT}
+			ResourceDelta(/SprinIoC/src/context.xml)[*]]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2018-10-11 14:29:43.942
+!MESSAGE changeEvent = org.eclipse.jdt.core.ElementChangedEvent[source=Java Model[*]: {CHILDREN}
+	SprinIoC[*]: {CHILDREN}
+		src[*]: {CONTENT}
+			ResourceDelta(/SprinIoC/src/context.xml)[*]]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2018-10-11 14:29:44.109
+!MESSAGE changeEvent = org.eclipse.jdt.core.ElementChangedEvent[source=Java Model[*]: {CHILDREN}
+	SprinIoC[*]: {CHILDREN}
+		src[*]: {CONTENT}
+			ResourceDelta(/SprinIoC/src/context.xml)[*]]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2018-10-11 14:29:48.903
+!MESSAGE changeEvent = org.eclipse.jdt.core.ElementChangedEvent[source=Java Model[*]: {CHILDREN}
+	SprinIoC[*]: {CHILDREN}
+		src[*]: {CONTENT}
+			ResourceDelta(/SprinIoC/src/context.xml)[*]]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2018-10-11 14:30:36.066
+!MESSAGE changeEvent = org.eclipse.jdt.core.ElementChangedEvent[source=Java Model[*]: {CHILDREN}
+	SprinIoC[*]: {CHILDREN}
+		src[*]: {CONTENT}
+			ResourceDelta(/SprinIoC/src/context.xml)[*]]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2018-10-11 14:30:58.537
+!MESSAGE changeEvent = org.eclipse.jdt.core.ElementChangedEvent[source=Java Model[*]: {CHILDREN}
+	SprinIoC[*]: {CHILDREN}
+		src[*]: {CONTENT}
+			ResourceDelta(/SprinIoC/src/context.xml)[*]]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2018-10-11 14:30:59.203
+!MESSAGE changeEvent = org.eclipse.jdt.core.ElementChangedEvent[source=Java Model[*]: {CHILDREN}
+	SprinIoC[*]: {CHILDREN}
+		src[*]: {CONTENT}
+			ResourceDelta(/SprinIoC/src/context.xml)[*]]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2018-10-11 14:30:59.817
+!MESSAGE changeEvent = org.eclipse.jdt.core.ElementChangedEvent[source=Java Model[*]: {CHILDREN}
+	SprinIoC[*]: {CHILDREN}
+		src[*]: {CONTENT}
+			ResourceDelta(/SprinIoC/src/context.xml)[*]]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2018-10-11 14:31:00.365
+!MESSAGE changeEvent = org.eclipse.jdt.core.ElementChangedEvent[source=Java Model[*]: {CHILDREN}
+	SprinIoC[*]: {CHILDREN}
+		src[*]: {CONTENT}
+			ResourceDelta(/SprinIoC/src/context.xml)[*]]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2018-10-11 14:31:19.954
+!MESSAGE changeEvent = org.eclipse.jdt.core.ElementChangedEvent[source=Java Model[*]: {CHILDREN}
+	SprinIoC[*]: {CHILDREN}
+		src[*]: {CONTENT}
+			ResourceDelta(/SprinIoC/src/context.xml)[*]]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2018-10-11 14:31:20.117
+!MESSAGE changeEvent = org.eclipse.jdt.core.ElementChangedEvent[source=Java Model[*]: {CHILDREN}
+	SprinIoC[*]: {CHILDREN}
+		src[*]: {CONTENT}
+			ResourceDelta(/SprinIoC/src/context.xml)[*]]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2018-10-11 14:31:27.824
+!MESSAGE changeEvent = org.eclipse.jdt.core.ElementChangedEvent[source=Java Model[*]: {CHILDREN}
+	SprinIoC[*]: {CHILDREN}
+		src[*]: {CONTENT}
+			ResourceDelta(/SprinIoC/src/context.xml)[*]]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2018-10-11 14:31:28.022
+!MESSAGE changeEvent = org.eclipse.jdt.core.ElementChangedEvent[source=Java Model[*]: {CHILDREN}
+	SprinIoC[*]: {CHILDREN}
+		src[*]: {CONTENT}
+			ResourceDelta(/SprinIoC/src/context.xml)[*]]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2018-10-11 14:31:52.388
+!MESSAGE changeEvent = org.eclipse.jdt.core.ElementChangedEvent[source=Java Model[*]: {CHILDREN}
+	SprinIoC[*]: {CHILDREN}
+		src[*]: {CONTENT}
+			ResourceDelta(/SprinIoC/src/context.xml)[*]]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2018-10-11 14:32:42.715
+!MESSAGE changeEvent = org.eclipse.jdt.core.ElementChangedEvent[source=Java Model[*]: {CHILDREN}
+	SprinIoC[*]: {CHILDREN}
+		src[*]: {CHILDREN}
+			com.training.beans[*]: {CHILDREN}
+				Student.java[+]: {}]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2018-10-11 14:32:42.776
+!MESSAGE changeEvent = org.eclipse.jdt.core.ElementChangedEvent[source=Java Model[*]: {CHILDREN}
+	SprinIoC[*]: {CHILDREN}
+		src[*]: {CHILDREN}
+			com.training.beans[*]: {CHILDREN}
+				[Working copy] Student.java[*]: {PRIMARY WORKING COPY}]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2018-10-11 14:32:58.535
+!MESSAGE changeEvent = org.eclipse.jdt.core.ElementChangedEvent[source=Java Model[*]: {CHILDREN}
+	SprinIoC[*]: {CHILDREN}
+		src[*]: {CHILDREN}
+			com.training.beans[*]: {CHILDREN}
+				Teacher.java[+]: {}]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2018-10-11 14:32:58.611
+!MESSAGE changeEvent = org.eclipse.jdt.core.ElementChangedEvent[source=Java Model[*]: {CHILDREN}
+	SprinIoC[*]: {CHILDREN}
+		src[*]: {CHILDREN}
+			com.training.beans[*]: {CHILDREN}
+				[Working copy] Teacher.java[*]: {PRIMARY WORKING COPY}]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2018-10-11 14:33:06.830
+!MESSAGE changeEvent = org.eclipse.jdt.core.ElementChangedEvent[source=Java Model[*]: {CHILDREN}
+	SprinIoC[*]: {CHILDREN}
+		src[*]: {CHILDREN}
+			com.training.beans[*]: {CHILDREN}
+				[Working copy] Teacher.java[*]: {CHILDREN | FINE GRAINED | PRIMARY RESOURCE}
+					Teacher[*]: {CHILDREN | FINE GRAINED}
+						student[+]: {}]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2018-10-11 14:33:21.063
+!MESSAGE changeEvent = org.eclipse.jdt.core.ElementChangedEvent[source=Java Model[*]: {CHILDREN}
+	SprinIoC[*]: {CHILDREN}
+		src[*]: {CHILDREN}
+			com.training.beans[*]: {CHILDREN}
+				[Working copy] Teacher.java[*]: {CONTENT | FINE GRAINED | PRIMARY RESOURCE}]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2018-10-11 14:33:48.024
+!MESSAGE changeEvent = org.eclipse.jdt.core.ElementChangedEvent[source=Java Model[*]: {CHILDREN}
+	SprinIoC[*]: {CHILDREN}
+		src[*]: {CHILDREN}
+			com.training.beans[*]: {CHILDREN}
+				[Working copy] Teacher.java[*]: {PRIMARY RESOURCE}]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2018-10-11 14:34:10.452
+!MESSAGE changeEvent = org.eclipse.jdt.core.ElementChangedEvent[source=Java Model[*]: {CHILDREN}
+	SprinIoC[*]: {CHILDREN}
+		src[*]: {CHILDREN}
+			com.training.beans[*]: {CHILDREN}
+				[Working copy] Student.java[*]: {PRIMARY RESOURCE}]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2018-10-11 14:36:46.336
+!MESSAGE changeEvent = org.eclipse.jdt.core.ElementChangedEvent[source=Java Model[*]: {CHILDREN}
+	SprinIoC[*]: {CHILDREN}
+		src[*]: {CONTENT}
+			ResourceDelta(/SprinIoC/src/context.xml)[*]]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2018-10-11 14:36:56.846
+!MESSAGE changeEvent = org.eclipse.jdt.core.ElementChangedEvent[source=Java Model[*]: {CHILDREN}
+	SprinIoC[*]: {CHILDREN}
+		src[*]: {CONTENT}
+			ResourceDelta(/SprinIoC/src/context.xml)[*]]
+
+!ENTRY org.springframework.ide.eclipse.beans.core 1 0 2018-10-11 14:36:57.026
+!MESSAGE Error occured processing '/SprinIoC/src/context.xml'
+!STACK 0
+org.xml.sax.SAXParseException; lineNumber: 26; columnNumber: 1; Element type "bean" must be followed by either attribute specifications, ">" or "/>".
+	at org.apache.xerces.parsers.DOMParser.parse(Unknown Source)
+	at org.springframework.ide.eclipse.core.io.xml.XercesDocumentLoader.loadDocument(XercesDocumentLoader.java:48)
+	at org.springframework.beans.factory.xml.XmlBeanDefinitionReader.doLoadDocument(XmlBeanDefinitionReader.java:429)
+	at org.springframework.beans.factory.xml.XmlBeanDefinitionReader.doLoadBeanDefinitions(XmlBeanDefinitionReader.java:391)
+	at org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:336)
+	at org.springframework.ide.eclipse.beans.core.internal.model.BeansConfig$2.loadBeanDefinitions(BeansConfig.java:394)
+	at org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:304)
+	at org.springframework.ide.eclipse.beans.core.internal.model.BeansConfig$3.call(BeansConfig.java:453)
+	at org.springframework.ide.eclipse.beans.core.internal.model.BeansConfig$3.call(BeansConfig.java:1)
+	at java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Unknown Source)
+	at java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2018-10-11 14:36:57.034
+!MESSAGE changeEvent = org.eclipse.jdt.core.ElementChangedEvent[source=Java Model[*]: {CHILDREN}
+	SprinIoC[*]: {CHILDREN}
+		src[*]: {CONTENT}
+			ResourceDelta(/SprinIoC/src/context.xml)[*]]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2018-10-11 14:37:26.137
+!MESSAGE changeEvent = org.eclipse.jdt.core.ElementChangedEvent[source=Java Model[*]: {CHILDREN}
+	SprinIoC[*]: {CHILDREN}
+		src[*]: {CONTENT}
+			ResourceDelta(/SprinIoC/src/context.xml)[*]]
+
+!ENTRY org.springframework.ide.eclipse.beans.core 1 0 2018-10-11 14:37:26.275
+!MESSAGE Error occured processing '/SprinIoC/src/context.xml'
+!STACK 0
+org.xml.sax.SAXParseException; lineNumber: 26; columnNumber: 1; Element type "bean" must be followed by either attribute specifications, ">" or "/>".
+	at org.apache.xerces.parsers.DOMParser.parse(Unknown Source)
+	at org.springframework.ide.eclipse.core.io.xml.XercesDocumentLoader.loadDocument(XercesDocumentLoader.java:48)
+	at org.springframework.beans.factory.xml.XmlBeanDefinitionReader.doLoadDocument(XmlBeanDefinitionReader.java:429)
+	at org.springframework.beans.factory.xml.XmlBeanDefinitionReader.doLoadBeanDefinitions(XmlBeanDefinitionReader.java:391)
+	at org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:336)
+	at org.springframework.ide.eclipse.beans.core.internal.model.BeansConfig$2.loadBeanDefinitions(BeansConfig.java:394)
+	at org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:304)
+	at org.springframework.ide.eclipse.beans.core.internal.model.BeansConfig$3.call(BeansConfig.java:453)
+	at org.springframework.ide.eclipse.beans.core.internal.model.BeansConfig$3.call(BeansConfig.java:1)
+	at java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Unknown Source)
+	at java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2018-10-11 14:37:26.280
+!MESSAGE changeEvent = org.eclipse.jdt.core.ElementChangedEvent[source=Java Model[*]: {CHILDREN}
+	SprinIoC[*]: {CHILDREN}
+		src[*]: {CONTENT}
+			ResourceDelta(/SprinIoC/src/context.xml)[*]]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2018-10-11 14:38:18.361
+!MESSAGE changeEvent = org.eclipse.jdt.core.ElementChangedEvent[source=Java Model[*]: {CHILDREN}
+	SprinIoC[*]: {CHILDREN}
+		src[*]: {CONTENT}
+			ResourceDelta(/SprinIoC/src/context.xml)[*]]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2018-10-11 14:38:18.544
+!MESSAGE changeEvent = org.eclipse.jdt.core.ElementChangedEvent[source=Java Model[*]: {CHILDREN}
+	SprinIoC[*]: {CHILDREN}
+		src[*]: {CONTENT}
+			ResourceDelta(/SprinIoC/src/context.xml)[*]]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2018-10-11 14:38:31.053
+!MESSAGE changeEvent = org.eclipse.jdt.core.ElementChangedEvent[source=Java Model[*]: {CHILDREN}
+	SprinIoC[*]: {CHILDREN}
+		src[*]: {CONTENT}
+			ResourceDelta(/SprinIoC/src/context.xml)[*]]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2018-10-11 14:38:36.652
+!MESSAGE changeEvent = org.eclipse.jdt.core.ElementChangedEvent[source=Java Model[*]: {CHILDREN}
+	SprinIoC[*]: {CHILDREN}
+		src[*]: {CONTENT}
+			ResourceDelta(/SprinIoC/src/context.xml)[*]]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2018-10-11 14:38:50.662
+!MESSAGE changeEvent = org.eclipse.jdt.core.ElementChangedEvent[source=Java Model[*]: {CHILDREN}
+	SprinIoC[*]: {CHILDREN}
+		src[*]: {CONTENT}
+			ResourceDelta(/SprinIoC/src/context.xml)[*]]
+
+!ENTRY org.springframework.ide.eclipse.beans.core 1 0 2018-10-11 14:38:50.846
+!MESSAGE Error occured processing '/SprinIoC/src/context.xml'
+!STACK 0
+org.xml.sax.SAXParseException; lineNumber: 24; columnNumber: 57; Element or attribute do not match QName production: QName::=(NCName':')?NCName. 
+	at org.apache.xerces.parsers.DOMParser.parse(Unknown Source)
+	at org.springframework.ide.eclipse.core.io.xml.XercesDocumentLoader.loadDocument(XercesDocumentLoader.java:48)
+	at org.springframework.beans.factory.xml.XmlBeanDefinitionReader.doLoadDocument(XmlBeanDefinitionReader.java:429)
+	at org.springframework.beans.factory.xml.XmlBeanDefinitionReader.doLoadBeanDefinitions(XmlBeanDefinitionReader.java:391)
+	at org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:336)
+	at org.springframework.ide.eclipse.beans.core.internal.model.BeansConfig$2.loadBeanDefinitions(BeansConfig.java:394)
+	at org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:304)
+	at org.springframework.ide.eclipse.beans.core.internal.model.BeansConfig$3.call(BeansConfig.java:453)
+	at org.springframework.ide.eclipse.beans.core.internal.model.BeansConfig$3.call(BeansConfig.java:1)
+	at java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Unknown Source)
+	at java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2018-10-11 14:38:50.850
+!MESSAGE changeEvent = org.eclipse.jdt.core.ElementChangedEvent[source=Java Model[*]: {CHILDREN}
+	SprinIoC[*]: {CHILDREN}
+		src[*]: {CONTENT}
+			ResourceDelta(/SprinIoC/src/context.xml)[*]]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2018-10-11 14:38:52.386
+!MESSAGE changeEvent = org.eclipse.jdt.core.ElementChangedEvent[source=Java Model[*]: {CHILDREN}
+	SprinIoC[*]: {CHILDREN}
+		src[*]: {CONTENT}
+			ResourceDelta(/SprinIoC/src/context.xml)[*]]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2018-10-11 14:38:53.108
+!MESSAGE changeEvent = org.eclipse.jdt.core.ElementChangedEvent[source=Java Model[*]: {CHILDREN}
+	SprinIoC[*]: {CHILDREN}
+		src[*]: {CONTENT}
+			ResourceDelta(/SprinIoC/src/context.xml)[*]]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2018-10-11 14:39:27.013
+!MESSAGE changeEvent = org.eclipse.jdt.core.ElementChangedEvent[source=Java Model[*]: {CHILDREN}
+	SprinIoC[*]: {CHILDREN}
+		src[*]: {CHILDREN}
+			com.training.beans[*]: {CHILDREN}
+				[Working copy] Student.java[*]: {PRIMARY RESOURCE}]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2018-10-11 14:39:37.380
+!MESSAGE changeEvent = org.eclipse.jdt.core.ElementChangedEvent[source=Java Model[*]: {CHILDREN}
+	SprinIoC[*]: {CHILDREN}
+		src[*]: {CONTENT}
+			ResourceDelta(/SprinIoC/src/context.xml)[*]]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2018-10-11 14:40:26.050
+!MESSAGE changeEvent = org.eclipse.jdt.core.ElementChangedEvent[source=Java Model[*]: {CHILDREN}
+	SprinIoC[*]: {CHILDREN}
+		src[*]: {CONTENT}
+			ResourceDelta(/SprinIoC/src/context.xml)[*]]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2018-10-11 14:40:32.433
+!MESSAGE changeEvent = org.eclipse.jdt.core.ElementChangedEvent[source=Java Model[*]: {CHILDREN}
+	SprinIoC[*]: {CHILDREN}
+		src[*]: {CONTENT}
+			ResourceDelta(/SprinIoC/src/context.xml)[*]]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2018-10-11 14:40:38.537
+!MESSAGE changeEvent = org.eclipse.jdt.core.ElementChangedEvent[source=Java Model[*]: {CHILDREN}
+	SprinIoC[*]: {CHILDREN}
+		src[*]: {CONTENT}
+			ResourceDelta(/SprinIoC/src/context.xml)[*]]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2018-10-11 14:41:17.764
+!MESSAGE changeEvent = org.eclipse.jdt.core.ElementChangedEvent[source=Java Model[*]: {CHILDREN}
+	SprinIoC[*]: {CHILDREN}
+		src[*]: {CHILDREN}
+			com.training.apps[*]: {CHILDREN}
+				[Working copy] QuickStartApplication.java[*]: {PRIMARY RESOURCE}]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2018-10-11 14:41:35.796
+!MESSAGE changeEvent = org.eclipse.jdt.core.ElementChangedEvent[source=Java Model[*]: {CHILDREN}
+	SprinIoC[*]: {CHILDREN}
+		src[*]: {CHILDREN}
+			com.training.apps[*]: {CHILDREN}
+				[Working copy] QuickStartApplication.java[*]: {CONTENT | FINE GRAINED | PRIMARY RESOURCE}]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2018-10-11 14:43:44.581
+!MESSAGE changeEvent = org.eclipse.jdt.core.ElementChangedEvent[source=Java Model[*]: {CHILDREN}
+	SprinIoC[*]: {CHILDREN}
+		src[*]: {CONTENT}
+			ResourceDelta(/SprinIoC/src/context.xml)[*]]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2018-10-11 14:44:01.967
+!MESSAGE changeEvent = org.eclipse.jdt.core.ElementChangedEvent[source=Java Model[*]: {CHILDREN}
+	SprinIoC[*]: {CHILDREN}
+		src[*]: {CHILDREN}
+			com.training.apps[*]: {CHILDREN}
+				[Working copy] QuickStartApplication.java[*]: {PRIMARY RESOURCE}]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2018-10-11 14:44:07.395
+!MESSAGE changeEvent = org.eclipse.jdt.core.ElementChangedEvent[source=Java Model[*]: {CHILDREN}
+	SprinIoC[*]: {CHILDREN}
+		src[*]: {CHILDREN}
+			com.training.apps[*]: {CHILDREN}
+				[Working copy] QuickStartApplication.java[*]: {CONTENT | FINE GRAINED | PRIMARY RESOURCE}]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2018-10-11 14:44:20.013
+!MESSAGE changeEvent = org.eclipse.jdt.core.ElementChangedEvent[source=Java Model[*]: {CHILDREN}
+	SprinIoC[*]: {CHILDREN}
+		src[*]: {CONTENT}
+			ResourceDelta(/SprinIoC/src/context.xml)[*]]
