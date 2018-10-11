@@ -4,6 +4,24 @@
 	xmlns:p="http://www.springframework.org/schema/p"
 	xmlns:c="http://www.springframework.org/schema/c"
 	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
-<bean id="invBean" class="com.training.beans.Invoice" p:invoiceNumber="101" p:customerName="Ramesh" p:invoiceAmount="4500" lazy-init="true"/>
-<bean id="contructorBean" class="com.training.beans.Invoice" c:invoiceNumber="102" c:customerName="Ram" c:invoiceAmount="2000"/>
+<bean id="invBean" class="com.training.beans.Invoice" p:invoiceNumber="101" p:customerName-ref="ram" p:invoiceAmount="4500" lazy-init="true">
+<property name="productList">
+	<list>
+		<idref bean="tv"></idref>
+		<idref bean="laptop"></idref>
+		<idref bean="mobile"></idref>
+	</list>
+</property>
+</bean>
+<!-- <bean id="contructorBean" class="com.training.beans.Invoice" c:invoiceNumber="102" c:customerName-ref="ram" c:invoiceAmount="2000"/>-->
+<bean id="ram" class="com.training.beans.Customer" p:customerName="Ramesh" p:mobileNumber="549687"/>
+<bean id="tv" class="com.training.beans.Product" p:productId="301" p:productName="SonyTV" p:quantity="5" p:ratePerUnit="20000"/>
+<bean id="laptop" class="com.training.beans.Product" p:productId="302" p:productName="DellInspiron" p:quantity="2" p:ratePerUnit="40000"/>
+<bean id="mobile" class="com.training.beans.Product" p:productId="303" p:productName="Samsung" p:quantity="1" p:ratePerUnit="10000"/>
+
+
+
+<bean id="student" class="com.training.beans.Student" p:studentName="Morgan"></bean>
+<bean id="teacher" class="com.training.beans.Teacher" p:teacherName="Gupta" autowire="byName"></bean>
+<bean id="teacherEx2" class="com.training.beans.Teacher" p:teacherName="Gupta" autowire="byType"></bean>
 </beans>

@@ -1,22 +1,49 @@
 package com.training.beans;
 
+import java.util.List;
 import java.util.logging.Logger;
 
 public class Invoice {
 
 	private long invoiceNumber;
-	private String customerName;
+	private Customer customer;
 	private double invoiceAmount;
+	private List<Product> productList;
 	
 	private static Logger log=Logger.getAnonymousLogger();
 	
 	
 	
-	public Invoice(long invoiceNumber, String customerName, double invoiceAmount) {
+	public Invoice(long invoiceNumber, Customer customer, double invoiceAmount, List<Product> productList) {
 		super();
 		this.invoiceNumber = invoiceNumber;
-		this.customerName = customerName;
+		this.customer = customer;
 		this.invoiceAmount = invoiceAmount;
+		this.productList = productList;
+	}
+	public Invoice(long invoiceNumber, Customer customerName, double invoiceAmount) {
+		super();
+		this.invoiceNumber = invoiceNumber;
+		this.customer = customerName;
+		this.invoiceAmount = invoiceAmount;
+	}
+	public Customer getCustomer() {
+		return customer;
+	}
+	public void setCustomer(Customer customer) {
+		this.customer = customer;
+	}
+	public List<Product> getProductList() {
+		return productList;
+	}
+	public void setProductList(List<Product> productList) {
+		this.productList = productList;
+	}
+	public static Logger getLog() {
+		return log;
+	}
+	public static void setLog(Logger log) {
+		Invoice.log = log;
 	}
 	public Invoice() {
 		super();
@@ -29,12 +56,12 @@ public class Invoice {
 		log.info("Set Invoice Number Called");
 		this.invoiceNumber = invoiceNumber;
 	}
-	public String getCustomerName() {
-		return customerName;
+	public Customer getCustomerName() {
+		return customer;
 	}
-	public void setCustomerName(String customerName) {
-		log.info("Set Customer Name Called");
-		this.customerName = customerName;
+	public void setCustomerName(Customer customer) {
+		log.info("Set Customer Called");
+		this.customer = customer;
 	}
 	public double getInvoiceAmount() {
 		return invoiceAmount;
@@ -43,7 +70,13 @@ public class Invoice {
 		log.info("Set Invoice Amt Called");
 		this.invoiceAmount = invoiceAmount;
 	}
-	
+	public double totalAmount() {
+		double amt=0;
+		for(Product p:productList) {
+			amt+=p.getRatePerUnit()*p.getQuantity();
+		}
+		return amt;
+	}
 	
 	
 }
