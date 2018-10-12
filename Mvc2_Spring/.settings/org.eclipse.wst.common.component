@@ -32,25 +32,28 @@
         <dependent-module archiveName="spring-context-4.2.5.RELEASE.jar" deploy-path="/WEB-INF/lib" handle="module:/classpath/lib/C:/Users/AC31841/Downloads/spring-framework-4.2.5.RELEASE-dist/spring-framework-4.2.5.RELEASE/libs/spring-context-4.2.5.RELEASE.jar">
             <dependency-type>uses</dependency-type>
         </dependent-module>
-        <dependent-module archiveName="slf4j-api-1.5.6.jar" deploy-path="/WEB-INF/lib" handle="module:/classpath/lib/C:/Users/AC31841/Downloads/validation/slf4j-api-1.5.6.jar">
-            <dependency-type>uses</dependency-type>
-        </dependent-module>
-        <dependent-module archiveName="hibernate-validator-4.0.2.GA.jar" deploy-path="/WEB-INF/lib" handle="module:/classpath/lib/C:/Users/AC31841/Downloads/validation/hibernate-validator-4.0.2.GA.jar">
-            <dependency-type>uses</dependency-type>
-        </dependent-module>
         <dependent-module archiveName="commons-io-1.2.jar" deploy-path="/WEB-INF/lib" handle="module:/classpath/lib/C:/Users/AC31841/Downloads/validation/commons-io-1.2.jar">
             <dependency-type>uses</dependency-type>
         </dependent-module>
         <dependent-module archiveName="commons-fileupload-1.1.1.jar" deploy-path="/WEB-INF/lib" handle="module:/classpath/lib/C:/Users/AC31841/Downloads/validation/commons-fileupload-1.1.1.jar">
             <dependency-type>uses</dependency-type>
         </dependent-module>
-        <dependent-module archiveName="log4j-1.2.14.jar" deploy-path="/WEB-INF/lib" handle="module:/classpath/lib/C:/Users/AC31841/Downloads/validation/log4j-1.2.14.jar">
+        <dependent-module archiveName="hibernate-validator-annotation-processor-6.0.13.Final.jar" deploy-path="/WEB-INF/lib" handle="module:/classpath/lib/C:/Users/AC31841/Downloads/Validation2.0/hibernate-validator-annotation-processor-6.0.13.Final.jar">
             <dependency-type>uses</dependency-type>
         </dependent-module>
-        <dependent-module archiveName="slf4j-log4j12-1.5.6.jar" deploy-path="/WEB-INF/lib" handle="module:/classpath/lib/C:/Users/AC31841/Downloads/validation/slf4j-log4j12-1.5.6.jar">
+        <dependent-module archiveName="javax.el-api-3.0.0.jar" deploy-path="/WEB-INF/lib" handle="module:/classpath/lib/C:/Users/AC31841/Downloads/Validation2.0/javax.el-api-3.0.0.jar">
             <dependency-type>uses</dependency-type>
         </dependent-module>
-        <dependent-module archiveName="validation-api-1.0.0.GA.jar" deploy-path="/WEB-INF/lib" handle="module:/classpath/lib/C:/Users/AC31841/Downloads/validation/validation-api-1.0.0.GA.jar">
+        <dependent-module archiveName="validation-api-2.0.1.Final.jar" deploy-path="/WEB-INF/lib" handle="module:/classpath/lib/C:/Users/AC31841/Downloads/Validation2.0/validation-api-2.0.1.Final.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="hibernate-validator-6.0.13.Final.jar" deploy-path="/WEB-INF/lib" handle="module:/classpath/lib/C:/Users/AC31841/Downloads/Validation2.0/hibernate-validator-6.0.13.Final.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="classmate-0.5.4.jar" deploy-path="/WEB-INF/lib" handle="module:/classpath/lib/C:/Users/AC31841/Downloads/Validation2.0/classmate-0.5.4.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="jboss-logging-3.3.2.Final.jar" deploy-path="/WEB-INF/lib" handle="module:/classpath/lib/C:/Users/AC31841/Downloads/jboss-logging-3.3.2.Final.jar">
             <dependency-type>uses</dependency-type>
         </dependent-module>
         <property name="context-root" value="Mvc2_Spring"/>

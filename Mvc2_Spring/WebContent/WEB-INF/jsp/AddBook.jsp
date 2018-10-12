@@ -25,7 +25,7 @@
 	
 	<label for="">Date of Publish</label>
 	<form:input path="dateOfPublish" type="date"/>
-	<!--<form:errors cssStyle="color:red" path="dateOfPublish"></form:errors>-->
+	<form:errors cssStyle="color:red" path="dateOfPublish"></form:errors>
 	
 	<label for="">Rate Per Unit</label>
 	<form:input path="ratePerUnit"/>

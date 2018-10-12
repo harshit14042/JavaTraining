@@ -21,7 +21,7 @@ public class Book {
 	private String author;
 	private String category;
 	
-	//@Past
+	@Past
 	@DateTimeFormat(iso=ISO.DATE)
 	public LocalDate dateOfPublish;
 	private double ratePerUnit;
