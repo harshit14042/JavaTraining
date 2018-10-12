@@ -2,6 +2,8 @@ package com.training.entity;
 
 import java.time.LocalDate;
 
+import org.springframework.format.annotation.DateTimeFormat;
+import org.springframework.format.annotation.DateTimeFormat.ISO;
 import org.springframework.stereotype.Component;
 
 @Component
@@ -11,7 +13,8 @@ public class Book {
 	private String bookName;
 	private String author;
 	private String category;
-	private LocalDate dateOfPublish;
+	@DateTimeFormat(iso=ISO.DATE)
+	public LocalDate dateOfPublish;
 	private double ratePerUnit;
 	public long getBookNumber() {
 		return bookNumber;

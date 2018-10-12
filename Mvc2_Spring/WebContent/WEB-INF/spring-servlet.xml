@@ -20,5 +20,8 @@
 		class="org.springframework.web.servlet.view.InternalResourceViewResolver"
 		p:suffix=".jsp" p:prefix="/WEB-INF/jsp/">
 	</bean>
+	
+	<bean id="dateEditor" class="org.springframework.web.servlet.ModelAndView"/>
+	<mvc:resources mapping="/resources/**" location="/resources/"></mvc:resources>
 
 </beans>
