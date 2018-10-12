@@ -55,7 +55,6 @@ INDEX VERSION 1.131+C:\Users\AC31841\Desktop\Java Workspace\JavaTraining\.metada
 981837304.index
 320745413.index
 3582020132.index
-249868310.index
 1122839536.index
 166514845.index
 2353794671.index
