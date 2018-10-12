@@ -2,3 +2,9 @@
 table{
 	border: 1px solid black
 }
+tr,td{
+	border: 1px solid blue;
+	width: 100px;
+	text-align:center;
+	color:red;
+}

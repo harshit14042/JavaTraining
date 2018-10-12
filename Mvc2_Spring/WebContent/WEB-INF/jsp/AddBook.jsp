@@ -20,7 +20,7 @@
 	<form:input path="author"/>
 	
 	<label for="">Category</label>
-	<form:input path="category"/>
+	<form:select items="${catList}" path="category"></form:select>
 	
 	<label for="">Date of Publish</label>
 	<form:input path="dateOfPublish" type="date"/>

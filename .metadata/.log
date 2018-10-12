@@ -7418,3 +7418,39 @@ java.io.FileNotFoundException: class path resource [com/training/controllers/Wel
 	at org.springframework.ide.eclipse.beans.core.metadata.internal.model.BeanMetadataBuilderJob.attachMetadata(BeanMetadataBuilderJob.java:170)
 	at org.springframework.ide.eclipse.beans.core.metadata.internal.model.BeanMetadataBuilderJob.run(BeanMetadataBuilderJob.java:141)
 	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.springframework.ide.eclipse.beans.core 2 0 2018-10-12 12:21:23.134
+!MESSAGE Error during AST class visiting
+!STACK 0
+java.io.FileNotFoundException: class path resource [com/training/controllers/WelcomeController.class] cannot be opened because it does not exist
+	at org.springframework.core.io.ClassPathResource.getInputStream(ClassPathResource.java:172)
+	at org.springframework.ide.eclipse.core.type.asm.SimpleClassReaderFactory.getClassReader(SimpleClassReaderFactory.java:67)
+	at org.springframework.ide.eclipse.core.type.asm.CachingClassReaderFactory.getClassReader(CachingClassReaderFactory.java:61)
+	at org.springframework.ide.eclipse.core.type.asm.SimpleClassReaderFactory.getClassReader(SimpleClassReaderFactory.java:63)
+	at org.springframework.ide.eclipse.beans.core.metadata.model.AbstractAnnotationReadingMetadataProvider.runAnnotationMetadataVisitor(AbstractAnnotationReadingMetadataProvider.java:135)
+	at org.springframework.ide.eclipse.beans.core.metadata.model.AbstractAnnotationReadingMetadataProvider.getAnnotationMetadata(AbstractAnnotationReadingMetadataProvider.java:117)
+	at org.springframework.ide.eclipse.beans.core.metadata.model.AbstractAnnotationReadingMetadataProvider.provideBeanMetadata(AbstractAnnotationReadingMetadataProvider.java:71)
+	at org.springframework.ide.eclipse.beans.core.metadata.internal.model.BeanMetadataBuilderJob$1.run(BeanMetadataBuilderJob.java:198)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.springframework.ide.eclipse.beans.core.metadata.internal.model.BeanMetadataBuilderJob.attachMetadataToBean(BeanMetadataBuilderJob.java:191)
+	at org.springframework.ide.eclipse.beans.core.metadata.internal.model.BeanMetadataBuilderJob.attachMetadata(BeanMetadataBuilderJob.java:170)
+	at org.springframework.ide.eclipse.beans.core.metadata.internal.model.BeanMetadataBuilderJob.run(BeanMetadataBuilderJob.java:141)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.springframework.ide.eclipse.beans.core 2 0 2018-10-12 12:22:18.318
+!MESSAGE Error during AST class visiting
+!STACK 0
+java.io.FileNotFoundException: class path resource [com/training/controllers/WelcomeController.class] cannot be opened because it does not exist
+	at org.springframework.core.io.ClassPathResource.getInputStream(ClassPathResource.java:172)
+	at org.springframework.ide.eclipse.core.type.asm.SimpleClassReaderFactory.getClassReader(SimpleClassReaderFactory.java:67)
+	at org.springframework.ide.eclipse.core.type.asm.CachingClassReaderFactory.getClassReader(CachingClassReaderFactory.java:61)
+	at org.springframework.ide.eclipse.core.type.asm.SimpleClassReaderFactory.getClassReader(SimpleClassReaderFactory.java:63)
+	at org.springframework.ide.eclipse.beans.core.metadata.model.AbstractAnnotationReadingMetadataProvider.runAnnotationMetadataVisitor(AbstractAnnotationReadingMetadataProvider.java:135)
+	at org.springframework.ide.eclipse.beans.core.metadata.model.AbstractAnnotationReadingMetadataProvider.getAnnotationMetadata(AbstractAnnotationReadingMetadataProvider.java:117)
+	at org.springframework.ide.eclipse.beans.core.metadata.model.AbstractAnnotationReadingMetadataProvider.provideBeanMetadata(AbstractAnnotationReadingMetadataProvider.java:71)
+	at org.springframework.ide.eclipse.beans.core.metadata.internal.model.BeanMetadataBuilderJob$1.run(BeanMetadataBuilderJob.java:198)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.springframework.ide.eclipse.beans.core.metadata.internal.model.BeanMetadataBuilderJob.attachMetadataToBean(BeanMetadataBuilderJob.java:191)
+	at org.springframework.ide.eclipse.beans.core.metadata.internal.model.BeanMetadataBuilderJob.attachMetadata(BeanMetadataBuilderJob.java:170)
+	at org.springframework.ide.eclipse.beans.core.metadata.internal.model.BeanMetadataBuilderJob.run(BeanMetadataBuilderJob.java:141)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)

@@ -45,4 +45,9 @@ public class WelcomeController {
 		model.addAttribute("bookAdded",b);
 		return "Success";
 	}
+	
+	@ModelAttribute("catList")
+	public String[] getCategories() {
+		return new String[] {"Fiction","Scientific","Novel"};
+	}
 }
