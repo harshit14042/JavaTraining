@@ -13,9 +13,6 @@
 <label for="">Name</label>
 <form:input path="name"/>
 
-<label for="">Image Ref</label>
-<form:input path="imageName"/>
-
 <label for="">Description</label>
 <form:input path="description"/>
 

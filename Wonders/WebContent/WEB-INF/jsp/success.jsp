@@ -7,7 +7,7 @@
 <title>Insert title here</title>
 </head>
 <body>
-<img src="resources/images/${command.imageName}.jpg">
+<img src="resources/images/${command.name}.jpg">
 <h1>${command.name}</h1><br/>
 Desc: <p>${command.description}</p><br/>
 Continent: <p>${command.continent}</p>
