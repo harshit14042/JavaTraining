@@ -2,6 +2,8 @@ package com.training.entity;
 
 import java.time.LocalDate;
 
+import javax.validation.constraints.*;
+
 import org.springframework.format.annotation.DateTimeFormat;
 import org.springframework.format.annotation.DateTimeFormat.ISO;
 import org.springframework.stereotype.Component;
@@ -9,10 +11,17 @@ import org.springframework.stereotype.Component;
 @Component
 public class Book {
 
+	@NotNull
+	@Max(value=1000,message="Max value should be 1000")
+	@Min(value=10,message="Min value should be 10")
 	private long bookNumber;
+	
+	
 	private String bookName;
 	private String author;
 	private String category;
+	
+	//@Past
 	@DateTimeFormat(iso=ISO.DATE)
 	public LocalDate dateOfPublish;
 	private double ratePerUnit;

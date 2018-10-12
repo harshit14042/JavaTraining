@@ -10,12 +10,12 @@
 </head>
 <body>
 <table>
-<tr><td><c:out value="${bookAdded.bookNumber}"></c:out></td>
-<td><c:out value="${bookAdded.bookName}"></c:out></td>
-<td><c:out value="${bookAdded.author}"></c:out></td>
-<td><c:out value="${bookAdded.category}"></c:out></td>
-<td><c:out value="${bookAdded.dateOfPublish}"></c:out></td>
-<td><c:out value="${bookAdded.ratePerUnit}"></c:out></td></tr>
+<tr><td><c:out value="${command.bookNumber}"></c:out></td>
+<td><c:out value="${command.bookName}"></c:out></td>
+<td><c:out value="${command.author}"></c:out></td>
+<td><c:out value="${command.category}"></c:out></td>
+<td><c:out value="${command.dateOfPublish}"></c:out></td>
+<td><c:out value="${command.ratePerUnit}"></c:out></td></tr>
 </table>
 </body>
 </html>

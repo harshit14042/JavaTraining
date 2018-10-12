@@ -1,14 +1,16 @@
 package com.training.controllers;
 
+import javax.validation.Valid;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
+import org.springframework.validation.BindingResult;
 import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.servlet.ModelAndView;
 
-import com.sun.scenario.effect.Blend.Mode;
 import com.training.entity.Book;
 
 @Controller
@@ -41,9 +43,20 @@ public class WelcomeController {
 	}
 	
 	@RequestMapping(value="/addBook", method=RequestMethod.POST)
-	public String submit(@ModelAttribute("command")Book b, Model model) {
-		model.addAttribute("bookAdded",b);
-		return "Success";
+	public String submit(@Valid @ModelAttribute("command")Book b, BindingResult result)
+	{
+		System.out.println("Submit");
+		
+		if(result.hasErrors()) {
+			System.out.println("Error Occured");
+			return "AddBook";
+		}
+		else {
+			System.out.println("Error not Occured");
+			//model.addAttribute("bookAdded",b);
+			return "Success";
+		}
+		
 	}
 	
 	@ModelAttribute("catList")

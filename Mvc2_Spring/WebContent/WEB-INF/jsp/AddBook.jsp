@@ -12,6 +12,7 @@
 	
 	<label for="">Book Number</label>
 	<form:input path="bookNumber"/>
+	<form:errors cssStyle="color:red" path="bookNumber"></form:errors>
 	
 	<label for="">Book Name</label>
 	<form:input path="bookName"/>
@@ -24,6 +25,7 @@
 	
 	<label for="">Date of Publish</label>
 	<form:input path="dateOfPublish" type="date"/>
+	<!--<form:errors cssStyle="color:red" path="dateOfPublish"></form:errors>-->
 	
 	<label for="">Rate Per Unit</label>
 	<form:input path="ratePerUnit"/>
