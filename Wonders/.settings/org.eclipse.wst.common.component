@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?><project-modules id="moduleCoreId" project-version="1.5.0">
+    <wb-module deploy-name="Wonders">
+        <wb-resource deploy-path="/" source-path="/WebContent" tag="defaultRootSource"/>
+        <wb-resource deploy-path="/WEB-INF/classes" source-path="/src"/>
+        <dependent-module archiveName="spring-aspects-4.2.5.RELEASE.jar" deploy-path="/WEB-INF/lib" handle="module:/classpath/lib/C:/Users/AC31841/Downloads/spring-framework-4.2.5.RELEASE-dist/spring-framework-4.2.5.RELEASE/libs/spring-aspects-4.2.5.RELEASE.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="hibernate-validator-annotation-processor-6.0.13.Final.jar" deploy-path="/WEB-INF/lib" handle="module:/classpath/lib/C:/Users/AC31841/Downloads/Validation2.0/hibernate-validator-annotation-processor-6.0.13.Final.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="spring-beans-4.2.5.RELEASE.jar" deploy-path="/WEB-INF/lib" handle="module:/classpath/lib/C:/Users/AC31841/Downloads/spring-framework-4.2.5.RELEASE-dist/spring-framework-4.2.5.RELEASE/libs/spring-beans-4.2.5.RELEASE.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="spring-context-4.2.5.RELEASE.jar" deploy-path="/WEB-INF/lib" handle="module:/classpath/lib/C:/Users/AC31841/Downloads/spring-framework-4.2.5.RELEASE-dist/spring-framework-4.2.5.RELEASE/libs/spring-context-4.2.5.RELEASE.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="jboss-logging-3.3.2.Final.jar" deploy-path="/WEB-INF/lib" handle="module:/classpath/lib/C:/Users/AC31841/Downloads/jboss-logging-3.3.2.Final.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="commons-io-1.2.jar" deploy-path="/WEB-INF/lib" handle="module:/classpath/lib/C:/Users/AC31841/Downloads/validation/commons-io-1.2.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="javax.el-api-3.0.0.jar" deploy-path="/WEB-INF/lib" handle="module:/classpath/lib/C:/Users/AC31841/Downloads/Validation2.0/javax.el-api-3.0.0.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="spring-expression-4.2.5.RELEASE.jar" deploy-path="/WEB-INF/lib" handle="module:/classpath/lib/C:/Users/AC31841/Downloads/spring-framework-4.2.5.RELEASE-dist/spring-framework-4.2.5.RELEASE/libs/spring-expression-4.2.5.RELEASE.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="commons-logging-1.2.jar" deploy-path="/WEB-INF/lib" handle="module:/classpath/lib/C:/Users/AC31841/Downloads/commons-logging-1.2.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="spring-aop-4.2.5.RELEASE.jar" deploy-path="/WEB-INF/lib" handle="module:/classpath/lib/C:/Users/AC31841/Downloads/spring-framework-4.2.5.RELEASE-dist/spring-framework-4.2.5.RELEASE/libs/spring-aop-4.2.5.RELEASE.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="classmate-0.5.4.jar" deploy-path="/WEB-INF/lib" handle="module:/classpath/lib/C:/Users/AC31841/Downloads/Validation2.0/classmate-0.5.4.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="validation-api-2.0.1.Final.jar" deploy-path="/WEB-INF/lib" handle="module:/classpath/lib/C:/Users/AC31841/Downloads/Validation2.0/validation-api-2.0.1.Final.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="hibernate-validator-6.0.13.Final.jar" deploy-path="/WEB-INF/lib" handle="module:/classpath/lib/C:/Users/AC31841/Downloads/Validation2.0/hibernate-validator-6.0.13.Final.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="spring-web-4.2.5.RELEASE.jar" deploy-path="/WEB-INF/lib" handle="module:/classpath/lib/C:/Users/AC31841/Downloads/spring-framework-4.2.5.RELEASE-dist/spring-framework-4.2.5.RELEASE/libs/spring-web-4.2.5.RELEASE.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="commons-fileupload-1.1.1.jar" deploy-path="/WEB-INF/lib" handle="module:/classpath/lib/C:/Users/AC31841/Downloads/validation/commons-fileupload-1.1.1.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="spring-context-support-4.2.5.RELEASE.jar" deploy-path="/WEB-INF/lib" handle="module:/classpath/lib/C:/Users/AC31841/Downloads/spring-framework-4.2.5.RELEASE-dist/spring-framework-4.2.5.RELEASE/libs/spring-context-support-4.2.5.RELEASE.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="spring-core-4.2.5.RELEASE.jar" deploy-path="/WEB-INF/lib" handle="module:/classpath/lib/C:/Users/AC31841/Downloads/spring-framework-4.2.5.RELEASE-dist/spring-framework-4.2.5.RELEASE/libs/spring-core-4.2.5.RELEASE.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="spring-webmvc-4.2.5.RELEASE.jar" deploy-path="/WEB-INF/lib" handle="module:/classpath/lib/C:/Users/AC31841/Downloads/spring-framework-4.2.5.RELEASE-dist/spring-framework-4.2.5.RELEASE/libs/spring-webmvc-4.2.5.RELEASE.jar">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <property name="context-root" value="Wonders"/>
+        <property name="java-output-path" value="/Wonders/build/classes"/>
+    </wb-module>
+</project-modules>
