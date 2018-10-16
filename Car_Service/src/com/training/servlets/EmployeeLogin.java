@@ -52,7 +52,7 @@ public class EmployeeLogin extends HttpServlet {
 		}
 		RequestDispatcher dispatcher=null;
 		if(isValid) {
-			dispatcher=request.getRequestDispatcher("addService.html");
+			dispatcher=request.getRequestDispatcher("main.html");
 		}
 		else {
 			dispatcher=request.getRequestDispatcher("index.html");
