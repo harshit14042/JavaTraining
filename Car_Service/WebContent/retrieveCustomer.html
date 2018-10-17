@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Get Customer</title>
+<script type="text/javascript" src="jquery1-7-2.js"></script>
+<script>
+	$(function(){
+		$("#customer").on("click",function(){
+			$.ajax({
+				url:"http://localhost:8080/Car_Service_REST_Services/rest/carservice/getCustomer/"+$("#customer_id").val(),
+				type:"GET",
+				success:function(data){
+					data=JSON.parse(data);
+					$("#customerdetails").html(data);
+				},
+				error:function(errorThrown){
+					console.log(errorThrown);
+				}
+			});
+			$.ajax({
+				url:"http://localhost:8080/Car_Service_REST_Services/rest/carservice/getCar/"+$("#customer_id").val(),
+				type:"GET",
+				success:function(data){
+					data=JSON.parse(data);
+					$("#cardetails").html(data);
+				},
+				error:function(errorThrown){
+					console.log(errorThrown);
+				}
+			});
+			$.ajax({
+				url:"http://localhost:8080/Car_Service_REST_Services/rest/carservice/getService/"+$("#customer_id").val(),
+				type:"GET",
+				success:function(data){
+					data=JSON.parse(data);
+					$("#servicedetails").html(data);
+				},
+				error:function(errorThrown){
+					console.log(errorThrown);
+				}
+			});
+		});
+	});
+</script>
+</head>
+<body>
+<form>
+<label for="customer_id">Customer Id</label>
+<input type="text" name="customer_id" id="customer_id"/>
+<input type="submit" value="Find" id="customer"/>
+</form>
+<div id="customerdetails"></div>
+<div id="cardetails"></div>
+<div id="servicedetails"></div>
+<a href="main.html">Back</a>
+</body>
+</html>

@@ -1,6 +1,7 @@
 package com.training.servlets;
 
 import java.io.IOException;
+import java.sql.SQLException;
 
 import javax.servlet.RequestDispatcher;
 import javax.servlet.ServletException;
@@ -41,20 +42,40 @@ public class EmployeeLogin extends HttpServlet {
 		//doGet(request, response);
 		String userId=request.getParameter("userId");
 		String passWord=request.getParameter("passWord");
-		boolean isValid=false;
-		DAO dao;
+		RequestDispatcher dispatcher=null;
+		DAO dao=null;
 		try {
 			dao = new DAOImpl();
-			isValid=dao.validate(userId, passWord);
-		} catch (Exception e) {
+		} catch (Exception e1) {
 			// TODO Auto-generated catch block
-			e.printStackTrace();
+			e1.printStackTrace();
 		}
-		RequestDispatcher dispatcher=null;
-		if(isValid) {
-			dispatcher=request.getRequestDispatcher("main.html");
+		if(request.getParameter("type").equals("login")) {
+		
+			boolean isValid=false;
+			
+			try {
+				isValid=dao.validate(userId, passWord);
+			} catch (SQLException e) {
+				// TODO Auto-generated catch block
+				e.printStackTrace();
+			}
+			
+			if(isValid) {
+				dispatcher=request.getRequestDispatcher("main.html");
+			}
+			else {
+				dispatcher=request.getRequestDispatcher("index.html");
+			}
 		}
 		else {
+			try {
+				System.out.println(userId+" "+passWord);
+				dao.register(userId, passWord);
+			} catch (SQLException e) {
+				// TODO Auto-generated catch block
+				e.printStackTrace();
+			}
 			dispatcher=request.getRequestDispatcher("index.html");
 		}
 		dispatcher.forward(request, response);

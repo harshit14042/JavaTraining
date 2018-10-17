@@ -8,6 +8,6 @@ public interface CustomerDAO extends DAO<Customer> {
 
 	public int updatebyId(String Id, String property, String newVal) throws SQLException;
 	
-	
+	public long getNewId() throws SQLException;
 	
 }

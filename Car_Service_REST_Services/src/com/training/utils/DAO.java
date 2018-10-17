@@ -8,5 +8,5 @@ public interface DAO<T> {
 
 	public T findById(String Id) throws SQLException;
 	
-	public int addById(T t) throws SQLException;
+	public int add(T t) throws SQLException;
 }

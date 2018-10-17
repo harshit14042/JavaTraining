@@ -27,9 +27,15 @@ public class CarDAOImpl implements DAO<Car> {
 		System.out.println(con);
 	}
 	
-	public Car convertToCar(ResultSet rs) {
-		Car car=null;
+	public Car convertToCar(ResultSet rs) throws SQLException {
 		
+		String car_no=rs.getString(1);
+		long customer_id=rs.getLong(2);
+		String company=rs.getString(3);
+		String car_model=rs.getString(4);
+		int car_age=rs.getInt(5);
+		
+		Car car=new Car(car_no, customer_id, company, car_model, car_age);
 		
 		return car;
 	}
@@ -38,7 +44,7 @@ public class CarDAOImpl implements DAO<Car> {
 	public Car findById(String id) throws SQLException {
 		// TODO Auto-generated method stub
 		Car car=null;
-		String sql="select * from car where regNo="+id;
+		String sql="select * from hv_car where customer_id="+id;
 		PreparedStatement ps=con.prepareStatement(sql);
 		
 		ResultSet rs=ps.executeQuery();
@@ -49,9 +55,22 @@ public class CarDAOImpl implements DAO<Car> {
 	}
 
 	@Override
-	public int addById(Car t) throws SQLException {
+	public int add(Car car) throws SQLException {
 		// TODO Auto-generated method stub
-		return 0;
+		int rowsAdded=0;
+		String sql="insert into hv_car values(?,?,?,?,?)";
+		
+		PreparedStatement ps=con.prepareStatement(sql);
+		
+		ps.setString(1,car.getCar_no());
+		ps.setLong(2, car.getCustomer_id());
+		ps.setString(3, car.getCompany());
+		ps.setString(4, car.getCar_model());
+		ps.setInt(5, car.getCar_age());
+		
+		rowsAdded=ps.executeUpdate();
+		
+		return rowsAdded;
 	}
 
 }

@@ -53,4 +53,22 @@ public class DAOImpl implements DAO<Employee> {
 		return isValid;
 	}
 
+
+
+	@Override
+	public int register(String userId, String passWord) throws SQLException {
+		// TODO Auto-generated method stub
+		int rowsAdded=0;
+		
+		String sql="insert into hv_employee values(?,?)";
+		PreparedStatement ps=con.prepareStatement(sql);
+		
+		ps.setString(1,userId);
+		ps.setString(2, passWord);
+		
+		rowsAdded=ps.executeUpdate();
+		
+		return rowsAdded;
+	}
+
 }
