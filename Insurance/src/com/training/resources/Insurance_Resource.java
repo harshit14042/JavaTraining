@@ -1,15 +1,14 @@
 package com.training.resources;
 
+import java.awt.PageAttributes.MediaType;
 import java.sql.SQLException;
+import java.time.LocalDate;
 
 import javax.ws.rs.GET;
 import javax.ws.rs.Path;
 import javax.ws.rs.PathParam;
 import javax.ws.rs.Produces;
-import javax.ws.rs.core.MediaType;
-import javax.ws.rs.core.Response;
 
-import com.training.entity.Insurance;
 import com.training.utils.DAO;
 import com.training.utils.InsuranceDAOImpl;
 
@@ -21,20 +20,24 @@ public class Insurance_Resource {
 	
 	public Insurance_Resource() throws Exception {
 		dao=new InsuranceDAOImpl();
+		Logger log=Logger.getRootLogger();
 	}
 	
 	@GET
-	@Path("getDetails/{car_no}")
-	@Produces(MediaType.APPLICATION_JSON)
-	public Response getDetails(@PathParam("car_no")String car_no) {
-		Insurance ins=null;
+	@Path("getDetails/{customer_id}")
+	@Produces(MediaType.TEXT_PLAIN)
+	public String getDetails(@PathParam("customer_id")String customer_id) {
+		String cvg="0";
 		try {
-			ins = dao.getbyId(car_no);
+			cvg = dao.getbyId(customer_id);
 		} catch (SQLException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
-		return Response.status(200).entity(ins).build();
+		
+		log.info("Request made for details of the customer with customer id: "+customer_id+" at "+LocalDate.now());
+		
+		return cvg;
 	}
 	
 }

@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+<script type="text/javascript" src="jquery1-7-2.js"></script>
+<script>
+$(function(){
+	$("#btn").on("click",function(){
+		$.ajax({
+			url:"http://localhost:8080/Car_Service_REST_Services/rest/carservice/getCustomer/"+$("#customer_id").val(),
+			type:"GET",
+			success:function(data){
+				data=JSON.parse(data);
+				$("#customerdetails").html(data);
+			},
+			error:function(errorThrown){
+				console.log(errorThrown);
+			}
+		});
+		$.ajax({
+			url:"http://localhost:8080/Car_Service_REST_Services/rest/carservice/getCar/"+$("#customer_id").val(),
+			type:"GET",
+			success:function(data){
+				data=JSON.parse(data);
+				$("#cardetails").html(data);
+			},
+			error:function(errorThrown){
+				console.log(errorThrown);
+			}
+		});
+		$.ajax({
+			url:"http://localhost:8080/Insurance/rest/insurance/getDetails/"+$("#customer_id").val(),
+			type:"GET",
+			success:function(data){
+				var total=0;
+				if($("services").val()=="option1"){
+					total=-1000;
+				}
+				else if($("services").val()=="option2"){
+					total=-1200;
+				}
+				else{
+					total=-3000;
+				}
+				total+=parseInt(data);
+				$("#insurancedetails").html("Toal Amount: "+total);
+			},
+			error:function(errorThrown){
+				console.log(errorThrown);
+			}
+		});
+	});
+});
+</script>
+</head>
+<body>
+<form>
+<label for="customer_id">Customer Id</label>
+<input type="number" name="customer_id" id="customer_id" required/>
+<div id="customerdetails"></div>
+<span>Car Registration Number:</span>
+<div id="cardetails"></div>
+<select name="services" id="services">
+	<option value="option1">Option 1</option>
+	<option value="option2">Option 2</option>
+	<option value="option3">Option 3</option>
+</select>
+<input type="submit" value="Add Service" id="btn"/>
+</form>
+<div id="insurancedetails"></div>
+<a href="main.html">Back</a>
+</body>
+</html>

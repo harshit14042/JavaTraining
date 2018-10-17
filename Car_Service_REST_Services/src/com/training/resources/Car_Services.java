@@ -54,8 +54,8 @@ public class Car_Services {
 	}
 	
 	@PUT
-	@Path("updateCustomer/{custId}/{property}/{newVal}")
-	public int updateCustomer(@PathParam("custId") String custId,@PathParam("property") String property,@PathParam("newVal")String newVal) throws SQLException {
+	@Path("updateCustomer/{customer_id}/{property}/{newVal}")
+	public int updateCustomer(@PathParam("customer_id") String custId,@PathParam("property") String property,@PathParam("newVal")String newVal) throws SQLException {
 		return custDao.updatebyId(custId, property, newVal);
 	}
 	

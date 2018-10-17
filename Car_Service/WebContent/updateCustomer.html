@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+<script type="text/javascript" src="jquery1-7-2.js"></script>
+<script>
+
+$(function(){
+	$("#btn").on("click",function(){
+		$.ajax({
+			url:"http://localhost:8080/Car_Service_REST_Services/rest/carservice/updateCustomer/"+$("#customer_id").val()+"/"+$("#property").val()+"/"+$("#newVal"),
+			type:"PUT",
+			contentType:"charset=utf-8",
+			success:function(data){
+				console.log(data);
+			},
+			error:function(errorThrown){
+				console.log(errorThrown);
+			}
+		});
+	});
+});
+
+</script>
+</head>
+<body>
+<form>
+<label for="customer_id">Customer Id</label>
+<input type="number" name="customer_id" id="customer_id"required/>
+<label for="property">Property</label>
+<select name="property" id="property">
+<option value="addr">Address</option>
+<option value="cname">Name</option>
+<option value="email">Email</option>
+</select>
+<input type="text" id="newVal" name="newVal" required/>
+<input type="submit" value="Update" id="btn">
+</form>
+<a href="main.html">Back</a>
+</body>
+</html>

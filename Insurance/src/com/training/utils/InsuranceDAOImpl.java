@@ -33,29 +33,26 @@ public class InsuranceDAOImpl implements DAO<Insurance>{
 		Insurance ins=null;
 		
 		long insurance_id=rs.getLong(1);
-		String car_no=rs.getString(2);
-		int coverage=rs.getInt(3);
+		long customer_id=rs.getLong(2);
+		String car_no=rs.getString(3);
+		int coverage=rs.getInt(4);
 		
-		ins=new Insurance(insurance_id, car_no, coverage);
+		ins=new Insurance(insurance_id, car_no, customer_id, coverage);
 		
 		return ins;
 	}
 	
 	@Override
-	public Insurance getbyId(String carNo) throws SQLException {
+	public String getbyId(String customer_id) throws SQLException {
 		// TODO Auto-generated method stub
-		String sql="select * from hv_insurance_details where car_no="+carNo;
+		String sql="select coverage from hv_insurance_details where customer_id="+customer_id;
 		
 		PreparedStatement ps=con.prepareStatement(sql);
 		
 		ResultSet rs=ps.executeQuery();
-		
-		Insurance ins=null;
-		
-		if(rs.next()) {
-			ins=converToInsurance(rs);
-		}
-		return ins;
+		String res="0";
+		res=""+rs.getInt(1);
+		return res;
 		
 	}
 

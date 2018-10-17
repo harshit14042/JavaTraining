@@ -7,6 +7,6 @@ import com.training.entity.Insurance;
 public interface DAO<T> {
 
 	
-	public Insurance getbyId(String carNo) throws SQLException;
+	public String getbyId(String carNo) throws SQLException;
 	
 }
