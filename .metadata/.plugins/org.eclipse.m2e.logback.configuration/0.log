@@ -688,3 +688,18 @@ Caused by: org.eclipse.aether.transfer.ArtifactNotFoundException: Could not find
 2018-10-17 10:52:37,860 [Worker-5] INFO  c.g.t.t.d.PublishedGradleVersions - Gradle version information cache is up-to-date. Trying to read.
 2018-10-17 21:08:21,378 [Worker-15] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: com.training:FirstMaven:0.0.1-SNAPSHOT @ C:\Users\HARSHIT VERMA\git\JavaTraining\JavaTraining\FirstMaven\pom.xml.
 2018-10-17 21:08:37,519 [Worker-9] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: com.training:SecondProject:0.0.1-SNAPSHOT @ C:\Users\HARSHIT VERMA\git\JavaTraining\JavaTraining\SecondProject\pom.xml.
+2018-10-18 11:23:41,681 [Worker-6] INFO  c.g.t.t.d.PublishedGradleVersions - Gradle version information cache is up-to-date. Trying to read.
+2018-10-18 11:26:22,238 [Worker-12] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: com.training:FirstMaven:0.0.1-SNAPSHOT @ C:\Users\AC31841\JavaTraining\FirstMaven\pom.xml.
+2018-10-18 11:26:24,102 [Worker-12] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2018-10-18 11:26:24,110 [Worker-12] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\AC31841\JavaTraining\FirstMaven\src\main\resources
+2018-10-18 11:26:24,113 [Worker-12] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2018-10-18 11:26:24,122 [Worker-12] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\AC31841\JavaTraining\FirstMaven\src\test\resources
+2018-10-18 11:26:41,328 [Worker-10] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: com.training:SecondProject:0.0.1-SNAPSHOT @ C:\Users\AC31841\JavaTraining\SecondProject\pom.xml.
+2018-10-18 11:26:41,660 [Worker-10] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2018-10-18 11:26:41,661 [Worker-10] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\AC31841\JavaTraining\SecondProject\src\main\resources
+2018-10-18 11:26:41,662 [Worker-10] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2018-10-18 11:26:41,663 [Worker-10] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\AC31841\JavaTraining\SecondProject\src\test\resources
+2018-10-18 11:26:42,461 [Worker-6] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2018-10-18 11:26:42,462 [Worker-6] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\AC31841\JavaTraining\SecondProject\src\main\resources
+2018-10-18 11:26:42,463 [Worker-6] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2018-10-18 11:26:42,464 [Worker-6] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\AC31841\JavaTraining\SecondProject\src\test\resources

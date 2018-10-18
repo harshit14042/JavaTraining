@@ -8,7 +8,7 @@
     <welcome-file>default.html</welcome-file>
     <welcome-file>default.htm</welcome-file>
     <welcome-file>default.jsp</welcome-file>
-  </welcome-file-list>  
+  </welcome-file-list>
   <servlet>
     <description></description>
     <display-name>EmployeeLogin</display-name>
@@ -18,5 +18,45 @@
   <servlet-mapping>
     <servlet-name>EmployeeLogin</servlet-name>
     <url-pattern>/emplogin</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>Find</display-name>
+    <servlet-name>Find</servlet-name>
+    <servlet-class>com.training.servlets.Find</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>Find</servlet-name>
+    <url-pattern>/find</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>addService</display-name>
+    <servlet-name>addService</servlet-name>
+    <servlet-class>com.training.servlets.addService</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>addService</servlet-name>
+    <url-pattern>/addService</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>ServiceLog</display-name>
+    <servlet-name>ServiceLog</servlet-name>
+    <servlet-class>com.training.servlets.ServiceLog</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>ServiceLog</servlet-name>
+    <url-pattern>/serviceLog</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>addCustomer</display-name>
+    <servlet-name>addCustomer</servlet-name>
+    <servlet-class>com.training.servlets.addCustomer</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>addCustomer</servlet-name>
+    <url-pattern>/addCustomer</url-pattern>
   </servlet-mapping>
 </web-app>

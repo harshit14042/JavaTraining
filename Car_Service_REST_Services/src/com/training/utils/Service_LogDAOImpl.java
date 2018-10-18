@@ -45,12 +45,14 @@ public class Service_LogDAOImpl implements DAO<Service_Log>{
 	public List<Service_Log> findByCustId(String Id) throws SQLException {
 		// TODO Auto-generated method stub
 		List<Service_Log> list=new ArrayList<>();
-		String sql="select * from hv_servicelog inner join hv_services on hv_servicelog.serviceid=hv_services.serviceid  inner join hv_insurance_details on hv_insurance_details.car_no=hv_servicelog.car_no inner join hv_car on hv_car.car_no=hv_servicelog.car_no where customer_id="+Id;
+		String sql="select * from hv_servicelog inner join hv_services on hv_servicelog.serviceid=hv_services.serviceid  inner join hv_insurance_details on hv_insurance_details.car_no=hv_servicelog.car_no inner join hv_car on hv_car.car_no=hv_servicelog.car_no where hv_car.customer_id="+Id;
 		PreparedStatement ps=con.prepareStatement(sql);
 		ResultSet rs=ps.executeQuery();
 		while(rs.next()) {
+			System.out.println(rs);
 			list.add(convertToService_Log(rs));
 		}
+		System.out.println(list);
 		return list;
 	}
 
@@ -78,6 +80,33 @@ public class Service_LogDAOImpl implements DAO<Service_Log>{
 	public Service_Log findById(String Id) throws SQLException {
 		// TODO Auto-generated method stub
 		return null;
+	}
+	
+	public int getAmount(String service_name) throws SQLException{
+		
+		String sql="select amount from hv_services where service_name=?";
+		
+		PreparedStatement ps=con.prepareStatement(sql);
+		
+		ps.setString(1, service_name);
+		
+		ResultSet rs=ps.executeQuery();
+		
+		return rs.getInt(1);
+	}
+	
+	public long getNewId() throws SQLException {
+		// TODO Auto-generated method stub
+		String sql="select max(sid) from hv_servicelog";
+		PreparedStatement ps=con.prepareStatement(sql);
+		
+		ResultSet rs=ps.executeQuery();
+		
+		long id=0;
+		if(rs.next())
+			id=rs.getLong(1);
+		
+		return ++id;
 	}
 
 }

@@ -25,7 +25,7 @@ import com.training.utils.Service_LogDAOImpl;
 @Path("carservice")
 public class Car_Services {
 	
-	DAO carDao;
+	DAO<Car> carDao;
 	Service_LogDAOImpl serviceDao;
 	CustomerDAO custDao;
 	
@@ -53,9 +53,10 @@ public class Car_Services {
 		return custDao.add(customer);
 	}
 	
-	@PUT
+	@GET
 	@Path("updateCustomer/{customer_id}/{property}/{newVal}")
 	public int updateCustomer(@PathParam("customer_id") String custId,@PathParam("property") String property,@PathParam("newVal")String newVal) throws SQLException {
+		System.out.println(custId+" "+property+" "+newVal);
 		return custDao.updatebyId(custId, property, newVal);
 	}
 	
@@ -85,17 +86,26 @@ public class Car_Services {
 	@Path("getCar/{car_no}")
 	@Produces(MediaType.APPLICATION_JSON)
 	public Response getCarDetails(@PathParam("car_no")String car_no) throws SQLException {
-		Car car=(Car) carDao.findById(car_no);
+		Car car=carDao.findById(car_no);
 		return Response.status(200).entity(car).build();
 	}
 	
 	@GET
 	@Path("getNewId")
-	@Produces(MediaType.TEXT_PLAIN)
-	public String getNewId() throws SQLException {
-		String s=custDao.getNewId()+"";
-		System.out.println(s);
-		return s;
+	public long getNewId() throws SQLException {
+		return custDao.getNewId();
+	}
+	
+	@GET
+	@Path("getNewServiceId")
+	public long getNewServiceId() throws SQLException {
+		return serviceDao.getNewId();
+	}
+	
+	@GET
+	@Path("getAmount/{service_name}")
+	public int getAmount(@PathParam("service_name")String service_name) throws SQLException {
+		return serviceDao.getAmount(service_name);
 	}
 	
 }

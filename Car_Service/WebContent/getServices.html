@@ -3,25 +3,9 @@
 <head>
 <meta charset="ISO-8859-1">
 <title>Insert title here</title>
-<script type="text/javascript" src="jquery1-7-2.js"></script>
-<script>
-	$(function(){
-		$.ajax({
-			url:"http://localhost:8080/Car_Service_REST_Services/rest/carservice/getService/"+$("#customer_id").val(),
-			type:"GET",
-			success:function(data){
-				data=JSON.parse(data);
-				$("#servicelog").html(data);
-			},
-			error:function(errorThrown){
-				console.log(errorThrown);
-			}
-		});
-	});
-</script>
 </head>
 <body>
-<form>
+<form action="serviceLog" method="post">
 <label for="customer_id">Customer Id</label>
 <input type="number" name="customer_id" id="customer_id" required/>
 <input type="submit" value="Submit" id="btn"/>

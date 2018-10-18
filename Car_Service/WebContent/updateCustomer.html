@@ -9,8 +9,8 @@
 $(function(){
 	$("#btn").on("click",function(){
 		$.ajax({
-			url:"http://localhost:8080/Car_Service_REST_Services/rest/carservice/updateCustomer/"+$("#customer_id").val()+"/"+$("#property").val()+"/"+$("#newVal"),
-			type:"PUT",
+			url:"http://localhost:8080/Car_Service_REST_Services/rest/carservice/updateCustomer/"+$("#customer_id").val()+"/"+$("#property").val()+"/"+$("#newVal").val(),
+			type:"GET",
 			contentType:"charset=utf-8",
 			success:function(data){
 				console.log(data);
@@ -35,7 +35,7 @@ $(function(){
 <option value="email">Email</option>
 </select>
 <input type="text" id="newVal" name="newVal" required/>
-<input type="submit" value="Update" id="btn">
+<input type="button" value="Update" id="btn">
 </form>
 <a href="main.html">Back</a>
 </body>

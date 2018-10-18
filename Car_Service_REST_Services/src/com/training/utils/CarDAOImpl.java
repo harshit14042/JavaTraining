@@ -58,6 +58,7 @@ public class CarDAOImpl implements DAO<Car> {
 	public int add(Car car) throws SQLException {
 		// TODO Auto-generated method stub
 		int rowsAdded=0;
+		System.out.println(car);
 		String sql="insert into hv_car values(?,?,?,?,?)";
 		
 		PreparedStatement ps=con.prepareStatement(sql);

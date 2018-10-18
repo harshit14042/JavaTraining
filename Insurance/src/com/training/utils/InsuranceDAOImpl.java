@@ -43,15 +43,16 @@ public class InsuranceDAOImpl implements DAO<Insurance>{
 	}
 	
 	@Override
-	public String getbyId(String customer_id) throws SQLException {
+	public int getbyId(String customer_id) throws SQLException {
 		// TODO Auto-generated method stub
 		String sql="select coverage from hv_insurance_details where customer_id="+customer_id;
 		
 		PreparedStatement ps=con.prepareStatement(sql);
 		
 		ResultSet rs=ps.executeQuery();
-		String res="0";
-		res=""+rs.getInt(1);
+		int res=0;
+		if(rs.next())
+		res=rs.getInt(1);
 		return res;
 		
 	}

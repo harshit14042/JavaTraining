@@ -2,88 +2,10 @@
 <html>
 <head>
 <meta charset="ISO-8859-1">
-<script type="text/javascript" src="jquery1-7-2.js"></script>
-<script>
-$(function(){
-	
-	function getNewId(){
-		var id=1;
-		$.ajax({
-			url:"http://localhost:8080/Car_Service_REST_Services/rest/carservice/getNewId",
-			type:"GET",
-			success:function(data){
-				console.log("ID");
-				id=parseInt(data);
-			},
-			error:function(errorThrown){
-				console.log(errorThrown);
-			}
-		});
-		console.log(id);
-		return id;
-	}
-	
-	
-	console.log("Hello");
-	$("#btn").on("click",function(){
-		console.log("Hello");
-		var custId=getNewId();
-		console.log(custId);
-		var customer={
-				customer_id: custId,
-				cname: $("#cname").val(),
-				addr: $("#addr").val(),
-				email: $("#email").val()
-		}
-		var car={
-				car_no: $("#car_no").val(),
-				customer_id: custId,
-				company: $("#company").val(),
-				car_model: $("#car_model").val(),
-				car_age: $("#car_age").val()
-		}
-		console.log(customer)
-		console.log(car)
-		$.ajax({
-			url:"http://localhost:8080/Car_Service_REST_Services/rest/carservice/addCustomer",
-			type:"POST",
-			dataType:"json",
-			contentType:"application/json;charset=utf-8",
-			success:function(data){
-				console.log(data);
-				/*data=JSON.parse(data);
-				var htmlData="";
-				for(var i=0;i<data.length;i++){
-					console.log(data[i]);
-					htmlData+="<a href='http://localhost:8080/BloodDonor/rest/donor/locations/"+data[i]+"'>"+data[i]+"</a><br/>"
-				}
-				console.log(htmlData);
-				$("#locationDiv").html(htmlData);*/
-			},
-			data:JSON.stringify(customer)
-		});
-		$.ajax({
-			url:"http://localhost:8080/Car_Service_REST_Services/rest/carservice/addCar",
-			type:"POST",
-			dataType:"json",
-			contentType:"application/json;charset=utf-8",
-			success:function(data){
-				console.log(data);
-			},
-			data:JSON.stringify(car)
-		});
-	});
-});
-
-
-
-
-
-</script>
 <title>Add Customer</title>
 </head>
 <body>
-<form>
+<form action="addCustomer" method="post">
 
 <h3>Customer Details</h3>
 
